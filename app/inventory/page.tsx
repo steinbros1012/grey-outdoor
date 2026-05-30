@@ -25,8 +25,8 @@ interface Billboard {
   dailyTraffic: string;
 }
 
-const STATIC_IMG = "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&q=80";
-const DIGITAL_IMG = "https://images.unsplash.com/photo-1617854818583-09e7f077a156?w=800&q=80";
+const STATIC_IMG = "/hero/grey-outdoor-hero.jpg";
+const DIGITAL_IMG = "/hero/highway-1.jpg";
 
 const billboards: Billboard[] = [
   { id: "WIL-001", market: "Wilmington/Coast", type: "Digital", location: "Hwy 17 Hampstead", highway: "Hwy 17 Northbound, Pender County NC", dimensions: "14x48", dailyTraffic: "28,000*" },
