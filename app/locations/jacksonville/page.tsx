@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
 import CTABanner from "@/components/CTABanner";
@@ -20,15 +21,24 @@ const faqs = [
 export default function JacksonvillePage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
-        <div className="max-w-4xl mx-auto">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1920&q=80"
+          alt="Highway corridor in Onslow County, NC"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
+        <div className="relative max-w-4xl mx-auto">
           <Link href="/inventory" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">← All Markets</Link>
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#DC2626]/20 text-red-400 mb-4 uppercase tracking-widest">Jacksonville, NC</span>
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#DC2626]/20 text-red-400 mb-4 uppercase tracking-widest">Jacksonville, NC — Onslow County</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Jacksonville Billboard Advertising</h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Reach the military community and growing civilian population of Onslow County.
-            Jacksonville&apos;s unique demographic — anchored by Camp Lejeune — offers advertisers
-            a stable, high-spending consumer base year-round.
+            Home to Marine Corps Base Camp Lejeune — the largest USMC base on the East Coast.
+            Key commercial corridors: NC-24 (Western Blvd, the main retail strip), US-17, and US-258.
+            Reach a heavily military/veteran demographic alongside a growing civilian retail market.
           </p>
         </div>
       </section>
@@ -50,9 +60,9 @@ export default function JacksonvillePage() {
             <h2 className="text-3xl font-black text-[#0F172A] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
             <div className="space-y-4">
               {[
-                { loc: "Western Blvd at Gum Branch Rd", hw: "NC-24 Eastbound", size: "14x48", traffic: "43,000/day", type: "Static" },
-                { loc: "Marine Blvd & Henderson Dr", hw: "US-17 Northbound", size: "10x36", traffic: "36,000/day", type: "Digital" },
-                { loc: "Bell Fork Rd at Jacksonville Mall", hw: "NC-24 Westbound", size: "14x48", traffic: "39,000/day", type: "Static" },
+                { loc: "NC-24 Western Blvd corridor", hw: "NC-24 Westbound", size: "14x48", traffic: "28,000*/day", type: "Static" },
+                { loc: "US-17 at Henderson Dr", hw: "US-17 Northbound", size: "14x48", traffic: "22,000*/day", type: "Static" },
+                { loc: "US-258 at Bell Fork Rd", hw: "US-258 Southbound", size: "10x36", traffic: "18,000*/day", type: "Static" },
               ].map((loc) => (
                 <div key={loc.loc} className="flex items-center justify-between p-5 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
                   <div>

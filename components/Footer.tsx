@@ -13,7 +13,8 @@ const services = [
 const locations = [
   { label: "Wilmington", href: "/locations/wilmington" },
   { label: "Raleigh", href: "/locations/raleigh" },
-  { label: "Apex", href: "/locations/apex" },
+  { label: "Florence, SC", href: "/locations/florence-sc" },
+  { label: "Eastern NC", href: "/locations/coastal-nc" },
   { label: "Leland", href: "/locations/leland" },
   { label: "Jacksonville", href: "/locations/jacksonville" },
   { label: "Coastal NC", href: "/locations/coastal-nc" },

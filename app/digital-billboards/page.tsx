@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 import { Zap, Clock, BarChart3, Users } from "lucide-react";
@@ -17,6 +18,15 @@ export default function DigitalBillboardsPage() {
         className="pt-32 pb-20 px-4 relative overflow-hidden"
         style={{ backgroundColor: "#08091A" }}
       >
+        <Image
+          src="https://images.unsplash.com/photo-1609743522471-83c84ce23e32?w=1920&q=80"
+          alt="City at night with digital billboard displays"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
         <div
           className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
           style={{

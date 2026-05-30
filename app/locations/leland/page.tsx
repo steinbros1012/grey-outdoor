@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
 import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Leland, NC Billboard Advertising | Grey Outdoor",
+  title: "Leland & Brunswick County Billboard Advertising | Grey Outdoor",
   description:
-    "Billboard advertising in Leland, NC and Brunswick County. Strategic placements on US-74/76 and Highway 17 reaching commuters and the booming Brunswick County growth corridor.",
+    "Billboard advertising in Leland, Southport, and Brunswick County, NC. Strategic placements on US-74/76, Highway 17 South, and NC-133 reaching commuters and one of NC's fastest-growing counties.",
 };
 
 const faqs = [
@@ -20,14 +21,24 @@ const faqs = [
 export default function LelandPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
-        <div className="max-w-4xl mx-auto">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          alt="Coastal highway in Brunswick County, NC"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
+        <div className="relative max-w-4xl mx-auto">
           <Link href="/inventory" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">← All Markets</Link>
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#B45309]/20 text-amber-400 mb-4 uppercase tracking-widest">Leland, NC</span>
-          <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Leland Billboard Advertising</h1>
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#B45309]/20 text-amber-400 mb-4 uppercase tracking-widest">Leland &amp; Brunswick County, NC</span>
+          <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Leland &amp; Southport Billboard Advertising</h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Capture Brunswick County&apos;s booming growth corridor. Leland is one of NC&apos;s fastest-growing
-            towns, with tens of thousands of residents commuting daily to Wilmington via US-74/76.
+            Brunswick County is one of NC&apos;s fastest-growing counties — driven by retirees, remote workers,
+            and families relocating from Wilmington. Key corridors: US-74/76 (main artery), Highway 17 South,
+            and NC-133. Reach new residents, home services buyers, healthcare seekers, and retail shoppers.
           </p>
         </div>
       </section>
@@ -49,9 +60,9 @@ export default function LelandPage() {
             <h2 className="text-3xl font-black text-[#0F172A] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
             <div className="space-y-4">
               {[
-                { loc: "Leland Town Center Drive", hw: "US-74/76 Eastbound", size: "14x48", traffic: "38,000/day", type: "Static" },
-                { loc: "Village Road at Waterford", hw: "Highway 17 South", size: "10x36", traffic: "24,000/day", type: "Static" },
-                { loc: "New Pointe Blvd", hw: "US-74/76 Westbound", size: "14x48", traffic: "38,000/day", type: "Static" },
+                { loc: "US-74/76 Brunswick Town Center corridor", hw: "US-74/76 Eastbound", size: "14x48", traffic: "32,000*/day", type: "Static" },
+                { loc: "NC-211 at Howe St, Southport", hw: "NC-211", size: "10x36", traffic: "18,000*/day", type: "Static" },
+                { loc: "Highway 17 South at Village Road", hw: "Highway 17 South", size: "10x36", traffic: "22,000*/day", type: "Static" },
               ].map((loc) => (
                 <div key={loc.loc} className="flex items-center justify-between p-5 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
                   <div>

@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Eye, MapPin, Clock } from "lucide-react";
 import StatCounter from "@/components/StatCounter";
 import LeadForm from "@/components/LeadForm";
@@ -34,39 +35,39 @@ const industries = [
 const locations = [
   {
     city: "Wilmington, NC",
-    highways: "I-40 · US-17 · Highway 74",
-    description: "Coastal NC's largest market with year-round traffic and a fast-growing economy.",
+    highways: "US-17 · US-74 · I-140",
+    description: "New Hanover County's coastal market — tourism, healthcare, real estate, and a fast-growing metro.",
     href: "/locations/wilmington",
   },
   {
-    city: "Raleigh, NC",
-    highways: "I-440 · US-1 · I-40",
-    description: "NC's capital and tech hub — one of the fastest-growing metros in the Southeast.",
-    href: "/locations/raleigh",
-  },
-  {
-    city: "Apex, NC",
-    highways: "US-1 · NC-55 · I-540",
-    description: "One of NC's fastest-growing suburbs with high-income households and strong retail traffic.",
-    href: "/locations/apex",
-  },
-  {
-    city: "Leland, NC",
-    highways: "US-74/76 · Highway 17",
-    description: "Brunswick County's gateway — booming residential growth and commuter traffic.",
+    city: "Leland & Southport, NC",
+    highways: "US-74/76 · Highway 211",
+    description: "Brunswick County's fastest-growing area — capturing booming residential and commuter traffic.",
     href: "/locations/leland",
   },
   {
     city: "Jacksonville, NC",
     highways: "NC-24 · US-17",
-    description: "Military corridor connecting Camp Lejeune to a growing civilian population.",
+    description: "Onslow County military corridor — Camp Lejeune and a growing civilian consumer base.",
     href: "/locations/jacksonville",
   },
   {
-    city: "Coastal NC",
-    highways: "Highway 17 · US-64",
-    description: "Beach routes and vacation corridors with millions of seasonal visitors annually.",
+    city: "Eastern NC",
+    highways: "US-74 · US-701 · US-421",
+    description: "Whiteville, Elizabethtown, Clinton, Goldsboro, and Kinston — rural highway markets with strong reach.",
     href: "/locations/coastal-nc",
+  },
+  {
+    city: "Piedmont NC",
+    highways: "I-85/40 · US-70",
+    description: "Burlington, Greensboro, and Raleigh — NC's central corridor with major interstate exposure.",
+    href: "/locations/raleigh",
+  },
+  {
+    city: "Florence & Myrtle Beach, SC",
+    highways: "I-95 · Hwy 76 · US-501",
+    description: "South Carolina markets — I-95 travel corridor and the Grand Strand's high-traffic tourism zone.",
+    href: "/locations/florence-sc",
   },
 ];
 
@@ -78,6 +79,15 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{ backgroundColor: "#08091A" }}
       >
+        <Image
+          src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=1920&q=80"
+          alt="Aerial view of highway interchange"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
         <div
           className="absolute inset-0 opacity-20"
           style={{

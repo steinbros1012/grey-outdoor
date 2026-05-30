@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
 import CTABanner from "@/components/CTABanner";
@@ -35,19 +36,28 @@ const faqs = [
 export default function RaleighPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
-        <div className="max-w-4xl mx-auto">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1920&q=80"
+          alt="City highway interchange at dusk"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
+        <div className="relative max-w-4xl mx-auto">
           <Link href="/inventory" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">← All Markets</Link>
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#7C3AED]/20 text-purple-400 mb-4 uppercase tracking-widest">
-            Raleigh, NC
+            Piedmont NC — Burlington · Greensboro · Raleigh
           </span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>
             Raleigh Billboard Advertising
           </h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            NC&apos;s capital city is one of the fastest-growing metros in the country.
-            Reach Raleigh&apos;s 500,000+ residents and the broader Research Triangle market
-            with billboard placements on the region&apos;s busiest interstates.
+            Grey Outdoor serves the full I-85/40 Piedmont corridor — Burlington, Greensboro, and Raleigh.
+            Reach NC&apos;s capital and the broader Research Triangle market with billboard placements on the
+            region&apos;s busiest interstates.
           </p>
         </div>
       </section>
@@ -104,9 +114,9 @@ export default function RaleighPage() {
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Raleigh?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Explosive Population Growth", body: "Raleigh consistently ranks as one of the fastest-growing cities in the US, adding tens of thousands of new residents every year — all of whom are potential customers learning their new market." },
+              { title: "Full Piedmont Corridor Coverage", body: "Grey Outdoor's I-85/40 corridor inventory connects Burlington, Greensboro, and Raleigh in a single campaign. Advertisers with a regional footprint can achieve consistent brand exposure across all three markets simultaneously." },
               { title: "High-Income Tech Workforce", body: "The Research Triangle's concentration of technology, pharmaceutical, and biotech employers has created one of the highest median household incomes of any major NC market." },
-              { title: "Major Interstate Exposure", body: "The I-440 Beltline carries nearly 100,000 vehicles per day and provides total market encirclement. Combined with I-40 and US-1, Raleigh offers unmatched highway billboard inventory." },
+              { title: "Major Interstate Exposure", body: "The I-85/40 corridor is one of NC's busiest freight and commuter routes. Combined with US-70 in the Goldsboro/Alamance corridor, Grey Outdoor's Piedmont inventory delivers unmatched highway coverage across central NC." },
             ].map((r) => (
               <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <h3 className="text-lg font-bold text-white mb-2">{r.title}</h3>

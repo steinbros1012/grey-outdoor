@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
 import CTABanner from "@/components/CTABanner";
@@ -6,7 +7,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Wilmington Billboard Advertising | Grey Outdoor",
   description:
-    "Billboard advertising in Wilmington, NC. Prime locations on I-40, US-17, and Highway 74 reaching 48,000+ daily drivers. Get availability and rates from Grey Outdoor.",
+    "Billboard advertising in Wilmington, NC. Prime locations on US-17, US-74, I-140, and US-421 reaching 38,000–45,000+ daily drivers. Get availability and rates from Grey Outdoor.",
 };
 
 const faqs = [
@@ -20,7 +21,7 @@ const faqs = [
   },
   {
     q: "Which Wilmington highways get the most traffic?",
-    a: "US-17 (Market Street) and I-40 are the highest-traffic corridors in the Wilmington market. Highway 74/76 heading toward Leland and Brunswick County is also a strong performer, especially for businesses serving both markets.",
+    a: "US-17 (Market Street / N. College Rd) and US-74 (Oleander Dr / S. College Rd) are the highest-traffic corridors. I-140 provides strong exposure connecting Wilmington to Brunswick County, and US-421 (Carolina Beach Rd) captures southbound beach traffic. Contact us for NCDOT-verified traffic counts by corridor.",
   },
   {
     q: "How long does a billboard campaign in Wilmington run?",
@@ -35,8 +36,17 @@ const faqs = [
 export default function WilmingtonPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
-        <div className="max-w-4xl mx-auto">
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          alt="Coastal road near Wilmington, NC"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
+        <div className="relative max-w-4xl mx-auto">
           <Link href="/inventory" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">
             ← All Markets
           </Link>
@@ -50,8 +60,9 @@ export default function WilmingtonPage() {
             Wilmington Billboard Advertising
           </h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Reach Wilmington&apos;s 130,000+ residents and coastal NC&apos;s millions of annual
-            visitors with strategic billboard placements on the region&apos;s most-traveled corridors.
+            Reach Wilmington&apos;s ~125,000 residents and coastal NC&apos;s 280,000+ metro area with
+            strategic billboard placements on US-17 (Market St/N. College Rd), US-74 (Oleander/S. College),
+            I-140, and US-421 (Carolina Beach Rd).
           </p>
         </div>
       </section>
@@ -60,10 +71,10 @@ export default function WilmingtonPage() {
       <section className="py-14 px-4" style={{ backgroundColor: "#0D1230" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { value: "130,000+", label: "City Population" },
-            { value: "350,000+", label: "Metro Area" },
-            { value: "48,000", label: "I-40 Daily Traffic" },
-            { value: "62,000", label: "US-17 Daily Traffic" },
+            { value: "~125,000", label: "City Population" },
+            { value: "280,000+", label: "Metro Area" },
+            { value: "45,000*", label: "US-17 Daily Traffic" },
+            { value: "38,000*", label: "US-74 Daily Traffic" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl lg:text-4xl font-black text-[#F97316] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
@@ -82,10 +93,10 @@ export default function WilmingtonPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { loc: "North College Rd at I-40", hw: "I-40 Westbound", size: "14x48", traffic: "48,000/day", type: "Static" },
-                { loc: "Market St & 17th Street", hw: "US-17 Northbound", size: "10x36", traffic: "62,000/day", type: "Digital" },
-                { loc: "Carolina Beach Rd South", hw: "US-421", size: "14x48", traffic: "35,000/day", type: "Static" },
-                { loc: "Oleander Dr at Masonboro", hw: "US-76", size: "10x36", traffic: "28,000/day", type: "Static" },
+                { loc: "US-17 North (N. College Rd)", hw: "US-17 Northbound", size: "14x48", traffic: "45,000*/day", type: "Static" },
+                { loc: "US-74 Business / Market St", hw: "US-74 Business", size: "14x48", traffic: "38,000*/day", type: "Static" },
+                { loc: "Carolina Beach Rd (US-421)", hw: "US-421 Southbound", size: "14x48", traffic: "30,000*/day", type: "Static" },
+                { loc: "Oleander Dr / S. College Rd", hw: "US-74 Westbound", size: "10x36", traffic: "28,000*/day", type: "Static" },
               ].map((loc) => (
                 <div
                   key={loc.loc}
@@ -154,7 +165,7 @@ export default function WilmingtonPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-black text-[#0F172A] mb-6" style={{ letterSpacing: "-0.02em" }}>Industries That Succeed in Wilmington</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Real Estate", "Healthcare", "Restaurants", "Hospitality", "Retail", "Legal Services", "Home Services", "Auto Dealers"].map(i => (
+            {["Tourism & Hospitality", "Healthcare (Novant/NHRMC)", "Real Estate", "Restaurants", "Retail", "Legal Services", "Home Services", "Auto Dealers"].map(i => (
               <span key={i} className="px-4 py-2 rounded-full text-sm font-semibold text-[#0F172A] bg-white border border-[#E2E8F0]">{i}</span>
             ))}
           </div>

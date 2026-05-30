@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import CTABanner from "@/components/CTABanner";
 
@@ -35,6 +36,15 @@ export default function AboutPage() {
       {/* Company Story */}
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-3xl mx-auto">
+          <div className="relative w-full h-64 rounded-lg overflow-hidden mb-10">
+            <Image
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+              alt="Modern office team at work"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
           <h2
             className="text-3xl font-black text-[#0F172A] mb-6"
             style={{ letterSpacing: "-0.02em" }}

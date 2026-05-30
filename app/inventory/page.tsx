@@ -1,11 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import LeadForm from "@/components/LeadForm";
 
 type BillboardType = "Static" | "Digital";
-type Market = "Wilmington" | "Raleigh" | "Apex" | "Leland" | "Jacksonville" | "Coastal NC";
+type Market =
+  | "Wilmington"
+  | "Leland/Brunswick"
+  | "Jacksonville"
+  | "Eastern NC"
+  | "Piedmont NC"
+  | "Florence SC"
+  | "Myrtle Beach SC";
 
 interface Billboard {
   id: string;
@@ -17,28 +25,32 @@ interface Billboard {
   dailyTraffic: string;
 }
 
+const STATIC_IMG = "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&q=80";
+const DIGITAL_IMG = "https://images.unsplash.com/photo-1617854818583-09e7f077a156?w=800&q=80";
+
 const billboards: Billboard[] = [
-  { id: "WIL-001", market: "Wilmington", type: "Static", location: "North College Rd", highway: "I-40 W", dimensions: "14x48", dailyTraffic: "48,000" },
-  { id: "WIL-002", market: "Wilmington", type: "Digital", location: "Market St & 17th", highway: "US-17", dimensions: "10x36", dailyTraffic: "62,000" },
-  { id: "WIL-003", market: "Wilmington", type: "Static", location: "Carolina Beach Rd", highway: "US-421", dimensions: "14x48", dailyTraffic: "35,000" },
-  { id: "RAL-001", market: "Raleigh", type: "Digital", location: "Wade Ave Interchange", highway: "I-440", dimensions: "14x48", dailyTraffic: "95,000" },
-  { id: "RAL-002", market: "Raleigh", type: "Static", location: "Capital Blvd North", highway: "US-1", dimensions: "14x48", dailyTraffic: "72,000" },
-  { id: "APX-001", market: "Apex", type: "Static", location: "Apex Peakway at US-1", highway: "US-1", dimensions: "10x36", dailyTraffic: "55,000" },
-  { id: "APX-002", market: "Apex", type: "Digital", location: "NC-55 Corridor", highway: "NC-55", dimensions: "14x48", dailyTraffic: "41,000" },
-  { id: "LEL-001", market: "Leland", type: "Static", location: "Leland Town Center", highway: "US-74/76", dimensions: "14x48", dailyTraffic: "38,000" },
-  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "Western Blvd", highway: "NC-24", dimensions: "14x48", dailyTraffic: "43,000" },
-  { id: "JAX-002", market: "Jacksonville", type: "Digital", location: "Marine Blvd", highway: "US-17", dimensions: "10x36", dailyTraffic: "36,000" },
-  { id: "CST-001", market: "Coastal NC", type: "Static", location: "Surf City Approach", highway: "Highway 17", dimensions: "14x48", dailyTraffic: "29,000" },
-  { id: "CST-002", market: "Coastal NC", type: "Static", location: "Crystal Coast Entry", highway: "US-64", dimensions: "14x48", dailyTraffic: "24,000" },
+  { id: "WIL-001", market: "Wilmington", type: "Static", location: "US-17 North, New Hanover County", highway: "US-17 Northbound", dimensions: "14x48", dailyTraffic: "45,000*" },
+  { id: "WIL-002", market: "Wilmington", type: "Static", location: "US-74 Business / Market St", highway: "US-74 Business", dimensions: "14x48", dailyTraffic: "38,000*" },
+  { id: "LEL-001", market: "Leland/Brunswick", type: "Static", location: "US-74/76 Brunswick Town Center corridor", highway: "US-74/76 Eastbound", dimensions: "14x48", dailyTraffic: "32,000*" },
+  { id: "LEL-002", market: "Leland/Brunswick", type: "Static", location: "NC-211 at Howe St, Southport", highway: "NC-211", dimensions: "10x36", dailyTraffic: "18,000*" },
+  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "NC-24 Western Blvd corridor", highway: "NC-24 Westbound", dimensions: "14x48", dailyTraffic: "28,000*" },
+  { id: "JAX-002", market: "Jacksonville", type: "Static", location: "US-17 at Henderson Dr", highway: "US-17 Northbound", dimensions: "14x48", dailyTraffic: "22,000*" },
+  { id: "ENC-001", market: "Eastern NC", type: "Static", location: "US-74 at NC-130, Whiteville", highway: "US-74", dimensions: "10x36", dailyTraffic: "15,000*" },
+  { id: "ENC-002", market: "Eastern NC", type: "Static", location: "US-701 at NC-87, Elizabethtown", highway: "US-701", dimensions: "10x36", dailyTraffic: "12,000*" },
+  { id: "PIE-001", market: "Piedmont NC", type: "Static", location: "I-40/85 at exit 145, Burlington", highway: "I-40/85", dimensions: "14x48", dailyTraffic: "55,000*" },
+  { id: "PIE-002", market: "Piedmont NC", type: "Static", location: "US-70 at NC-581, Goldsboro", highway: "US-70", dimensions: "10x36", dailyTraffic: "20,000*" },
+  { id: "FLO-001", market: "Florence SC", type: "Static", location: "I-95 at Hwy 76 interchange, Florence", highway: "I-95", dimensions: "14x48", dailyTraffic: "65,000*" },
+  { id: "MYR-001", market: "Myrtle Beach SC", type: "Digital", location: "US-501 at Hwy 544, Myrtle Beach area", highway: "US-501", dimensions: "14x48", dailyTraffic: "40,000*" },
 ];
 
 const marketColors: Record<Market, string> = {
   Wilmington: "#0047CC",
-  Raleigh: "#7C3AED",
-  Apex: "#059669",
-  Leland: "#B45309",
+  "Leland/Brunswick": "#B45309",
   Jacksonville: "#DC2626",
-  "Coastal NC": "#0891B2",
+  "Eastern NC": "#0891B2",
+  "Piedmont NC": "#7C3AED",
+  "Florence SC": "#059669",
+  "Myrtle Beach SC": "#EA580C",
 };
 
 type FilterType = "All" | Market | "Static" | "Digital";
@@ -46,7 +58,18 @@ type FilterType = "All" | Market | "Static" | "Digital";
 export default function InventoryPage() {
   const [active, setActive] = useState<FilterType>("All");
 
-  const filters: FilterType[] = ["All", "Wilmington", "Raleigh", "Apex", "Leland", "Jacksonville", "Coastal NC", "Static", "Digital"];
+  const filters: FilterType[] = [
+    "All",
+    "Wilmington",
+    "Leland/Brunswick",
+    "Jacksonville",
+    "Eastern NC",
+    "Piedmont NC",
+    "Florence SC",
+    "Myrtle Beach SC",
+    "Static",
+    "Digital",
+  ];
 
   const filtered = billboards.filter((b) => {
     if (active === "All") return true;
@@ -99,42 +122,56 @@ export default function InventoryPage() {
                 {filtered.map((bb) => (
                   <div
                     key={bb.id}
-                    className="bg-white rounded-lg p-5"
+                    className="bg-white rounded-lg overflow-hidden"
                     style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)", border: "1px solid #E2E8F0" }}
                   >
-                    <div className="flex items-center gap-2 mb-3">
-                      <span
-                        className="px-2.5 py-1 rounded-full text-xs font-bold text-white"
-                        style={{ backgroundColor: marketColors[bb.market] }}
-                      >
-                        {bb.market}
-                      </span>
-                      <span
-                        className="px-2.5 py-1 rounded-full text-xs font-bold"
-                        style={{
-                          backgroundColor: bb.type === "Digital" ? "#FEF3C7" : "#F1F5F9",
-                          color: bb.type === "Digital" ? "#92400E" : "#475569",
-                        }}
-                      >
-                        {bb.type}
-                      </span>
+                    <div className="relative h-32 w-full">
+                      <Image
+                        src={bb.type === "Digital" ? DIGITAL_IMG : STATIC_IMG}
+                        alt={`${bb.type} billboard — ${bb.location}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                      />
                     </div>
-                    <h3 className="font-bold text-[#0F172A] mb-0.5">{bb.location}</h3>
-                    <p className="text-xs text-[#0047CC] font-semibold mb-3">{bb.highway}</p>
-                    <div className="flex items-center justify-between text-xs text-[#475569] mb-4">
-                      <span>Size: <strong className="text-[#0F172A]">{bb.dimensions}</strong></span>
-                      <span>Traffic: <strong className="text-[#0F172A]">{bb.dailyTraffic}/day</strong></span>
+                    <div className="p-5">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span
+                          className="px-2.5 py-1 rounded-full text-xs font-bold text-white"
+                          style={{ backgroundColor: marketColors[bb.market] }}
+                        >
+                          {bb.market}
+                        </span>
+                        <span
+                          className="px-2.5 py-1 rounded-full text-xs font-bold"
+                          style={{
+                            backgroundColor: bb.type === "Digital" ? "#FEF3C7" : "#F1F5F9",
+                            color: bb.type === "Digital" ? "#92400E" : "#475569",
+                          }}
+                        >
+                          {bb.type}
+                        </span>
+                      </div>
+                      <h3 className="font-bold text-[#0F172A] mb-0.5">{bb.location}</h3>
+                      <p className="text-xs text-[#0047CC] font-semibold mb-3">{bb.highway}</p>
+                      <div className="flex items-center justify-between text-xs text-[#475569] mb-4">
+                        <span>Size: <strong className="text-[#0F172A]">{bb.dimensions}</strong></span>
+                        <span>Traffic: <strong className="text-[#0F172A]">{bb.dailyTraffic}/day</strong></span>
+                      </div>
+                      <Link
+                        href="/contact"
+                        className="block w-full text-center py-2.5 rounded-lg text-sm font-bold text-white hover:bg-[#EA580C] transition-colors"
+                        style={{ backgroundColor: "#F97316" }}
+                      >
+                        Request Availability
+                      </Link>
                     </div>
-                    <Link
-                      href="/contact"
-                      className="block w-full text-center py-2.5 rounded-lg text-sm font-bold text-white hover:bg-[#EA580C] transition-colors"
-                      style={{ backgroundColor: "#F97316" }}
-                    >
-                      Request Availability
-                    </Link>
                   </div>
                 ))}
               </div>
+              <p className="mt-6 text-xs text-[#94A3B8] leading-relaxed">
+                *Traffic estimates based on NCDOT/SCDOT AADT data for highway corridors. Actual counts vary by specific billboard placement. Contact Grey Outdoor for verified traffic counts.
+              </p>
             </div>
 
             {/* Sidebar form */}

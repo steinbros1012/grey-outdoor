@@ -13,8 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/resources`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/locations/wilmington`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/locations/raleigh`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/locations/apex`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/locations/leland`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/locations/florence-sc`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/locations/jacksonville`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/locations/coastal-nc`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
   ];
