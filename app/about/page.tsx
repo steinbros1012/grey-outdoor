@@ -16,6 +16,7 @@ const team = [
     photo: "/team/grey-vick.jpg",
     bio: "Grey earned his bachelor's and master's degrees in business and accounting from UNC Wilmington in 2005. He worked as an accountant and real estate investor before getting into the billboard business in 2007. He co-founded Waterway Outdoor LLC before starting Grey Outdoor in 2014. The company now operates over 700 billboard faces across the Carolinas, including digital signs. Grey serves on the North Carolina Outdoor Advertising Association board. He lives in Wilmington with his wife Sarah and their three kids, and he surfs, travels, and holds a Brown Belt in Jiu Jitsu.",
     phone: null,
+    email: "grey@greyoutdoor.com",
   },
   {
     name: "Guy Williamson",
@@ -23,6 +24,7 @@ const team = [
     photo: "/team/guy-williamson.jpg",
     bio: "Guy joined Grey Outdoor in 2019, bringing 32 years of experience in the outdoor advertising industry. He handles lease management, new location development, permitting, and rezoning. Guy appreciates working directly with ownership without the corporate red tape that slows things down at bigger companies. He lives in Cedar Point, NC with his wife Darlene, and enjoys time with family, taking care of their animals, and boating.",
     phone: "252-521-5555",
+    email: "guymwilliamson7@gmail.com",
   },
   {
     name: "Mark Ruggiero",
@@ -30,6 +32,7 @@ const team = [
     photo: "/team/mark-ruggiero.jpg",
     bio: "Mark has a business administration degree from William Paterson University and 25 years of advertising sales experience across print, online, radio, and billboards. He also spent five years as a licensed financial advisor working with active-duty Marines. A Marine Corps veteran himself, Mark works with clients to understand their needs and build billboard campaigns that actually drive results. He lives in Hampstead with his wife Kristan and their three adult children, and enjoys golf, gardening, and life on the coast.",
     phone: "910-270-2900",
+    email: null,
   },
   {
     name: "Austin Wolfe",
@@ -37,6 +40,7 @@ const team = [
     photo: "/team/austin-wolfe.jpg",
     bio: "Austin has seven years in marketing and advertising. He graduated from UNC Wilmington in 2018 with a marketing degree, which is how he connected with Grey Outdoor. He works primarily with small businesses, helping them figure out if and how billboard advertising fits into their marketing mix. Austin lives near Wilmington and spends his free time fishing, watching sports, and traveling.",
     phone: "919-820-4505",
+    email: null,
   },
 ];
 
@@ -93,14 +97,24 @@ export default function AboutPage() {
                 <h3 className="text-lg font-black text-[#0F172A] mb-1">{member.name}</h3>
                 <p className="text-sm font-semibold text-[#F97316] mb-3 leading-snug">{member.title}</p>
                 <p className="text-sm text-[#475569] leading-relaxed mb-3">{member.bio}</p>
-                {member.phone && (
-                  <a
-                    href={`tel:${member.phone.replace(/-/g, "")}`}
-                    className="text-sm font-semibold text-[#0047CC] hover:text-[#F97316] transition-colors"
-                  >
-                    {member.phone}
-                  </a>
-                )}
+                <div className="flex flex-col gap-1 mt-auto">
+                  {member.phone && (
+                    <a
+                      href={`tel:${member.phone.replace(/-/g, "")}`}
+                      className="text-sm font-semibold text-[#0047CC] hover:text-[#F97316] transition-colors"
+                    >
+                      Call or Text: {member.phone}
+                    </a>
+                  )}
+                  {member.email && (
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="text-sm text-[#475569] hover:text-[#F97316] transition-colors break-all"
+                    >
+                      {member.email}
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -112,12 +126,13 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto">
           <div className="relative w-full h-64 rounded-lg overflow-hidden mb-10">
             <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
-              alt="Modern office team at work"
+              src="/hero/coastal-road.jpg"
+              alt="North Carolina coastal highway"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
             />
+            <div className="absolute inset-0 bg-[#08091A]/40" />
           </div>
           <h2
             className="text-3xl font-black text-[#0F172A] mb-6"
