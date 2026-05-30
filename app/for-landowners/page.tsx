@@ -55,6 +55,45 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function ForLandownersPage() {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    propertyLocation: "",
+    state: "",
+    propertyType: "",
+    details: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/landowners", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please call us at 910-620-3567.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       {/* Hero */}
@@ -270,109 +309,80 @@ export default function ForLandownersPage() {
           <p className="text-white/80 text-center mb-10">
             Fill out the form and we&apos;ll be in touch within a few business days.
           </p>
+          {submitted ? (
+            <div className="bg-[#08091A] rounded-xl p-12 text-center">
+              <div className="text-5xl mb-4">✓</div>
+              <h3 className="text-2xl font-black text-white mb-2">Got it — thanks!</h3>
+              <p className="text-white/60">We&apos;ll review your property details and be in touch within a few business days.</p>
+            </div>
+          ) : (
           <form
             className="bg-[#08091A] rounded-xl p-8 space-y-5"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  required
+                <label htmlFor="lo-name" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Full Name *</label>
+                <input id="lo-name" name="name" type="text" required value={form.name} onChange={handleChange}
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors"
-                />
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors" />
               </div>
               <div>
-                <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  required
+                <label htmlFor="lo-phone" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Phone *</label>
+                <input id="lo-phone" name="phone" type="tel" required value={form.phone} onChange={handleChange}
                   placeholder="(910) 555-0100"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors"
-                />
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors" />
               </div>
             </div>
             <div>
-              <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                Email
-              </label>
-              <input
-                type="email"
-                required
+              <label htmlFor="lo-email" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Email *</label>
+              <input id="lo-email" name="email" type="email" required value={form.email} onChange={handleChange}
                 placeholder="jane@example.com"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors"
-              />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors" />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                Property Address / General Location
-              </label>
-              <input
-                type="text"
-                required
+              <label htmlFor="lo-location" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Property Address / General Location</label>
+              <input id="lo-location" name="propertyLocation" type="text" value={form.propertyLocation} onChange={handleChange}
                 placeholder="e.g. Near I-40 and exit 132, Burlington NC"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors"
-              />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                  State
-                </label>
-                <select
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#F97316] transition-colors appearance-none"
-                >
-                  <option value="" disabled selected>
-                    Select state
-                  </option>
-                  <option value="NC">NC</option>
-                  <option value="SC">SC</option>
-                  <option value="VA">VA</option>
-                  <option value="Other">Other</option>
+                <label htmlFor="lo-state" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">State</label>
+                <select id="lo-state" name="state" value={form.state} onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#F97316] transition-colors appearance-none">
+                  <option value="" style={{ color: "#0F172A" }}>Select state</option>
+                  <option value="NC" style={{ color: "#0F172A" }}>NC</option>
+                  <option value="SC" style={{ color: "#0F172A" }}>SC</option>
+                  <option value="VA" style={{ color: "#0F172A" }}>VA</option>
+                  <option value="Other" style={{ color: "#0F172A" }}>Other</option>
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                  Property Type
-                </label>
-                <select
-                  required
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#F97316] transition-colors appearance-none"
-                >
-                  <option value="" disabled selected>
-                    Select type
-                  </option>
-                  <option value="highway">Highway frontage</option>
-                  <option value="commercial">Commercial property</option>
-                  <option value="rural">Rural/Agricultural</option>
-                  <option value="other">Other</option>
+                <label htmlFor="lo-type" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Property Type</label>
+                <select id="lo-type" name="propertyType" value={form.propertyType} onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#F97316] transition-colors appearance-none">
+                  <option value="" style={{ color: "#0F172A" }}>Select type</option>
+                  <option value="highway" style={{ color: "#0F172A" }}>Highway frontage</option>
+                  <option value="commercial" style={{ color: "#0F172A" }}>Commercial property</option>
+                  <option value="rural" style={{ color: "#0F172A" }}>Rural/Agricultural</option>
+                  <option value="other" style={{ color: "#0F172A" }}>Other</option>
                 </select>
               </div>
             </div>
             <div>
-              <label className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">
-                Additional Details
-              </label>
-              <textarea
-                rows={4}
+              <label htmlFor="lo-details" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Additional Details</label>
+              <textarea id="lo-details" name="details" rows={4} value={form.details} onChange={handleChange}
                 placeholder="Any other details about the property, existing structures, road frontage, etc."
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors resize-none"
-              />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#F97316] transition-colors resize-none" />
             </div>
-            <button
-              type="submit"
-              className="w-full py-4 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold text-base transition-colors"
-            >
-              Send My Property Details
+            {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+            <button type="submit" disabled={loading}
+              className="w-full py-4 rounded-full bg-[#F97316] hover:bg-[#EA580C] text-white font-bold text-base transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+              {loading ? "Sending..." : "Send My Property Details"}
             </button>
           </form>
+          )}
         </div>
       </section>
     </>
