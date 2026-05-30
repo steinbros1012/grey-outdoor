@@ -171,9 +171,6 @@ export default function HomePage() {
                 className="p-8 lg:p-10 rounded-lg"
                 style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}
               >
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white/60 mb-6 uppercase tracking-widest">
-                  Classic Format
-                </span>
                 <h3 className="text-2xl lg:text-3xl font-black text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
                   Static Billboards
                 </h3>
@@ -200,9 +197,6 @@ export default function HomePage() {
                   border: "1px solid rgba(0,71,204,0.3)",
                 }}
               >
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#0047CC]/20 text-[#60A5FA] mb-6 uppercase tracking-widest">
-                  Dynamic Format
-                </span>
                 <h3 className="text-2xl lg:text-3xl font-black text-white mb-3" style={{ letterSpacing: "-0.02em" }}>
                   Digital Billboards
                 </h3>
