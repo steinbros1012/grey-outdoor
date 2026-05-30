@@ -22,6 +22,7 @@ const locations = [
 
 const company = [
   { label: "About", href: "/about" },
+  { label: "For Landowners", href: "/for-landowners" },
   { label: "Careers", href: "/about" },
   { label: "Blog", href: "/resources" },
   { label: "Contact", href: "/contact" },

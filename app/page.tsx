@@ -2,10 +2,10 @@
 
 import { motion, type Variants } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { Eye, MapPin, Clock } from "lucide-react";
 import StatCounter from "@/components/StatCounter";
 import LeadForm from "@/components/LeadForm";
+import Hero from "@/components/Hero";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -74,79 +74,7 @@ const locations = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ backgroundColor: "#08091A" }}
-      >
-        <Image
-          src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=1920&q=80"
-          alt="Aerial view of highway interchange"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px)",
-            backgroundSize: "28px 28px",
-          }}
-        />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%)",
-            filter: "blur(40px)",
-          }}
-        />
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 pt-36">
-          <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.div variants={fadeUp}>
-              <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#F97316]/15 text-[#F97316] mb-8 tracking-widest uppercase">
-                700+ Billboard Faces Across NC
-              </span>
-            </motion.div>
-            <motion.h1
-              variants={fadeUp}
-              className="text-5xl sm:text-7xl lg:text-8xl font-black text-white mb-6"
-              style={{ letterSpacing: "-0.03em", lineHeight: 1.05 }}
-            >
-              North Carolina&apos;s Most Visible{" "}
-              <span className="text-[#F97316]">Billboard Network</span>
-            </motion.h1>
-            <motion.p
-              variants={fadeUp}
-              className="text-lg sm:text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed"
-            >
-              Get your brand in front of millions of NC drivers. From Wilmington
-              to Raleigh. We have the locations, the inventory, and the
-              experience to make your outdoor campaign work.
-            </motion.p>
-            <motion.div
-              variants={fadeUp}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            >
-              <Link
-                href="/contact"
-                className="px-8 py-4 rounded-full bg-[#F97316] text-white font-bold text-base hover:bg-[#EA580C] transition-colors"
-              >
-                Request Availability
-              </Link>
-              <Link
-                href="/inventory"
-                className="px-8 py-4 rounded-full border border-white/30 text-white font-bold text-base hover:bg-white/10 transition-colors"
-              >
-                View All Locations
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Stats Bar */}
       <section style={{ backgroundColor: "#0D1230" }}>

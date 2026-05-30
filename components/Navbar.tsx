@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Locations", href: "/locations/wilmington" },
   { label: "Digital Billboards", href: "/digital-billboards" },
   { label: "Inventory", href: "/inventory" },
+  { label: "For Landowners", href: "/for-landowners" },
   { label: "About", href: "/about" },
   { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/contact" },
