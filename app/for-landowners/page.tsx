@@ -80,12 +80,24 @@ export default function ForLandownersPage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/landowners", {
+      const res = await fetch("https://formsubmit.co/ajax/steinbros1012@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Landowner Inquiry — ${form.name} (${form.state || "State not specified"})`,
+          _template: "table",
+          _captcha: "false",
+          Name: form.name,
+          Phone: form.phone,
+          Email: form.email,
+          "Property Location": form.propertyLocation || "—",
+          State: form.state || "Not specified",
+          "Property Type": form.propertyType || "Not specified",
+          Details: form.details || "—",
+        }),
       });
-      if (!res.ok) throw new Error("Send failed");
+      const data = await res.json();
+      if (!data.success) throw new Error("Failed");
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us at 910-620-3567.");

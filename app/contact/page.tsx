@@ -28,12 +28,25 @@ export default function ContactPage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formsubmit.co/ajax/steinbros1012@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `New Billboard Inquiry — ${form.name} (${form.market || "Market not specified"})`,
+          _template: "table",
+          _captcha: "false",
+          Name: form.name,
+          Company: form.company || "—",
+          Phone: form.phone,
+          Email: form.email,
+          Market: form.market || "Not specified",
+          "Campaign Type": form.campaignType || "Not specified",
+          Budget: form.budget || "Not specified",
+          Message: form.message || "—",
+        }),
       });
-      if (!res.ok) throw new Error("Send failed");
+      const data = await res.json();
+      if (!data.success) throw new Error("Failed");
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us directly at 910-620-3567.");
