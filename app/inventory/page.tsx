@@ -23,24 +23,22 @@ interface Billboard {
   highway: string;
   dimensions: string;
   dailyTraffic: string;
+  image: string;
 }
 
-const STATIC_IMG = "/hero/grey-outdoor-hero.jpg";
-const DIGITAL_IMG = "/hero/highway-1.jpg";
-
 const billboards: Billboard[] = [
-  { id: "WIL-001", market: "Wilmington/Coast", type: "Digital", location: "Hwy 17 Hampstead", highway: "Hwy 17 Northbound, Pender County NC", dimensions: "14x48", dailyTraffic: "28,000*" },
-  { id: "WIL-002", market: "Wilmington/Coast", type: "Static", location: "US-74 Wilmington", highway: "US-74 New Hanover County NC", dimensions: "14x48", dailyTraffic: "42,000*" },
-  { id: "BRU-001", market: "Brunswick County", type: "Static", location: "Hwy 133 Southport Corridor", highway: "Hwy 133, Brunswick County NC", dimensions: "14x48", dailyTraffic: "15,000*" },
-  { id: "BRU-002", market: "Brunswick County", type: "Static", location: "Hwy 74/76 Bolton Area", highway: "Hwy 74/76, Columbus/Brunswick County NC", dimensions: "10x36", dailyTraffic: "12,000*" },
-  { id: "BRU-003", market: "Brunswick County", type: "Static", location: "Hwy 130 Ash/Brunswick County", highway: "Hwy 130, Brunswick County NC", dimensions: "10x36", dailyTraffic: "9,000*" },
-  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "NC-24 Jacksonville", highway: "NC-24, Onslow County NC", dimensions: "14x48", dailyTraffic: "25,000*" },
-  { id: "ENC-001", market: "Eastern NC", type: "Static", location: "Hwy 11 Kinston Corridor", highway: "Hwy 11, Lenoir County NC", dimensions: "10x36", dailyTraffic: "14,000*" },
-  { id: "ENC-002", market: "Eastern NC", type: "Static", location: "Hwy 301 Rocky Mount Area", highway: "Hwy 301, Nash County NC", dimensions: "14x48", dailyTraffic: "18,000*" },
-  { id: "BUR-001", market: "Burlington", type: "Static", location: "I-40/85 Burlington", highway: "I-40/85, Alamance County NC", dimensions: "14x48", dailyTraffic: "58,000*" },
-  { id: "FLO-001", market: "Florence SC", type: "Static", location: "I-95 at Alligator Rd (MM 156)", highway: "I-95, Dillon County SC", dimensions: "14x48", dailyTraffic: "32,000*" },
-  { id: "FLO-002", market: "Florence SC", type: "Static", location: "Hwy 76 @ Strawberry Patch", highway: "Hwy 76, Florence County SC", dimensions: "14x48", dailyTraffic: "22,000*" },
-  { id: "SC17-001", market: "Highway 17 SC", type: "Static", location: "Hwy 17 Little River", highway: "Hwy 17 Coastal Route, Horry County SC", dimensions: "14x48", dailyTraffic: "28,000*" },
+  { id: "WIL-001", market: "Wilmington/Coast", type: "Digital", location: "Hwy 17 Hampstead", highway: "Hwy 17 Northbound, Pender County NC", dimensions: "14x48", dailyTraffic: "28,000*", image: "/billboards/sneads-ferry.jpg" },
+  { id: "WIL-002", market: "Wilmington/Coast", type: "Static", location: "US-74 Wilmington", highway: "US-74 New Hanover County NC", dimensions: "14x48", dailyTraffic: "42,000*", image: "/billboards/rh-construction.jpg" },
+  { id: "BRU-001", market: "Brunswick County", type: "Static", location: "Hwy 133 Southport Corridor", highway: "Hwy 133, Brunswick County NC", dimensions: "14x48", dailyTraffic: "15,000*", image: "/billboards/bayview-fence.jpg" },
+  { id: "BRU-002", market: "Brunswick County", type: "Static", location: "Hwy 74/76 Bolton Area", highway: "Hwy 74/76, Columbus/Brunswick County NC", dimensions: "10x36", dailyTraffic: "12,000*", image: "/billboards/bay-tree-lakes.jpg" },
+  { id: "BRU-003", market: "Brunswick County", type: "Static", location: "Hwy 130 Ash/Brunswick County", highway: "Hwy 130, Brunswick County NC", dimensions: "10x36", dailyTraffic: "9,000*", image: "/billboards/bethel-zion.jpg" },
+  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "NC-24 Jacksonville", highway: "NC-24, Onslow County NC", dimensions: "14x48", dailyTraffic: "25,000*", image: "/billboards/jacksonville-digital.jpg" },
+  { id: "ENC-001", market: "Eastern NC", type: "Static", location: "Hwy 11 Kinston Corridor", highway: "Hwy 11, Lenoir County NC", dimensions: "10x36", dailyTraffic: "14,000*", image: "/billboards/greenville-1.jpg" },
+  { id: "ENC-002", market: "Eastern NC", type: "Static", location: "Hwy 301 Rocky Mount Area", highway: "Hwy 301, Nash County NC", dimensions: "14x48", dailyTraffic: "18,000*", image: "/billboards/whiteville.jpg" },
+  { id: "BUR-001", market: "Burlington", type: "Static", location: "I-40/85 Burlington", highway: "I-40/85, Alamance County NC", dimensions: "14x48", dailyTraffic: "58,000*", image: "/billboards/customers-can-see-you.jpg" },
+  { id: "FLO-001", market: "Florence SC", type: "Static", location: "I-95 at Alligator Rd (MM 156)", highway: "I-95, Dillon County SC", dimensions: "14x48", dailyTraffic: "32,000*", image: "/billboards/holly-ridge-2.jpg" },
+  { id: "FLO-002", market: "Florence SC", type: "Static", location: "Hwy 76 @ Strawberry Patch", highway: "Hwy 76, Florence County SC", dimensions: "14x48", dailyTraffic: "22,000*", image: "/billboards/lh-eastbound.jpg" },
+  { id: "SC17-001", market: "Highway 17 SC", type: "Static", location: "Hwy 17 Little River", highway: "Hwy 17 Coastal Route, Horry County SC", dimensions: "14x48", dailyTraffic: "28,000*", image: "/billboards/surf-city.png" },
 ];
 
 const marketColors: Record<Market, string> = {
@@ -135,7 +133,7 @@ export default function InventoryPage() {
                   >
                     <div className="relative h-32 w-full">
                       <Image
-                        src={bb.type === "Digital" ? DIGITAL_IMG : STATIC_IMG}
+                        src={bb.image}
                         alt={`${bb.type} billboard, ${bb.location}`}
                         fill
                         className="object-cover"
