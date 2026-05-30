@@ -58,9 +58,9 @@ const locations = [
     href: "/locations/coastal-nc",
   },
   {
-    city: "Piedmont NC",
-    highways: "I-85/40 · US-70",
-    description: "Burlington, Greensboro, and Raleigh — NC's central corridor with major interstate exposure.",
+    city: "Burlington / I-40 Corridor",
+    highways: "I-40/85 · Hwy 49",
+    description: "Alamance County and the I-40/85 corridor — reaching regional travelers and commuters on NC's busiest east-west interstate.",
     href: "/locations/raleigh",
   },
   {

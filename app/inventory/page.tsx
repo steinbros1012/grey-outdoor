@@ -7,13 +7,13 @@ import LeadForm from "@/components/LeadForm";
 
 type BillboardType = "Static" | "Digital";
 type Market =
-  | "Wilmington"
-  | "Leland/Brunswick"
+  | "Wilmington/Coast"
+  | "Brunswick County"
   | "Jacksonville"
   | "Eastern NC"
-  | "Piedmont NC"
+  | "Burlington"
   | "Florence SC"
-  | "Myrtle Beach SC";
+  | "Highway 17 SC";
 
 interface Billboard {
   id: string;
@@ -29,28 +29,28 @@ const STATIC_IMG = "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd
 const DIGITAL_IMG = "https://images.unsplash.com/photo-1617854818583-09e7f077a156?w=800&q=80";
 
 const billboards: Billboard[] = [
-  { id: "WIL-001", market: "Wilmington", type: "Static", location: "US-17 North, New Hanover County", highway: "US-17 Northbound", dimensions: "14x48", dailyTraffic: "45,000*" },
-  { id: "WIL-002", market: "Wilmington", type: "Static", location: "US-74 Business / Market St", highway: "US-74 Business", dimensions: "14x48", dailyTraffic: "38,000*" },
-  { id: "LEL-001", market: "Leland/Brunswick", type: "Static", location: "US-74/76 Brunswick Town Center corridor", highway: "US-74/76 Eastbound", dimensions: "14x48", dailyTraffic: "32,000*" },
-  { id: "LEL-002", market: "Leland/Brunswick", type: "Static", location: "NC-211 at Howe St, Southport", highway: "NC-211", dimensions: "10x36", dailyTraffic: "18,000*" },
-  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "NC-24 Western Blvd corridor", highway: "NC-24 Westbound", dimensions: "14x48", dailyTraffic: "28,000*" },
-  { id: "JAX-002", market: "Jacksonville", type: "Static", location: "US-17 at Henderson Dr", highway: "US-17 Northbound", dimensions: "14x48", dailyTraffic: "22,000*" },
-  { id: "ENC-001", market: "Eastern NC", type: "Static", location: "US-74 at NC-130, Whiteville", highway: "US-74", dimensions: "10x36", dailyTraffic: "15,000*" },
-  { id: "ENC-002", market: "Eastern NC", type: "Static", location: "US-701 at NC-87, Elizabethtown", highway: "US-701", dimensions: "10x36", dailyTraffic: "12,000*" },
-  { id: "PIE-001", market: "Piedmont NC", type: "Static", location: "I-40/85 at exit 145, Burlington", highway: "I-40/85", dimensions: "14x48", dailyTraffic: "55,000*" },
-  { id: "PIE-002", market: "Piedmont NC", type: "Static", location: "US-70 at NC-581, Goldsboro", highway: "US-70", dimensions: "10x36", dailyTraffic: "20,000*" },
-  { id: "FLO-001", market: "Florence SC", type: "Static", location: "I-95 at Hwy 76 interchange, Florence", highway: "I-95", dimensions: "14x48", dailyTraffic: "65,000*" },
-  { id: "MYR-001", market: "Myrtle Beach SC", type: "Digital", location: "US-501 at Hwy 544, Myrtle Beach area", highway: "US-501", dimensions: "14x48", dailyTraffic: "40,000*" },
+  { id: "WIL-001", market: "Wilmington/Coast", type: "Digital", location: "Hwy 17 Hampstead", highway: "Hwy 17 Northbound, Pender County NC", dimensions: "14x48", dailyTraffic: "28,000*" },
+  { id: "WIL-002", market: "Wilmington/Coast", type: "Static", location: "US-74 Wilmington", highway: "US-74 New Hanover County NC", dimensions: "14x48", dailyTraffic: "42,000*" },
+  { id: "BRU-001", market: "Brunswick County", type: "Static", location: "Hwy 133 Southport Corridor", highway: "Hwy 133, Brunswick County NC", dimensions: "14x48", dailyTraffic: "15,000*" },
+  { id: "BRU-002", market: "Brunswick County", type: "Static", location: "Hwy 74/76 Bolton Area", highway: "Hwy 74/76, Columbus/Brunswick County NC", dimensions: "10x36", dailyTraffic: "12,000*" },
+  { id: "BRU-003", market: "Brunswick County", type: "Static", location: "Hwy 130 Ash/Brunswick County", highway: "Hwy 130, Brunswick County NC", dimensions: "10x36", dailyTraffic: "9,000*" },
+  { id: "JAX-001", market: "Jacksonville", type: "Static", location: "NC-24 Jacksonville", highway: "NC-24, Onslow County NC", dimensions: "14x48", dailyTraffic: "25,000*" },
+  { id: "ENC-001", market: "Eastern NC", type: "Static", location: "Hwy 11 Kinston Corridor", highway: "Hwy 11, Lenoir County NC", dimensions: "10x36", dailyTraffic: "14,000*" },
+  { id: "ENC-002", market: "Eastern NC", type: "Static", location: "Hwy 301 Rocky Mount Area", highway: "Hwy 301, Nash County NC", dimensions: "14x48", dailyTraffic: "18,000*" },
+  { id: "BUR-001", market: "Burlington", type: "Static", location: "I-40/85 Burlington", highway: "I-40/85, Alamance County NC", dimensions: "14x48", dailyTraffic: "58,000*" },
+  { id: "FLO-001", market: "Florence SC", type: "Static", location: "I-95 at Alligator Rd (MM 156)", highway: "I-95, Dillon County SC", dimensions: "14x48", dailyTraffic: "32,000*" },
+  { id: "FLO-002", market: "Florence SC", type: "Static", location: "Hwy 76 @ Strawberry Patch", highway: "Hwy 76, Florence County SC", dimensions: "14x48", dailyTraffic: "22,000*" },
+  { id: "SC17-001", market: "Highway 17 SC", type: "Static", location: "Hwy 17 Little River", highway: "Hwy 17 Coastal Route, Horry County SC", dimensions: "14x48", dailyTraffic: "28,000*" },
 ];
 
 const marketColors: Record<Market, string> = {
-  Wilmington: "#0047CC",
-  "Leland/Brunswick": "#B45309",
+  "Wilmington/Coast": "#0047CC",
+  "Brunswick County": "#B45309",
   Jacksonville: "#DC2626",
   "Eastern NC": "#0891B2",
-  "Piedmont NC": "#7C3AED",
+  Burlington: "#7C3AED",
   "Florence SC": "#059669",
-  "Myrtle Beach SC": "#EA580C",
+  "Highway 17 SC": "#EA580C",
 };
 
 type FilterType = "All" | Market | "Static" | "Digital";
@@ -60,13 +60,13 @@ export default function InventoryPage() {
 
   const filters: FilterType[] = [
     "All",
-    "Wilmington",
-    "Leland/Brunswick",
+    "Wilmington/Coast",
+    "Brunswick County",
     "Jacksonville",
     "Eastern NC",
-    "Piedmont NC",
+    "Burlington",
     "Florence SC",
-    "Myrtle Beach SC",
+    "Highway 17 SC",
     "Static",
     "Digital",
   ];
@@ -89,7 +89,7 @@ export default function InventoryPage() {
             Billboard Inventory
           </h1>
           <p className="text-lg text-white/60">
-            700+ faces across North Carolina — static and digital formats available now
+            700+ faces across North Carolina and South Carolina — static and digital formats available now
           </p>
         </div>
       </section>
@@ -99,6 +99,14 @@ export default function InventoryPage() {
           <div className="flex gap-6 flex-col lg:flex-row">
             {/* Main content */}
             <div className="flex-1">
+              {/* Sample note */}
+              <div className="mb-6 p-4 rounded-lg bg-[#0D1230] border border-white/10">
+                <p className="text-sm text-white/70">
+                  <strong className="text-white">Showing a sample of available locations.</strong>{" "}
+                  Grey Outdoor operates 700+ billboard faces — contact us for a complete availability list for your target market.
+                </p>
+              </div>
+
               {/* Filter pills */}
               <div className="flex flex-wrap gap-2 mb-8">
                 {filters.map((f) => (
