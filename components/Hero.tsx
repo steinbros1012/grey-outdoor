@@ -105,30 +105,30 @@ export default function Hero() {
             {/* Back card - rotated right */}
             <div className="absolute w-72 h-48 rounded-xl overflow-hidden shadow-2xl rotate-6 translate-x-16 -translate-y-8 opacity-60">
               <Image
-                src="/hero/highway-1.jpg"
+                src="/hero/grey-outdoor-hero-2.jpg"
                 fill
                 className="object-cover"
-                alt="NC highway corridor"
+                alt="Grey Outdoor billboard advertising"
                 sizes="288px"
               />
             </div>
             {/* Middle card - slight left rotation */}
             <div className="absolute w-80 h-52 rounded-xl overflow-hidden shadow-2xl -rotate-3 -translate-x-8 translate-y-4 opacity-80">
               <Image
-                src="/hero/highway-3.jpg"
+                src="/hero/highway-2.jpg"
                 fill
                 className="object-cover"
-                alt="Highway billboard location"
+                alt="NC highway billboard location"
                 sizes="320px"
               />
             </div>
             {/* Front card - centered, no rotation */}
             <div className="absolute w-96 h-60 rounded-2xl overflow-hidden shadow-[0_32px_64px_rgba(0,0,0,0.6)] ring-1 ring-white/10 translate-x-8">
               <Image
-                src="/hero/highway-2.jpg"
+                src="/hero/grey-outdoor-hero.jpg"
                 fill
                 className="object-cover"
-                alt="North Carolina highway"
+                alt="Grey Outdoor billboard on NC highway"
                 sizes="384px"
               />
               {/* Orange glow edge at bottom */}

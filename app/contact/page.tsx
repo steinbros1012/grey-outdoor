@@ -5,6 +5,8 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     company: "",
@@ -21,9 +23,23 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please call us directly at 910-620-3567.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -101,7 +117,7 @@ export default function ContactPage() {
                     <select id="market" name="market" required value={form.market} onChange={handleChange}
                       className={inputClass} style={{ ...inputStyle, color: form.market ? "#F8FAFC" : "rgba(248,250,252,0.3)" }}>
                       <option value="" disabled style={{ color: "#0F172A" }}>Select market</option>
-                      {["Wilmington", "Raleigh", "Apex", "Leland", "Jacksonville", "Coastal NC", "Other"].map(m => (
+                      {["Wilmington / Hampstead", "Leland / Brunswick County", "Jacksonville", "Eastern NC", "Burlington / I-40 Corridor", "Florence, SC", "Myrtle Beach / Coastal SC", "Other"].map(m => (
                         <option key={m} value={m} style={{ color: "#0F172A", backgroundColor: "#fff" }}>{m}</option>
                       ))}
                     </select>
@@ -133,10 +149,13 @@ export default function ContactPage() {
                     placeholder="Tell us about your goals, campaign timeline, or any questions you have..."
                     className={inputClass} style={inputStyle} />
                 </div>
-                <button type="submit"
-                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#EA580C] transition-colors"
+                {error && (
+                  <p className="text-red-400 text-sm text-center">{error}</p>
+                )}
+                <button type="submit" disabled={loading}
+                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#EA580C] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   style={{ backgroundColor: "#F97316" }}>
-                  Send My Request →
+                  {loading ? "Sending..." : "Send My Request →"}
                 </button>
               </form>
             )}
@@ -148,10 +167,10 @@ export default function ContactPage() {
               Contact Information
             </h2>
             {[
-              { icon: MapPin, label: "Office", lines: ["Grey Outdoor Advertising", "1234 Market Street, Suite 200", "Wilmington, NC 28403"] },
-              { icon: Phone, label: "Phone", lines: ["(910) 123-4567"] },
-              { icon: Mail, label: "Email", lines: ["info@greyoutdoor.com", "sales@greyoutdoor.com"] },
-              { icon: Clock, label: "Office Hours", lines: ["Monday – Friday: 8am – 6pm", "Saturday: 9am – 2pm", "Sunday: Closed"] },
+              { icon: MapPin, label: "Office", lines: ["Grey Outdoor, LLC", "P.O. Box 1591", "Wrightsville Beach, NC 28480"] },
+              { icon: Phone, label: "Phone", lines: ["910-620-3567"] },
+              { icon: Mail, label: "Email", lines: ["grey@greyoutdoor.com"] },
+              { icon: Clock, label: "Office Hours", lines: ["Monday to Friday: 8am to 5pm", "Saturday: By appointment", "Sunday: Closed"] },
             ].map((item) => (
               <div
                 key={item.label}
