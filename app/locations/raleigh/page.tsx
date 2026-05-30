@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "How much lead time do I need to launch a Raleigh billboard campaign?",
-    a: "For static billboards, plan for 2–3 weeks from contract signing to go-live (including artwork production and installation). Digital campaigns can often launch within a week once creative is approved.",
+    a: "For static billboards, plan for 2 to 3 weeks from contract signing to go-live (including artwork production and installation). Digital campaigns can often launch within a week once creative is approved.",
   },
 ];
 

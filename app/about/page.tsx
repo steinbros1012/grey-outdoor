@@ -6,8 +6,39 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "About Grey Outdoor | NC Billboard Advertising Company",
   description:
-    "Learn about Grey Outdoor — North Carolina's premier billboard advertising company with 25+ years of experience placing brands across NC's most-traveled corridors.",
+    "Learn about Grey Outdoor — a North Carolina billboard advertising company with 25+ years of experience placing brands across NC's most-traveled corridors.",
 };
+
+const team = [
+  {
+    name: "Grey Vick",
+    title: "Owner, President of Sales & Real Estate",
+    photo: "https://www.greyoutdoor.com/wp-content/uploads/2024/08/Grey-Vick-400x400.jpg",
+    bio: "Grey earned his bachelor's and master's degrees in business and accounting from UNC Wilmington in 2005. He worked as an accountant and real estate investor before getting into the billboard business in 2007. He co-founded Waterway Outdoor LLC before starting Grey Outdoor in 2014. The company now operates over 700 billboard faces across the Carolinas, including digital signs. Grey serves on the North Carolina Outdoor Advertising Association board. He lives in Wilmington with his wife Sarah and their three kids, and he surfs, travels, and holds a Brown Belt in Jiu Jitsu.",
+    phone: null,
+  },
+  {
+    name: "Guy Williamson",
+    title: "VP of Real Estate & New Development",
+    photo: "https://www.greyoutdoor.com/wp-content/uploads/2019/12/Guy-Williamson-400x400.jpg",
+    bio: "Guy joined Grey Outdoor in 2019, bringing 32 years of experience in the outdoor advertising industry. He handles lease management, new location development, permitting, and rezoning. Guy appreciates working directly with ownership without the corporate red tape that slows things down at bigger companies. He lives in Cedar Point, NC with his wife Darlene, and enjoys time with family, taking care of their animals, and boating.",
+    phone: "252-521-5555",
+  },
+  {
+    name: "Mark Ruggiero",
+    title: "Senior Account Manager",
+    photo: "https://www.greyoutdoor.com/wp-content/uploads/2022/12/Mark-V-Ruggiero-Billboards-400x400.jpg",
+    bio: "Mark has a business administration degree from William Paterson University and 25 years of advertising sales experience across print, online, radio, and billboards. He also spent five years as a licensed financial advisor working with active-duty Marines. A Marine Corps veteran himself, Mark works with clients to understand their needs and build billboard campaigns that actually drive results. He lives in Hampstead with his wife Kristan and their three adult children, and enjoys golf, gardening, and life on the coast.",
+    phone: "910-270-2900",
+  },
+  {
+    name: "Austin Wolfe",
+    title: "Account Manager",
+    photo: "https://www.greyoutdoor.com/wp-content/uploads/2024/12/image_123650291-400x400.jpg",
+    bio: "Austin has seven years in marketing and advertising. He graduated from UNC Wilmington in 2018 with a marketing degree, which is how he connected with Grey Outdoor. He works primarily with small businesses, helping them figure out if and how billboard advertising fits into their marketing mix. Austin lives near Wilmington and spends his free time fishing, watching sports, and traveling.",
+    phone: "919-820-4505",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -30,6 +61,49 @@ export default function AboutPage() {
           <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed">
             Building NC&apos;s Most Recognizable Billboard Network Since 1999
           </p>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+        <div className="max-w-7xl mx-auto">
+          <h2
+            className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-12 text-center"
+            style={{ letterSpacing: "-0.02em" }}
+          >
+            Meet the Team
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {team.map((member) => (
+              <div
+                key={member.name}
+                className="flex flex-col items-center text-center p-6 rounded-lg"
+                style={{ border: "1px solid #E2E8F0", backgroundColor: "#F8FAFC" }}
+              >
+                <div className="mb-4 flex-shrink-0">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={200}
+                    height={200}
+                    className="rounded-full object-cover"
+                    style={{ width: 200, height: 200 }}
+                  />
+                </div>
+                <h3 className="text-lg font-black text-[#0F172A] mb-1">{member.name}</h3>
+                <p className="text-sm font-semibold text-[#F97316] mb-3 leading-snug">{member.title}</p>
+                <p className="text-sm text-[#475569] leading-relaxed mb-3">{member.bio}</p>
+                {member.phone && (
+                  <a
+                    href={`tel:${member.phone.replace(/-/g, "")}`}
+                    className="text-sm font-semibold text-[#0047CC] hover:text-[#F97316] transition-colors"
+                  >
+                    {member.phone}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -63,7 +137,7 @@ export default function AboutPage() {
             <p>
               Over the past 25 years, we&apos;ve built relationships with property
               owners, local governments, and businesses from the mountains to the
-              coast. We understand North Carolina&apos;s unique geography — how
+              coast. We know North Carolina&apos;s geography well: how
               seasonal beach traffic transforms Highway 17 every summer, how
               the Research Triangle&apos;s explosive growth has created new high-value
               corridors, and how military communities like Jacksonville have their
@@ -71,8 +145,8 @@ export default function AboutPage() {
             </p>
             <p>
               Today, Grey Outdoor manages 700+ billboard faces across 10+ NC
-              markets. We operate both static bulletins and state-of-the-art
-              digital displays. Every campaign we run is backed by real traffic
+              markets. We operate both static bulletins and digital
+              displays. Every campaign we run is backed by real traffic
               data, demographic insights, and 25 years of on-the-ground
               knowledge of North Carolina.
             </p>
@@ -99,11 +173,11 @@ export default function AboutPage() {
               },
               {
                 title: "Strategic Placement",
-                body: "Location is everything in outdoor advertising. We do not just sell billboard faces — we help you identify the specific intersections, highways, and corridors that deliver your target audience at the right moment in their journey.",
+                body: "Location is everything in outdoor advertising. We do not just sell billboard faces — we help you identify the specific intersections, highways, and corridors that put your brand in front of the right people at the right time.",
               },
               {
                 title: "Full-Service Partnership",
-                body: "From the first availability check to final installation and campaign reporting, we handle every detail. Your dedicated account manager is your single point of contact — available to answer questions, adjust strategy, and ensure your campaign is performing.",
+                body: "From the first availability check to final installation and campaign reporting, we handle every detail. Your dedicated account manager is your single point of contact, available to answer questions, adjust strategy, and keep your campaign on track.",
               },
             ].map((val) => (
               <div
@@ -134,11 +208,11 @@ export default function AboutPage() {
             {[
               {
                 title: "25+ Years NC Experience",
-                body: "A proven track record in every major NC market, with deep relationships and an unmatched inventory of premium locations.",
+                body: "A proven track record in every major NC market, with deep relationships and a large inventory of prime locations.",
               },
               {
                 title: "No Long-Term Lock-Ins",
-                body: "Flexible contract terms that match your campaign timeline — whether you need a 4-week seasonal push or a year-round presence.",
+                body: "Flexible contract terms that match your campaign timeline, whether you need a 4-week seasonal push or a year-round presence.",
               },
               {
                 title: "Creative Support",
@@ -146,7 +220,7 @@ export default function AboutPage() {
               },
               {
                 title: "Transparent Reporting",
-                body: "Regular campaign reports with traffic counts, impressions data, and photos of your live billboards — so you always know what you're getting.",
+                body: "Regular campaign reports with traffic counts, impressions data, and photos of your live billboards, so you always know what you're getting.",
               },
             ].map((card) => (
               <div

@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Grey Outdoor | Billboard Advertising in North Carolina",
   description:
-    "North Carolina's premier outdoor advertising company. 700+ billboard locations in Wilmington, Raleigh, Apex, Leland and across NC.",
+    "North Carolina billboard advertising. 700+ locations in Wilmington, Raleigh, Apex, Leland and across NC.",
   keywords: [
     "billboard advertising",
     "outdoor advertising",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Grey Outdoor | Billboard Advertising in North Carolina",
     description:
-      "North Carolina's premier outdoor advertising company. 700+ billboard locations across NC.",
+      "North Carolina billboard advertising. 700+ locations across NC.",
     type: "website",
     locale: "en_US",
   },

@@ -124,8 +124,8 @@ export default function HomePage() {
               className="text-lg sm:text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed"
             >
               Get your brand in front of millions of NC drivers. From Wilmington
-              to Raleigh — we have the locations, the inventory, and the
-              expertise to make your outdoor campaign work.
+              to Raleigh. We have the locations, the inventory, and the
+              experience to make your outdoor campaign work.
             </motion.p>
             <motion.div
               variants={fadeUp}
@@ -413,7 +413,7 @@ export default function HomePage() {
               Trusted by Every Industry in North Carolina
             </motion.h2>
             <motion.p variants={fadeUp} className="text-[#475569] mb-10">
-              From local retailers to regional healthcare systems — billboards deliver results across every sector.
+              From local retailers to regional healthcare systems, billboards get results across every sector.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-3">
               {industries.map((ind) => (
