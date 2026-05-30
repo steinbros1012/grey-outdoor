@@ -32,17 +32,17 @@ export default function ContactPage() {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          _subject: `New Billboard Inquiry — ${form.name} (${form.market || "Market not specified"})`,
+          _subject: `New Billboard Inquiry, ${form.name} (${form.market || "Market not specified"})`,
           _template: "table",
           _captcha: "false",
           Name: form.name,
-          Company: form.company || "—",
+          Company: form.company || "-",
           Phone: form.phone,
           Email: form.email,
           Market: form.market || "Not specified",
           "Campaign Type": form.campaignType || "Not specified",
           Budget: form.budget || "Not specified",
-          Message: form.message || "—",
+          Message: form.message || "-",
         }),
       });
       const data = await res.json();
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     <select id="campaignType" name="campaignType" value={form.campaignType} onChange={handleChange}
                       className={inputClass} style={{ ...inputStyle, color: form.campaignType ? "#F8FAFC" : "rgba(248,250,252,0.3)" }}>
                       <option value="" disabled style={{ color: "#0F172A" }}>Select type</option>
-                      {["Static Bulletin", "Digital Billboard", "Both — Need Advice", "Not Sure"].map(t => (
+                      {["Static Bulletin", "Digital Billboard", "Both, Need Advice", "Not Sure"].map(t => (
                         <option key={t} value={t} style={{ color: "#0F172A", backgroundColor: "#fff" }}>{t}</option>
                       ))}
                     </select>

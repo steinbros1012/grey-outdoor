@@ -84,16 +84,16 @@ export default function ForLandownersPage() {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          _subject: `Landowner Inquiry — ${form.name} (${form.state || "State not specified"})`,
+          _subject: `Landowner Inquiry, ${form.name} (${form.state || "State not specified"})`,
           _template: "table",
           _captcha: "false",
           Name: form.name,
           Phone: form.phone,
           Email: form.email,
-          "Property Location": form.propertyLocation || "—",
+          "Property Location": form.propertyLocation || "-",
           State: form.state || "Not specified",
           "Property Type": form.propertyType || "Not specified",
-          Details: form.details || "—",
+          Details: form.details || "-",
         }),
       });
       const data = await res.json();
@@ -248,7 +248,7 @@ export default function ForLandownersPage() {
             <p className="text-white/60 text-lg leading-relaxed">
               Lease payments vary based on location, traffic, and billboard type.
               Properties on busy interstates or in commercial corridors earn
-              more. We handle everything — permitting, construction, power if
+              more. We handle everything, permitting, construction, power if
               needed, and ongoing maintenance. Your only job is to cash the
               check.
             </p>
@@ -324,7 +324,7 @@ export default function ForLandownersPage() {
           {submitted ? (
             <div className="bg-[#08091A] rounded-xl p-12 text-center">
               <div className="text-5xl mb-4">✓</div>
-              <h3 className="text-2xl font-black text-white mb-2">Got it — thanks!</h3>
+              <h3 className="text-2xl font-black text-white mb-2">Got it, thanks!</h3>
               <p className="text-white/60">We&apos;ll review your property details and be in touch within a few business days.</p>
             </div>
           ) : (

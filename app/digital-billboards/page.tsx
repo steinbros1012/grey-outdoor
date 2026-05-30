@@ -87,7 +87,7 @@ export default function DigitalBillboardsPage() {
               {
                 icon: Users,
                 title: "Multiple Advertisers",
-                body: "Share a digital screen with other advertisers in a 6-second rotation — making premium locations affordable for businesses of every size.",
+                body: "Share a digital screen with other advertisers in a 6-second rotation, making premium locations affordable for businesses of every size.",
               },
               {
                 icon: Clock,

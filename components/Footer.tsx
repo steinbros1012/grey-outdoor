@@ -41,7 +41,7 @@ export default function Footer() {
             </Link>
             <p className="text-sm text-white/50 mb-6 max-w-xs leading-relaxed">
               North Carolina&apos;s Billboard Advertising Leaders. 700+ faces across
-              NC markets — delivering brand exposure that can&apos;t be skipped,
+              NC markets, delivering brand exposure that can&apos;t be skipped,
               blocked, or ignored.
             </p>
             <div className="flex items-center gap-3">

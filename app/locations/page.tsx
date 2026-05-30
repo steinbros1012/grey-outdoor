@@ -61,7 +61,7 @@ const markets = [
 export default function LocationsPage() {
   return (
     <>
-      {/* Section 1 — Dark hero */}
+      {/* Section 1, Dark hero */}
       <section className="pt-32 pb-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
@@ -91,7 +91,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Section 2 — Interactive map */}
+      {/* Section 2, Interactive map */}
       <section id="map" className="py-20 px-4" style={{ backgroundColor: "#fff" }}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
@@ -128,7 +128,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Section 3 — Market cards */}
+      {/* Section 3, Market cards */}
       <section className="py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -174,7 +174,7 @@ export default function LocationsPage() {
         </div>
       </section>
 
-      {/* Section 4 — CTA Banner */}
+      {/* Section 4, CTA Banner */}
       <CTABanner
         headline="Ready to Find Your Billboard?"
         subheadline="Tell us your target market and we'll send you availability and pricing within 24 hours."

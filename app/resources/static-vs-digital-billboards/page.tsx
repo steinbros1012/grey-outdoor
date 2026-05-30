@@ -49,7 +49,7 @@ export default function StaticVsDigitalPage() {
             A static billboard is a single advertiser's message printed on vinyl and mounted on the face of the structure. Once it goes up, it runs 24 hours a day, seven days a week, for the full duration of your contract.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
-            Contracts are typically sold in 4-week increments, with many advertisers renewing month to month or committing to quarterly or annual agreements. There are no rotation schedules — your ad is always up, always visible, and always working.
+            Contracts are typically sold in 4-week increments, with many advertisers renewing month to month or committing to quarterly or annual agreements. There are no rotation schedules, your ad is always up, always visible, and always working.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
             The main trade-off is that changing your message requires printing a new vinyl, which adds cost and lead time. If you need to update a phone number, swap a seasonal offer, or refresh creative, you are looking at $200 to $600 in print costs and a few days of production time.

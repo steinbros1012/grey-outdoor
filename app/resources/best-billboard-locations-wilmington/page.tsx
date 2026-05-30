@@ -43,13 +43,13 @@ export default function BestBillboardLocationsWilmingtonPage() {
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
-            US-17 — Market Street and North College Road
+            US-17, Market Street and North College Road
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
             US-17 through Wilmington is one of the highest-traffic corridors in the region. The Market Street and North College Road segments run through a dense commercial strip anchored by major retailers, car dealers, restaurants, urgent care facilities, and service businesses of every kind.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
-            Traffic counts on this corridor regularly exceed <strong className="text-slate-800">40,000 vehicles per day</strong> (AADT), which puts it among the most valuable billboard locations in the Wilmington market. Boards here tend to carry premium rates and low vacancy — when space opens up, it fills quickly. This corridor works well for healthcare, legal, financial services, and any brand that needs broad reach across a wide demographic.
+            Traffic counts on this corridor regularly exceed <strong className="text-slate-800">40,000 vehicles per day</strong> (AADT), which puts it among the most valuable billboard locations in the Wilmington market. Boards here tend to carry premium rates and low vacancy, when space opens up, it fills quickly. This corridor works well for healthcare, legal, financial services, and any brand that needs broad reach across a wide demographic.
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
@@ -59,7 +59,7 @@ export default function BestBillboardLocationsWilmingtonPage() {
             Oleander Drive is the main east-west artery connecting central Wilmington with the beach and mid-city neighborhoods. The traffic is a strong mix of residential commuters, shoppers, and people heading toward Wrightsville Beach.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
-            This corridor tends to attract advertisers targeting a more established residential demographic — financial advisors, healthcare practices, home improvement, and premium retail. The mix of traffic makes it a versatile placement for brands that are not purely service-oriented.
+            This corridor tends to attract advertisers targeting a more established residential demographic, financial advisors, healthcare practices, home improvement, and premium retail. The mix of traffic makes it a versatile placement for brands that are not purely service-oriented.
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
@@ -73,13 +73,13 @@ export default function BestBillboardLocationsWilmingtonPage() {
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
-            Hampstead and US-17 North — Pender County's Growth Corridor
+            Hampstead and US-17 North, Pender County's Growth Corridor
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
             Hampstead has been one of the fastest-growing communities in the entire state for the past decade. The US-17 corridor north of Wilmington through Pender County connects a wave of new subdivisions, commercial development, and transplant residents who have relocated from larger metros.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
-            Grey Outdoor has a <strong className="text-slate-800">digital billboard on US-17 in the Hampstead area</strong>, positioned to capture this growing audience. New residents actively need local services — HVAC, pest control, dental care, grocery delivery, childcare, financial planning — and outdoor advertising is one of the most efficient ways to reach them before they have formed strong brand loyalties.
+            Grey Outdoor has a <strong className="text-slate-800">digital billboard on US-17 in the Hampstead area</strong>, positioned to capture this growing audience. New residents actively need local services, HVAC, pest control, dental care, grocery delivery, childcare, financial planning, and outdoor advertising is one of the most efficient ways to reach them before they have formed strong brand loyalties.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
             This is a corridor where early presence pays dividends. Advertisers who get in front of Hampstead's new residents now are establishing recognition with a population that will continue to grow.
@@ -102,12 +102,12 @@ export default function BestBillboardLocationsWilmingtonPage() {
             Wilmington's outdoor advertising market is active across a wide range of industries. The most consistent billboard advertisers in this market include:
           </p>
           <ul className="list-disc pl-6 text-slate-600 leading-relaxed mb-6 space-y-2">
-            <li><strong className="text-slate-800">Healthcare systems and practices</strong> — Novant, NHRMC, urgent care chains, specialty practices</li>
-            <li><strong className="text-slate-800">Real estate developers and agents</strong> — especially for new communities in Brunswick and Pender counties</li>
-            <li><strong className="text-slate-800">Legal firms</strong> — personal injury and family law are particularly active</li>
+            <li><strong className="text-slate-800">Healthcare systems and practices</strong>, Novant, NHRMC, urgent care chains, specialty practices</li>
+            <li><strong className="text-slate-800">Real estate developers and agents</strong>, especially for new communities in Brunswick and Pender counties</li>
+            <li><strong className="text-slate-800">Legal firms</strong>, personal injury and family law are particularly active</li>
             <li><strong className="text-slate-800">Restaurants and food chains</strong> targeting commuter and tourist traffic</li>
             <li><strong className="text-slate-800">Car dealerships</strong> on the US-17 corridor</li>
-            <li><strong className="text-slate-800">Home services</strong> — HVAC, pest control, roofing, and landscaping serving the growth areas</li>
+            <li><strong className="text-slate-800">Home services</strong>, HVAC, pest control, roofing, and landscaping serving the growth areas</li>
           </ul>
           <p className="text-slate-600 leading-relaxed">
             If your business serves the Wilmington metro or surrounding coastal counties, we can show you what inventory is currently available and what the traffic numbers look like at each location.

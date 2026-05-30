@@ -7,14 +7,14 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Eastern NC Billboard Advertising | Grey Outdoor",
   description:
-    "Billboard advertising across Eastern NC — Whiteville, Elizabethtown, Southport, Hampstead, Clinton, and Goldsboro. Key highways: US-74, US-701, NC-87, Highway 211.",
+    "Billboard advertising across Eastern NC, Whiteville, Elizabethtown, Southport, Hampstead, Clinton, and Goldsboro. Key highways: US-74, US-701, NC-87, Highway 211.",
 };
 
 const faqs = [
   { q: "Which Eastern NC counties does Grey Outdoor serve?", a: "Grey Outdoor's Eastern NC coverage includes Columbus County (Whiteville), Bladen County (Elizabethtown), Sampson County (Clinton), Wayne County (Goldsboro), Duplin/Lenoir (Kinston), Pender County (Hampstead), and Brunswick County coastal areas including Southport. Contact us for availability in your specific market." },
-  { q: "How much does billboard advertising cost in Eastern NC?", a: "Eastern NC billboard rates are generally more affordable than metro markets — typically $400 to $1,200 per month for static locations on key corridors. US-74 and US-701 placements in Whiteville and Elizabethtown offer strong rural reach at competitive rates." },
+  { q: "How much does billboard advertising cost in Eastern NC?", a: "Eastern NC billboard rates are generally more affordable than metro markets, typically $400 to $1,200 per month for static locations on key corridors. US-74 and US-701 placements in Whiteville and Elizabethtown offer strong rural reach at competitive rates." },
   { q: "What highways have the best billboard exposure in Eastern NC?", a: "US-74 is the primary east-west artery through Columbus and Brunswick counties. US-701 is the key north-south route through Bladen and Sampson counties. Highway 211 connects Southport to the inland markets. Highway 17 at Hampstead is strong for Pender County traffic." },
-  { q: "Is Eastern NC worth advertising in for regional businesses?", a: "Yes. Eastern NC markets are often underserved by competing advertisers, which means your brand can achieve strong recall at accessible rates. These communities are tight-knit and brand loyalty runs deep — billboard advertising is particularly effective for businesses establishing a regional presence." },
+  { q: "Is Eastern NC worth advertising in for regional businesses?", a: "Yes. Eastern NC markets are often underserved by competing advertisers, which means your brand can achieve strong recall at accessible rates. These communities are tight-knit and brand loyalty runs deep, billboard advertising is particularly effective for businesses establishing a regional presence." },
   { q: "Can I run a coordinated campaign across multiple Eastern NC markets?", a: "Absolutely. Many clients coordinate placements across Whiteville, Elizabethtown, and Goldsboro as part of a regional Eastern NC campaign. We can show you available inventory across all these corridors and help you build a cost-effective multi-market plan." },
 ];
 
@@ -36,7 +36,7 @@ export default function CoastalNCPage() {
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#0891B2]/20 text-cyan-400 mb-4 uppercase tracking-widest">Eastern NC &amp; Coastal</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Eastern NC &amp; Coastal Billboard Advertising</h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Grey Outdoor covers the Eastern NC highway network — Whiteville (Columbus County),
+            Grey Outdoor covers the Eastern NC highway network, Whiteville (Columbus County),
             Elizabethtown (Bladen County), Clinton (Sampson County), Goldsboro (Wayne County),
             Kinston, Southport, and Hampstead (Pender County). Key corridors: US-74, US-701, NC-87, and Highway 211.
           </p>
@@ -90,7 +90,7 @@ export default function CoastalNCPage() {
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Eastern NC?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Highway Corridor Dominance", body: "Eastern NC's rural highway network — US-74, US-701, NC-87, and Highway 211 — funnels regional traffic through a limited number of corridors, giving billboard advertisers unavoidable exposure with minimal competing media." },
+              { title: "Highway Corridor Dominance", body: "Eastern NC's rural highway network, US-74, US-701, NC-87, and Highway 211, funnels regional traffic through a limited number of corridors, giving billboard advertisers unavoidable exposure with minimal competing media." },
               { title: "Underserved Advertising Market", body: "Compared to metro NC, Eastern NC has fewer competing advertisers. Brands can achieve dominant billboard presence at accessible rates while building strong recall among loyal local audiences." },
               { title: "Coastal Gateway Traffic", body: "Highway 211 and the Southport/Hampstead corridors carry significant seasonal and through traffic from inland markets heading to Brunswick and Pender County beaches, adding tourism reach on top of the resident base." },
             ].map((r) => (

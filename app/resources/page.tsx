@@ -15,7 +15,7 @@ const posts = [
     title: "How Much Does Billboard Advertising Cost in NC?",
     category: "Pricing",
     excerpt:
-      "Billboard rates in North Carolina vary widely based on market, format, and location. Here's what businesses actually pay — and what drives the price differences.",
+      "Billboard rates in North Carolina vary widely based on market, format, and location. Here's what businesses actually pay, and what drives the price differences.",
     image: "/articles/highway-billboard.jpg",
     imageAlt: "Highway billboard on NC road",
   },
@@ -142,7 +142,7 @@ export default function ResourcesPage() {
 
       <CTABanner
         headline="Have a Question About Billboard Advertising?"
-        subheadline="Our team is happy to answer any questions — no obligation required."
+        subheadline="Our team is happy to answer any questions, no obligation required."
         buttonLabel="Contact Us →"
         buttonHref="/contact"
       />

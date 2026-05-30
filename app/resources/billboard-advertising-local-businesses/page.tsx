@@ -5,7 +5,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "Billboard Advertising for Local Businesses: A Complete Guide | Grey Outdoor",
   description:
-    "Everything a local NC or SC business needs to know to run a billboard campaign — from picking a location to measuring results.",
+    "Everything a local NC or SC business needs to know to run a billboard campaign, from picking a location to measuring results.",
 };
 
 export default function BillboardAdvertisingLocalBusinessesPage() {
@@ -39,14 +39,14 @@ export default function BillboardAdvertisingLocalBusinessesPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-slate-600 leading-relaxed mb-6">
-            Billboards are not just for national brands. Across Eastern NC and the Wilmington area, local businesses run billboard campaigns every day — HVAC companies, law firms, restaurants, dentists, home builders, and dozens of other service providers. You do not need a big-brand budget to make outdoor advertising work. You need a good location, a clear message, and a reasonable understanding of what the medium does well.
+            Billboards are not just for national brands. Across Eastern NC and the Wilmington area, local businesses run billboard campaigns every day, HVAC companies, law firms, restaurants, dentists, home builders, and dozens of other service providers. You do not need a big-brand budget to make outdoor advertising work. You need a good location, a clear message, and a reasonable understanding of what the medium does well.
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
             What Makes a Good Billboard Location for a Local Business?
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
-            The best location for your business is not necessarily the highest-traffic location in the market — it is the location with the most relevant traffic for your specific customers. Relevance and reach both matter, but relevance often matters more for local businesses with defined service areas.
+            The best location for your business is not necessarily the highest-traffic location in the market, it is the location with the most relevant traffic for your specific customers. Relevance and reach both matter, but relevance often matters more for local businesses with defined service areas.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
             A good location for a local business has three things: it sits within or near your service area, the people driving by it are realistic potential customers, and the board is visible long enough for a driver to register your message. A billboard around a blind curve with 200 feet of approach distance is a poor buy at any price.
@@ -62,7 +62,7 @@ export default function BillboardAdvertisingLocalBusinessesPage() {
             Match the road to your customer profile, not just the traffic count. A high-traffic interstate may look attractive on paper, but if your customers are homeowners in established neighborhoods and the interstate runs through an industrial zone, the impressions are less valuable than a lower-traffic state road that connects residential subdivisions to retail corridors.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
-            Think about what your customers are doing when they drive a particular road. A commuter route with consistent morning and evening traffic is good for services people think about during routine parts of their day — insurance, dentists, oil changes, lawn care. A road with heavy Saturday traffic is better for weekend purchase decisions — furniture, home improvement, dining, and leisure.
+            Think about what your customers are doing when they drive a particular road. A commuter route with consistent morning and evening traffic is good for services people think about during routine parts of their day, insurance, dentists, oil changes, lawn care. A road with heavy Saturday traffic is better for weekend purchase decisions, furniture, home improvement, dining, and leisure.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
             If you are an HVAC company, you want residential neighborhoods. If you are a restaurant, you want the roads people travel for lunch or the route home from work. If you are a real estate developer, you want the corridors leading into the growth areas where your properties are located. Think about the route before you think about the rate.
@@ -88,10 +88,10 @@ export default function BillboardAdvertisingLocalBusinessesPage() {
             Outdoor advertising builds recognition through repeated exposure over time. A single four-week run will create some awareness, but it is not enough time for the compounding effect of recognition to take hold with most audiences.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
-            For brand awareness campaigns, plan for a minimum of three months. This gives your target audience enough exposures to start recognizing the name and associating it with a service. For specific promotions — a grand opening, a seasonal push, a limited-time offer — shorter runs are appropriate because the message has a defined end date.
+            For brand awareness campaigns, plan for a minimum of three months. This gives your target audience enough exposures to start recognizing the name and associating it with a service. For specific promotions, a grand opening, a seasonal push, a limited-time offer, shorter runs are appropriate because the message has a defined end date.
           </p>
           <p className="text-slate-600 leading-relaxed mb-6">
-            Long-term commitments often come with rate discounts from operators. If you know you want to run for 12 months, it is worth asking about annual pricing upfront — you may get a better rate than rolling month to month.
+            Long-term commitments often come with rate discounts from operators. If you know you want to run for 12 months, it is worth asking about annual pricing upfront, you may get a better rate than rolling month to month.
           </p>
 
           <h2 className="text-2xl font-black text-slate-900 mt-10 mb-4" style={{ letterSpacing: "-0.02em" }}>
@@ -126,7 +126,7 @@ export default function BillboardAdvertisingLocalBusinessesPage() {
             The process is straightforward. You call or text us, tell us where your business is and who your customers are, and we show you what inventory is available in your market. We walk you through the traffic counts, the rate for each location, and what the creative specifications are for each board.
           </p>
           <p className="text-slate-600 leading-relaxed">
-            If you need help with artwork, we can assist. If you have an existing design, we will check it against the board specs and let you know if anything needs to be adjusted. Once everything is ready, we can typically have a new advertiser up within two to four weeks. No long sales cycles, no complicated contracts — just a straightforward conversation about what is available and what makes sense for your business.
+            If you need help with artwork, we can assist. If you have an existing design, we will check it against the board specs and let you know if anything needs to be adjusted. Once everything is ready, we can typically have a new advertiser up within two to four weeks. No long sales cycles, no complicated contracts, just a straightforward conversation about what is available and what makes sense for your business.
           </p>
         </div>
       </section>

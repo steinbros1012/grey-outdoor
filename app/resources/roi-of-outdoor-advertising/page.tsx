@@ -66,7 +66,7 @@ export default function ROIOutdoorAdvertisingPage() {
             The 24/7 Advantage
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
-            Unlike digital advertising, a billboard runs continuously for the duration of your contract. You pay once and it is working around the clock — no daily budget caps, no bid adjustments, no algorithm deciding whether to show your ad.
+            Unlike digital advertising, a billboard runs continuously for the duration of your contract. You pay once and it is working around the clock, no daily budget caps, no bid adjustments, no algorithm deciding whether to show your ad.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
             There is no click fraud on a billboard. No ad blocker can remove it. No platform update changes its reach overnight. In a media landscape where digital performance can swing dramatically based on platform decisions outside your control, outdoor advertising provides a stable, predictable presence.
@@ -82,10 +82,10 @@ export default function ROIOutdoorAdvertisingPage() {
             Outdoor advertising consistently performs well for a specific set of industries and use cases:
           </p>
           <ul className="list-disc pl-6 text-slate-600 leading-relaxed mb-6 space-y-2">
-            <li><strong className="text-slate-800">Local businesses</strong> that serve customers in a defined geographic area — HVAC, plumbing, roofing, landscaping</li>
+            <li><strong className="text-slate-800">Local businesses</strong> that serve customers in a defined geographic area, HVAC, plumbing, roofing, landscaping</li>
             <li><strong className="text-slate-800">Healthcare providers</strong> including hospitals, urgent care, specialty practices, and insurance</li>
-            <li><strong className="text-slate-800">Legal services</strong> — personal injury, family law, and criminal defense firms are consistent outdoor advertisers</li>
-            <li><strong className="text-slate-800">Real estate</strong> — new communities, luxury listings, and developer brands</li>
+            <li><strong className="text-slate-800">Legal services</strong>, personal injury, family law, and criminal defense firms are consistent outdoor advertisers</li>
+            <li><strong className="text-slate-800">Real estate</strong>, new communities, luxury listings, and developer brands</li>
             <li><strong className="text-slate-800">Restaurants</strong> targeting commuter routes for lunch and dinner traffic</li>
             <li><strong className="text-slate-800">Auto dealers</strong> and large-ticket retailers</li>
             <li><strong className="text-slate-800">Political campaigns</strong> where geographic coverage and high-frequency impressions matter</li>

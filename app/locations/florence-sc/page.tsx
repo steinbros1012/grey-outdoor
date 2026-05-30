@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "What businesses advertise on I-95 in Florence?",
-    a: "Florence's I-95 corridor is a natural fit for gas stations, hotels, restaurants, truck stops, and tourism businesses targeting interstate travelers. Local businesses — healthcare providers, auto dealers, retailers, and home services — also use I-95 placements to build broad regional awareness across the Florence metro.",
+    a: "Florence's I-95 corridor is a natural fit for gas stations, hotels, restaurants, truck stops, and tourism businesses targeting interstate travelers. Local businesses, healthcare providers, auto dealers, retailers, and home services, also use I-95 placements to build broad regional awareness across the Florence metro.",
   },
   {
     q: "Why is Florence, SC a strong billboard market?",
@@ -57,7 +57,7 @@ export default function FlorenceSCPage() {
             Florence, SC Billboard Advertising
           </h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Florence sits at the crossroads of I-95, US-76, US-52, and US-301 — one of the Southeast&apos;s
+            Florence sits at the crossroads of I-95, US-76, US-52, and US-301, one of the Southeast&apos;s
             most important travel intersections. Capture tourism, trucking, and local business traffic on
             an interstate corridor carrying 70,000+ vehicles daily.
           </p>
@@ -135,7 +135,7 @@ export default function FlorenceSCPage() {
             {[
               {
                 title: "I-95 Corridor Dominance",
-                body: "Florence is a mandatory stop on I-95 — the primary North-South artery of the Eastern Seaboard. Billboard placements at the I-95/Hwy 76 interchange capture an unavoidable audience of tourists, truckers, and regional commuters around the clock.",
+                body: "Florence is a mandatory stop on I-95, the primary North-South artery of the Eastern Seaboard. Billboard placements at the I-95/Hwy 76 interchange capture an unavoidable audience of tourists, truckers, and regional commuters around the clock.",
               },
               {
                 title: "Multi-Highway Intersection",

@@ -89,7 +89,7 @@ export default function InventoryPage() {
             Billboard Inventory
           </h1>
           <p className="text-lg text-white/60">
-            700+ faces across North Carolina and South Carolina — static and digital formats available now
+            700+ faces across North Carolina and South Carolina, static and digital formats available now
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function InventoryPage() {
               <div className="mb-6 p-4 rounded-lg bg-[#0D1230] border border-white/10">
                 <p className="text-sm text-white/70">
                   <strong className="text-white">Showing a sample of available locations.</strong>{" "}
-                  Grey Outdoor operates 700+ billboard faces — contact us for a complete availability list for your target market.
+                  Grey Outdoor operates 700+ billboard faces, contact us for a complete availability list for your target market.
                 </p>
               </div>
 
@@ -136,7 +136,7 @@ export default function InventoryPage() {
                     <div className="relative h-32 w-full">
                       <Image
                         src={bb.type === "Digital" ? DIGITAL_IMG : STATIC_IMG}
-                        alt={`${bb.type} billboard — ${bb.location}`}
+                        alt={`${bb.type} billboard, ${bb.location}`}
                         fill
                         className="object-cover"
                         sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"

@@ -49,7 +49,7 @@ export default function BurlingtonPage() {
         <div className="relative max-w-4xl mx-auto">
           <Link href="/locations" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">← All Markets</Link>
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#7C3AED]/20 text-purple-400 mb-4 uppercase tracking-widest">
-            Alamance County, NC — I-40/85 Corridor
+            Alamance County, NC, I-40/85 Corridor
           </span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>
             Burlington &amp; I-40/85 Corridor Billboard Advertising
@@ -57,7 +57,7 @@ export default function BurlingtonPage() {
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
             Grey Outdoor operates billboard inventory along the I-40/85 corridor through Alamance County.
             Reach regional travelers, commuters, and local consumers on one of NC&apos;s most-traveled
-            east-west interstates — connecting the Triad to the Triangle and beyond.
+            east-west interstates, connecting the Triad to the Triangle and beyond.
           </p>
         </div>
       </section>

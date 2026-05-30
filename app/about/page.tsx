@@ -6,7 +6,7 @@ import CTABanner from "@/components/CTABanner";
 export const metadata: Metadata = {
   title: "About Grey Outdoor | NC Billboard Advertising Company",
   description:
-    "Learn about Grey Outdoor — a North Carolina billboard advertising company with 25+ years of experience placing brands across NC's most-traveled corridors.",
+    "Learn about Grey Outdoor, a North Carolina billboard advertising company with 25+ years of experience placing brands across NC's most-traveled corridors.",
 };
 
 const team = [
@@ -188,7 +188,7 @@ export default function AboutPage() {
               },
               {
                 title: "Strategic Placement",
-                body: "Location is everything in outdoor advertising. We do not just sell billboard faces — we help you identify the specific intersections, highways, and corridors that put your brand in front of the right people at the right time.",
+                body: "Location is everything in outdoor advertising. We do not just sell billboard faces, we help you identify the specific intersections, highways, and corridors that put your brand in front of the right people at the right time.",
               },
               {
                 title: "Full-Service Partnership",

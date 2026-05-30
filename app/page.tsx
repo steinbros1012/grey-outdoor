@@ -36,37 +36,37 @@ const locations = [
   {
     city: "Wilmington, NC",
     highways: "US-17 · US-74 · I-140",
-    description: "New Hanover County's coastal market — tourism, healthcare, real estate, and a fast-growing metro.",
+    description: "New Hanover County's coastal market, tourism, healthcare, real estate, and a fast-growing metro.",
     href: "/locations/wilmington",
   },
   {
     city: "Leland & Southport, NC",
     highways: "US-74/76 · Highway 211",
-    description: "Brunswick County's fastest-growing area — capturing booming residential and commuter traffic.",
+    description: "Brunswick County's fastest-growing area, capturing booming residential and commuter traffic.",
     href: "/locations/leland",
   },
   {
     city: "Jacksonville, NC",
     highways: "NC-24 · US-17",
-    description: "Onslow County military corridor — Camp Lejeune and a growing civilian consumer base.",
+    description: "Onslow County military corridor, Camp Lejeune and a growing civilian consumer base.",
     href: "/locations/jacksonville",
   },
   {
     city: "Eastern NC",
     highways: "US-74 · US-701 · US-421",
-    description: "Whiteville, Elizabethtown, Clinton, Goldsboro, and Kinston — rural highway markets with strong reach.",
+    description: "Whiteville, Elizabethtown, Clinton, Goldsboro, and Kinston, rural highway markets with strong reach.",
     href: "/locations/coastal-nc",
   },
   {
     city: "Burlington / I-40 Corridor",
     highways: "I-40/85 · Hwy 49",
-    description: "Alamance County and the I-40/85 corridor — reaching regional travelers and commuters on NC's busiest east-west interstate.",
+    description: "Alamance County and the I-40/85 corridor, reaching regional travelers and commuters on NC's busiest east-west interstate.",
     href: "/locations/raleigh",
   },
   {
     city: "Florence & Myrtle Beach, SC",
     highways: "I-95 · Hwy 76 · US-501",
-    description: "South Carolina markets — I-95 travel corridor and the Grand Strand's high-traffic tourism zone.",
+    description: "South Carolina markets, I-95 travel corridor and the Grand Strand's high-traffic tourism zone.",
     href: "/locations/florence-sc",
   },
 ];
@@ -126,7 +126,7 @@ export default function HomePage() {
                 {
                   icon: Clock,
                   title: "24/7 Brand Presence",
-                  body: "Unlike digital ads that disappear when your budget runs out, a billboard works around the clock — rain, shine, rush hour, or midnight.",
+                  body: "Unlike digital ads that disappear when your budget runs out, a billboard works around the clock, rain, shine, rush hour, or midnight.",
                 },
               ].map((card) => (
                 <motion.div
@@ -282,7 +282,7 @@ export default function HomePage() {
                 {[
                   "Deep knowledge of NC traffic patterns, commuter corridors, and seasonal demographics",
                   "End-to-end service from site selection and contract to creative production and installation",
-                  "Dedicated account management for every client — you always know who to call",
+                  "Dedicated account management for every client, you always know who to call",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 text-white/70 text-base leading-relaxed">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0" />

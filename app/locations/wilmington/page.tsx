@@ -148,7 +148,7 @@ export default function WilmingtonPage() {
               },
               {
                 title: "Strategic Gateway Position",
-                body: "As the hub of coastal NC, Wilmington captures traffic from Brunswick County, Onslow County, and the entire southeastern NC region — not just city residents.",
+                body: "As the hub of coastal NC, Wilmington captures traffic from Brunswick County, Onslow County, and the entire southeastern NC region, not just city residents.",
               },
             ].map((r) => (
               <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}>

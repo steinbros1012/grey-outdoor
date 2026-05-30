@@ -17,7 +17,7 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Dark overlay — heavier at left so text pops, lighter toward right */}
+      {/* Dark overlay, heavier at left so text pops, lighter toward right */}
       <div
         className="absolute inset-0"
         style={{

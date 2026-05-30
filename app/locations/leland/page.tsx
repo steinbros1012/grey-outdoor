@@ -15,7 +15,7 @@ const faqs = [
   { q: "Who sees Leland billboards?", a: "Leland billboards primarily reach Brunswick County residents commuting to Wilmington, shoppers visiting Leland Town Center and Waterford, and through-traffic on US-74/76 heading to and from the Wilmington metro area." },
   { q: "Is Leland growing fast enough to advertise there?", a: "Leland is one of the fastest-growing towns in NC. Brunswick County has seen explosive population growth driven by retirees, remote workers, and families priced out of Wilmington. The Leland market will only become more valuable as growth continues." },
   { q: "What are the best billboard locations in Leland?", a: "The US-74/76 corridor between Leland and the Cape Fear Memorial Bridge is the highest-traffic position. Leland Town Center area on Village Road is also strong for retail-oriented advertisers. We'll show you all available options with traffic data." },
-  { q: "Can I advertise in both Leland and Wilmington together?", a: "Absolutely. Many of our clients run coordinated campaigns across both markets. A Leland billboard captures the Brunswick County audience while Wilmington placements reach the core metro — together they cover the full southeastern NC market." },
+  { q: "Can I advertise in both Leland and Wilmington together?", a: "Absolutely. Many of our clients run coordinated campaigns across both markets. A Leland billboard captures the Brunswick County audience while Wilmington placements reach the core metro, together they cover the full southeastern NC market." },
 ];
 
 export default function LelandPage() {
@@ -36,7 +36,7 @@ export default function LelandPage() {
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#B45309]/20 text-amber-400 mb-4 uppercase tracking-widest">Leland &amp; Brunswick County, NC</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Leland &amp; Southport Billboard Advertising</h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Brunswick County is one of NC&apos;s fastest-growing counties — driven by retirees, remote workers,
+            Brunswick County is one of NC&apos;s fastest-growing counties, driven by retirees, remote workers,
             and families relocating from Wilmington. Key corridors: US-74/76 (main artery), Highway 17 South,
             and NC-133. Reach new residents, home services buyers, healthcare seekers, and retail shoppers.
           </p>
@@ -89,7 +89,7 @@ export default function LelandPage() {
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Leland?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "New Residents = New Customers", body: "Leland is adding thousands of new households every year. New residents are actively searching for local services, restaurants, healthcare providers, and retailers — making billboard advertising especially effective in this growth market." },
+              { title: "New Residents = New Customers", body: "Leland is adding thousands of new households every year. New residents are actively searching for local services, restaurants, healthcare providers, and retailers, making billboard advertising especially effective in this growth market." },
               { title: "Captive Commuter Audience", body: "Tens of thousands of Leland and Brunswick County residents commute to Wilmington daily via US-74/76. Billboard placements on this corridor reach the same commuters twice per day, five days a week, for the duration of your campaign." },
               { title: "Underserved Advertising Market", body: "Compared to Wilmington, Leland offers fewer competing advertisers and lower rates, giving brands the opportunity to own key locations and build strong recall among a growing, loyal local audience." },
             ].map((r) => (

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { q: "How much does billboard advertising cost in Jacksonville?", a: "Jacksonville billboard rates range from $500 to $1,800 per month for static locations. The market is competitively priced compared to larger NC metros, while still delivering strong traffic counts from both military and civilian drivers." },
-  { q: "What makes Jacksonville a unique advertising market?", a: "Jacksonville is home to Marine Corps Base Camp Lejeune and Marine Corps Air Station New River, creating a large, stable military population. This community — plus the growing civilian population — creates a distinct consumer market that responds well to local advertising." },
+  { q: "What makes Jacksonville a unique advertising market?", a: "Jacksonville is home to Marine Corps Base Camp Lejeune and Marine Corps Air Station New River, creating a large, stable military population. This community, plus the growing civilian population, creates a distinct consumer market that responds well to local advertising." },
   { q: "Which Jacksonville highways have the most traffic?", a: "NC-24 (Western Boulevard) and US-17 (Marine Boulevard) are the primary commercial corridors and carry the heaviest traffic. Both offer excellent billboard visibility and access to the full Jacksonville market." },
   { q: "Do you have digital billboard options in Jacksonville?", a: "We currently offer a digital display on Marine Boulevard (US-17). Digital availability in Jacksonville is limited, so we recommend reaching out early if you are interested in a digital placement." },
   { q: "What industries advertise most in Jacksonville?", a: "Auto dealers, restaurants, healthcare providers, insurance companies, and retail businesses are among the most active advertisers in the Jacksonville market. The military demographic is particularly responsive to auto, financial services, and retail advertising." },
@@ -33,10 +33,10 @@ export default function JacksonvillePage() {
         <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
         <div className="relative max-w-4xl mx-auto">
           <Link href="/inventory" className="text-xs text-white/40 hover:text-white/70 mb-4 inline-block">← All Markets</Link>
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#DC2626]/20 text-red-400 mb-4 uppercase tracking-widest">Jacksonville, NC — Onslow County</span>
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#DC2626]/20 text-red-400 mb-4 uppercase tracking-widest">Jacksonville, NC, Onslow County</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white mb-4" style={{ letterSpacing: "-0.03em" }}>Jacksonville Billboard Advertising</h1>
           <p className="text-lg text-white/60 max-w-2xl leading-relaxed">
-            Home to Marine Corps Base Camp Lejeune — the largest USMC base on the East Coast.
+            Home to Marine Corps Base Camp Lejeune, the largest USMC base on the East Coast.
             Key commercial corridors: NC-24 (Western Blvd, the main retail strip), US-17, and US-258.
             Reach a heavily military/veteran demographic alongside a growing civilian retail market.
           </p>
@@ -89,7 +89,7 @@ export default function JacksonvillePage() {
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Jacksonville?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Stable Military Demographic", body: "Camp Lejeune and MCAS New River anchor a large, economically stable military population with consistent purchasing power. Military households are known for strong brand loyalty — getting in front of them with a billboard builds long-term customer relationships." },
+              { title: "Stable Military Demographic", body: "Camp Lejeune and MCAS New River anchor a large, economically stable military population with consistent purchasing power. Military households are known for strong brand loyalty, getting in front of them with a billboard builds long-term customer relationships." },
               { title: "Growing Civilian Economy", body: "Jacksonville's civilian population has grown steadily as the local economy diversifies. Healthcare, retail, and service industries are expanding to serve both military and civilian residents, creating demand for local advertising." },
               { title: "Undercompetitive Market", body: "Compared to larger NC metros, Jacksonville has fewer competing advertisers, which means your brand can achieve dominant billboard presence at a fraction of the cost of Raleigh or Wilmington placements." },
             ].map((r) => (

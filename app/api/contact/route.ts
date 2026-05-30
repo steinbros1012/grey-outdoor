@@ -10,17 +10,17 @@ export async function POST(request: Request) {
     }
 
     const formData = new FormData();
-    formData.append("_subject", `New Billboard Inquiry — ${name} (${market || "Market not specified"})`);
+    formData.append("_subject", `New Billboard Inquiry, ${name} (${market || "Market not specified"})`);
     formData.append("_replyto", email);
     formData.append("_template", "table");
     formData.append("Name", name);
-    formData.append("Company", company || "—");
+    formData.append("Company", company || "-");
     formData.append("Phone", phone);
     formData.append("Email", email);
     formData.append("Market", market || "Not specified");
     formData.append("Campaign Type", campaignType || "Not specified");
     formData.append("Budget", budget || "Not specified");
-    formData.append("Message", message || "—");
+    formData.append("Message", message || "-");
 
     const res = await fetch(
       `https://formsubmit.co/ajax/${process.env.CONTACT_EMAIL ?? "steinbros1012@gmail.com"}`,
