@@ -180,7 +180,7 @@ export default function ContactPage() {
               Contact Information
             </h2>
             {[
-              { icon: MapPin, label: "Office", lines: ["Grey Outdoor, LLC", "P.O. Box 1591", "Wrightsville Beach, NC 28480"] },
+              { icon: MapPin, label: "Office", lines: ["Grey Outdoor, LLC", "1601 College Rd, Unit 102", "Wilmington, NC 28403"] },
               { icon: Phone, label: "Phone", lines: ["910-620-3567"] },
               { icon: Mail, label: "Email", lines: ["grey@greyoutdoor.com"] },
               { icon: Clock, label: "Office Hours", lines: ["Monday to Friday: 8am to 5pm", "Saturday: By appointment", "Sunday: Closed"] },
