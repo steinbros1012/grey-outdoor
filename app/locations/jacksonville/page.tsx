@@ -21,7 +21,7 @@ const faqs = [
 export default function JacksonvillePage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
           src="/hero/highway-1.jpg"
           alt="Highway corridor in Onslow County, NC"

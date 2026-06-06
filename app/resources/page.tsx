@@ -79,7 +79,7 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-4"
@@ -93,7 +93,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (
@@ -102,7 +102,7 @@ export default function ResourcesPage() {
                 className="bg-white rounded-lg overflow-hidden flex flex-col"
                 style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)", border: "1px solid #E2E8F0" }}
               >
-                <div className="relative h-36 overflow-hidden">
+                <div className="relative h-44 sm:h-48 overflow-hidden">
                   <Image
                     src={post.image}
                     alt={post.imageAlt}

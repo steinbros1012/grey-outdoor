@@ -12,7 +12,7 @@ export default function BestBillboardLocationsWilmingtonPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-3xl mx-auto">
           <Link
             href="/resources"

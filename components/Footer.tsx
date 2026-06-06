@@ -12,12 +12,11 @@ const services = [
 
 const locations = [
   { label: "Wilmington", href: "/locations/wilmington" },
-  { label: "Burlington / I-40 Corridor", href: "/locations/raleigh" },
-  { label: "Florence, SC", href: "/locations/florence-sc" },
-  { label: "Eastern NC", href: "/locations/coastal-nc" },
-  { label: "Leland", href: "/locations/leland" },
+  { label: "Leland / Brunswick County", href: "/locations/leland" },
   { label: "Jacksonville", href: "/locations/jacksonville" },
-  { label: "Coastal NC", href: "/locations/coastal-nc" },
+  { label: "Eastern NC", href: "/locations/coastal-nc" },
+  { label: "Burlington / I-40", href: "/locations/raleigh" },
+  { label: "Florence, SC", href: "/locations/florence-sc" },
 ];
 
 const company = [

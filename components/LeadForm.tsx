@@ -100,8 +100,8 @@ export default function LeadForm({
     return (
       <div className="text-center py-12">
         <div className="text-5xl mb-4">✓</div>
-        <h3 className="text-2xl font-bold text-white mb-2">Request Received!</h3>
-        <p className="text-white/60">
+        <h3 className="text-2xl font-bold mb-2" style={{ color: dark ? "#F8FAFC" : "#0F172A" }}>Request Received!</h3>
+        <p style={{ color: dark ? "rgba(248,250,252,0.6)" : "#475569" }}>
           We&apos;ll reach out within 24 hours with availability and rates for your
           selected market.
         </p>

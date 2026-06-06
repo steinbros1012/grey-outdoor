@@ -21,7 +21,7 @@ const faqs = [
 export default function CoastalNCPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
           src="/hero/highway-3.jpg"
           alt="Beach and coastal highway in Eastern NC"

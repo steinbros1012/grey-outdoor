@@ -110,7 +110,7 @@ export default function ForLandownersPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-20 px-4"
+        className="pt-24 sm:pt-32 pb-20 px-4"
         style={{ backgroundColor: "#08091A" }}
       >
         <div className="max-w-3xl mx-auto text-center">
@@ -138,7 +138,7 @@ export default function ForLandownersPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="max-w-5xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-14 text-center"
@@ -184,7 +184,7 @@ export default function ForLandownersPage() {
       </section>
 
       {/* What We Look For */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-5xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-14 text-center"
@@ -236,7 +236,7 @@ export default function ForLandownersPage() {
       </section>
 
       {/* What Landowners Earn */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-5xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-white mb-12 text-center"
@@ -289,7 +289,7 @@ export default function ForLandownersPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="max-w-3xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-12 text-center"
@@ -308,7 +308,7 @@ export default function ForLandownersPage() {
       {/* Contact Form */}
       <section
         id="contact-form"
-        className="py-20 px-4"
+        className="py-12 sm:py-20 px-4"
         style={{ backgroundColor: "#F97316" }}
       >
         <div className="max-w-2xl mx-auto">

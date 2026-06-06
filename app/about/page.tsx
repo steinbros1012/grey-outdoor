@@ -49,7 +49,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-20 px-4"
+        className="pt-24 sm:pt-32 pb-20 px-4"
         style={{ backgroundColor: "#08091A" }}
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -69,7 +69,7 @@ export default function AboutPage() {
       </section>
 
       {/* Meet the Team */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="max-w-7xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-12 text-center"
@@ -121,7 +121,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-3xl mx-auto">
           <div className="relative w-full h-64 rounded-lg overflow-hidden mb-10">
             <Image
@@ -169,7 +169,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -208,7 +208,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Clients Choose Us */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2

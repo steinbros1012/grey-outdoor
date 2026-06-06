@@ -56,12 +56,12 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="hidden lg:flex items-center gap-5">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-150"
+                  className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-150 whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
@@ -69,10 +69,10 @@ export default function Navbar() {
             </nav>
 
             {/* CTA */}
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <Link
                 href="/contact"
-                className="inline-flex items-center px-5 py-2.5 rounded-full bg-[#F97316] text-white text-sm font-semibold hover:bg-[#EA580C] transition-colors duration-150"
+                className="inline-flex items-center px-5 py-2.5 rounded-full bg-[#F97316] text-white text-sm font-semibold hover:bg-[#EA580C] transition-colors duration-150 whitespace-nowrap"
               >
                 Request Availability
               </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden p-2 text-white/80 hover:text-white"
+              className="lg:hidden p-2 text-white/80 hover:text-white"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >

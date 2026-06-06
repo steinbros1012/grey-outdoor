@@ -45,16 +45,10 @@ const markets = [
     highways: ["I-95", "Hwy 76", "Hwy 52"],
   },
   {
-    name: "Highway 17 South Carolina",
-    href: "/locations/coastal-nc",
-    area: "Little River · Murrells Inlet corridor",
-    highways: ["Hwy 17 coastal route"],
-  },
-  {
-    name: "Rural Eastern NC",
-    href: "/locations/coastal-nc",
-    area: "Bolton · Delco · Whiteville · Ash area",
-    highways: ["Hwy 74/76", "Hwy 130"],
+    name: "Florence & Coastal SC",
+    href: "/locations/florence-sc",
+    area: "Florence · Little River · Murrells Inlet",
+    highways: ["I-95", "Hwy 17 SC", "Hwy 501"],
   },
 ];
 
@@ -62,7 +56,7 @@ export default function LocationsPage() {
   return (
     <>
       {/* Section 1, Dark hero */}
-      <section className="pt-32 pb-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-5"
@@ -92,7 +86,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Section 2, Interactive map */}
-      <section id="map" className="py-20 px-4" style={{ backgroundColor: "#fff" }}>
+      <section id="map" className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#fff" }}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h2
@@ -109,7 +103,7 @@ export default function LocationsPage() {
 
           <div
             className="w-full rounded-2xl overflow-hidden border border-slate-200 shadow-lg"
-            style={{ height: "600px" }}
+            style={{ height: "clamp(280px, 50vw, 600px)" }}
           >
             <iframe
               src="https://www.google.com/maps/d/embed?mid=12nkQK97D7K_ARqLXAaMi8C70XYY&ehbc=2E312F"
@@ -129,7 +123,7 @@ export default function LocationsPage() {
       </section>
 
       {/* Section 3, Market cards */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2

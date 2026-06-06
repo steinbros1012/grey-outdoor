@@ -89,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Billboard Advertising Works */}
-      <section className="py-24 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-16 sm:py-24 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -149,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* Billboard Types */}
-      <section className="py-24 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-16 sm:py-24 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -221,7 +221,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Locations */}
-      <section className="py-24 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-16 sm:py-24 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -262,7 +262,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Grey Outdoor */}
-      <section className="py-24 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-16 sm:py-24 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -354,7 +354,7 @@ export default function HomePage() {
 
       {/* Lead CTA Section */}
       <section
-        className="py-24 px-4"
+        className="py-16 sm:py-24 px-4"
         style={{ background: "linear-gradient(135deg, #F97316 0%, #EA580C 100%)" }}
       >
         <div className="max-w-3xl mx-auto text-center mb-12">

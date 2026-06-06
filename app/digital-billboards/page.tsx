@@ -15,7 +15,7 @@ export default function DigitalBillboardsPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-20 px-4 relative overflow-hidden"
+        className="pt-24 sm:pt-32 pb-20 px-4 relative overflow-hidden"
         style={{ backgroundColor: "#08091A" }}
       >
         <Image
@@ -49,16 +49,16 @@ export default function DigitalBillboardsPage() {
             Update your message in real time, target by time of day, and share
             the most valuable intersections in NC.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="px-8 py-4 rounded-full bg-[#0047CC] text-white font-bold hover:bg-blue-700 transition-colors"
+              className="px-8 py-4 rounded-full bg-[#F97316] text-white font-bold hover:bg-[#EA580C] transition-colors text-center"
             >
               Check Digital Availability
             </Link>
             <Link
               href="/inventory"
-              className="px-8 py-4 rounded-full border border-white/20 text-white font-bold hover:bg-white/10 transition-colors"
+              className="px-8 py-4 rounded-full border border-white/20 text-white font-bold hover:bg-white/10 transition-colors text-center"
             >
               View Full Inventory
             </Link>
@@ -67,7 +67,7 @@ export default function DigitalBillboardsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -115,7 +115,7 @@ export default function DigitalBillboardsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -160,7 +160,7 @@ export default function DigitalBillboardsPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2
@@ -171,8 +171,8 @@ export default function DigitalBillboardsPage() {
             </h2>
             <p className="text-[#475569]">Choose the format that fits your campaign goals.</p>
           </div>
-          <div className="bg-white rounded-lg overflow-hidden" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
-            <table className="w-full">
+          <div className="bg-white rounded-lg overflow-hidden overflow-x-auto" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
+            <table className="w-full min-w-[480px]">
               <thead>
                 <tr style={{ backgroundColor: "#0F172A" }}>
                   <th className="text-left p-4 text-sm font-bold text-white/60">Feature</th>

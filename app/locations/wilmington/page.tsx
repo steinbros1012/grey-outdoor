@@ -36,7 +36,7 @@ const faqs = [
 export default function WilmingtonPage() {
   return (
     <>
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
           src="/hero/coastal-road.jpg"
           alt="Coastal road near Wilmington, NC"
@@ -85,7 +85,7 @@ export default function WilmingtonPage() {
       </section>
 
       {/* Available Locations */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-black text-[#0F172A] mb-8" style={{ letterSpacing: "-0.02em" }}>
@@ -100,7 +100,7 @@ export default function WilmingtonPage() {
               ].map((loc) => (
                 <div
                   key={loc.loc}
-                  className="flex items-center justify-between p-5 bg-white rounded-lg"
+                  className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-5 bg-white rounded-lg"
                   style={{ border: "1px solid #E2E8F0" }}
                 >
                   <div>
@@ -108,7 +108,7 @@ export default function WilmingtonPage() {
                     <div className="text-xs text-[#0047CC] font-semibold mt-0.5">{loc.hw}</div>
                     <div className="text-xs text-[#475569] mt-1">{loc.size} · {loc.traffic}</div>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 flex-shrink-0">
                     <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${loc.type === "Digital" ? "bg-yellow-100 text-yellow-800" : "bg-slate-100 text-slate-600"}`}>
                       {loc.type}
                     </span>
@@ -131,7 +131,7 @@ export default function WilmingtonPage() {
       </section>
 
       {/* Why Advertise in Wilmington */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>
             Why Advertise in Wilmington?
@@ -173,7 +173,7 @@ export default function WilmingtonPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-black text-[#0F172A] mb-10" style={{ letterSpacing: "-0.02em" }}>
             Wilmington Billboard Advertising FAQ
