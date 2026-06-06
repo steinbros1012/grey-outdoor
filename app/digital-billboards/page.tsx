@@ -19,7 +19,7 @@ export default function DigitalBillboardsPage() {
         style={{ backgroundColor: "#08091A" }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1609743522471-83c84ce23e32?w=1920&q=80"
+          src="/hero/highway-2.jpg"
           alt="City at night with digital billboard displays"
           fill
           className="object-cover"

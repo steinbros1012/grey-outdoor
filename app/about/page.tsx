@@ -88,10 +88,9 @@ export default function AboutPage() {
                   <Image
                     src={member.photo}
                     alt={member.name}
-                    width={200}
-                    height={200}
-                    className="rounded-full object-cover"
-                    style={{ width: 200, height: 200 }}
+                    width={160}
+                    height={160}
+                    className="rounded-full object-cover w-32 h-32 sm:w-40 sm:h-40"
                   />
                 </div>
                 <h3 className="text-lg font-black text-[#0F172A] mb-1">{member.name}</h3>

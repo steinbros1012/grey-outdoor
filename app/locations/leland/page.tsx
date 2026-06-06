@@ -23,7 +23,7 @@ export default function LelandPage() {
     <>
       <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          src="/hero/coastal-road.jpg"
           alt="Coastal highway in Brunswick County, NC"
           fill
           className="object-cover"

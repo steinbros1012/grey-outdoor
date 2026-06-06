@@ -92,7 +92,7 @@ export default function InventoryPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-10 sm:py-16 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
           <div className="flex gap-6 flex-col lg:flex-row">
             {/* Main content */}
@@ -180,9 +180,9 @@ export default function InventoryPage() {
               </p>
             </div>
 
-            {/* Sidebar form */}
+            {/* Sidebar form — shown at top on mobile, side on desktop */}
             <div
-              className="lg:w-80 flex-shrink-0 p-6 rounded-lg self-start sticky top-24"
+              className="lg:w-80 flex-shrink-0 p-6 rounded-lg lg:self-start lg:sticky lg:top-24 order-first lg:order-last"
               style={{ backgroundColor: "#0D1230" }}
             >
               <LeadForm

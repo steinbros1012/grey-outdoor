@@ -269,7 +269,7 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             variants={stagger}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           >
             <motion.div variants={fadeUp}>
               <h2

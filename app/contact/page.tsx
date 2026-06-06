@@ -80,8 +80,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4" style={{ backgroundColor: "#0D1230" }}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#0D1230" }}>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
             {submitted ? (

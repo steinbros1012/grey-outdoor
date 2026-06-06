@@ -38,7 +38,7 @@ export default function FlorenceSCPage() {
     <>
       <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
-          src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1920&q=80"
+          src="/hero/highway-1.jpg"
           alt="Interstate highway in Florence, SC"
           fill
           className="object-cover"

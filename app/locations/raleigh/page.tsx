@@ -38,7 +38,7 @@ export default function BurlingtonPage() {
     <>
       <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
-          src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1920&q=80"
+          src="/hero/grey-outdoor-hero-2.jpg"
           alt="Interstate highway corridor at dusk"
           fill
           className="object-cover"

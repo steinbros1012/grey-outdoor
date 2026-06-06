@@ -23,7 +23,7 @@ export default function CoastalNCPage() {
     <>
       <section className="pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
         <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80"
+          src="/hero/highway-3.jpg"
           alt="Beach and coastal highway in Eastern NC"
           fill
           className="object-cover"

@@ -27,14 +27,14 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 pt-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 pt-32 sm:pt-40">
         <div className="max-w-2xl">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-8"
+            className="mb-6 sm:mb-8"
           >
             <span className="inline-flex items-center gap-2 border border-orange-500/30 bg-orange-500/10 text-orange-400 text-xs font-medium px-3 py-1 rounded-full">
               <span className="relative flex h-2 w-2">
@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-7xl md:text-8xl lg:text-[96px] font-black leading-[0.95] tracking-[-0.04em] text-white mb-0"
+            className="text-[48px] sm:text-7xl md:text-8xl lg:text-[96px] font-black leading-[0.95] tracking-[-0.04em] text-white mb-0"
           >
             Your Brand.
             <br />
@@ -75,17 +75,17 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-start gap-4 mt-10"
+            className="flex flex-col sm:flex-row items-stretch sm:items-start gap-3 sm:gap-4 mt-8 sm:mt-10"
           >
             <Link
               href="/contact"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full transition-all"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full transition-all text-center"
             >
               Request Availability
             </Link>
             <Link
               href="/locations"
-              className="border border-white/30 hover:border-white/60 hover:bg-white/10 text-white px-8 py-4 rounded-full transition-all"
+              className="border border-white/30 hover:border-white/60 hover:bg-white/10 text-white px-8 py-4 rounded-full transition-all text-center"
             >
               View Locations
             </Link>

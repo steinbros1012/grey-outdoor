@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Globe, Send, Rss, Share } from "lucide-react";
+import { Rss, Share } from "lucide-react";
 
 const services = [
   { label: "Static Billboards", href: "/inventory" },
@@ -32,9 +32,9 @@ export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#08091A", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand col */}
-          <div className="lg:col-span-2">
+          <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-baseline gap-1 mb-3">
               <span className="text-xl font-black text-white">GREY</span>
               <span className="text-xl font-black text-[#F97316]">OUTDOOR</span>
@@ -46,25 +46,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X / Twitter"
-                className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-colors"
-              >
-                <Send size={16} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-colors"
-              >
-                <Globe size={16} />
-              </a>
-              <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/greyoutdoor/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -73,7 +55,7 @@ export default function Footer() {
                 <Share size={16} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/grey_billboards/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -145,16 +127,16 @@ export default function Footer() {
             <address className="not-italic space-y-1.5">
               <p className="text-sm text-white/60">Wilmington, NC 28403</p>
               <a
-                href="tel:+19101234567"
+                href="tel:+19106203567"
                 className="block text-sm text-white/60 hover:text-white transition-colors"
               >
-                (910) 123-4567
+                910-620-3567
               </a>
               <a
-                href="mailto:info@greyoutdoor.com"
+                href="mailto:grey@greyoutdoor.com"
                 className="block text-sm text-white/60 hover:text-white transition-colors"
               >
-                info@greyoutdoor.com
+                grey@greyoutdoor.com
               </a>
             </address>
           </div>

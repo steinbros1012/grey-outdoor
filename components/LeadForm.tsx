@@ -18,12 +18,13 @@ type FormData = {
 };
 
 const markets = [
-  "Wilmington",
-  "Raleigh",
-  "Apex",
-  "Leland",
+  "Wilmington / Hampstead",
+  "Leland / Brunswick County",
   "Jacksonville",
-  "Coastal NC",
+  "Eastern NC",
+  "Burlington / I-40 Corridor",
+  "Florence, SC",
+  "Myrtle Beach / Coastal SC",
   "Other",
 ];
 
@@ -41,6 +42,8 @@ export default function LeadForm({
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -51,9 +54,34 @@ export default function LeadForm({
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/steinbros1012@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Billboard Availability Request, ${form.name} (${form.market || "Market not specified"})`,
+          _template: "table",
+          _captcha: "false",
+          Name: form.name,
+          Business: form.business,
+          Phone: form.phone,
+          Email: form.email,
+          Market: form.market || "Not specified",
+          Message: form.message || "-",
+        }),
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error("Failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please call us at 910-620-3567.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass = dark
@@ -219,12 +247,14 @@ export default function LeadForm({
             aria-label="Additional message"
           />
         </div>
+        {error && <p className="text-red-400 text-sm text-center">{error}</p>}
         <button
           type="submit"
-          className="w-full py-4 rounded-full font-bold text-white text-base hover:opacity-90 transition-opacity"
+          disabled={loading}
+          className="w-full py-4 rounded-full font-bold text-white text-base hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
           style={{ backgroundColor: dark ? "#F97316" : "#0047CC" }}
         >
-          Request Free Availability Check →
+          {loading ? "Sending..." : "Request Free Availability Check →"}
         </button>
       </form>
     </div>
