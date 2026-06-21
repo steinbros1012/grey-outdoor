@@ -18,7 +18,7 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 *,
@@ -34,8 +34,8 @@ html {
 }
 
 body {
-  background-color: #08091A;
-  color: #F8FAFC;
+  background-color: #ffffff;
+  color: #0F172A;
   font-family: var(--font-sans);
   font-feature-settings: "ss01";
   min-height: 100vh;
@@ -45,23 +45,23 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #08091A;
+  background: #F1F5F9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0047CC;
+  background: #CBD5E1;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0039A6;
+  background: #F97316;
 }
 
 ::selection {
-  background-color: rgba(0, 71, 204, 0.35);
-  color: #F8FAFC;
+  background-color: rgba(249, 115, 22, 0.25);
+  color: #0F172A;
 }
 
 :focus-visible {
-  outline: 2px solid #0047CC;
+  outline: 2px solid #F97316;
   outline-offset: 2px;
   border-radius: 4px;
 }
