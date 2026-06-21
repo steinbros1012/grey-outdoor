@@ -59,23 +59,13 @@ export default function LeadForm({
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("https://formsubmit.co/ajax/steinbros1012@gmail.com", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          _subject: `Billboard Availability Request, ${form.name} (${form.market || "Market not specified"})`,
-          _template: "table",
-          _captcha: "false",
-          Name: form.name,
-          Business: form.business,
-          Phone: form.phone,
-          Email: form.email,
-          Market: form.market || "Not specified",
-          Message: form.message || "-",
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
       const data = await res.json();
-      if (!data.success) throw new Error("Failed");
+      if (!res.ok || !data.success) throw new Error("Failed");
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us at 910-620-3567.");

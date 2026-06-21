@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Rss, Share } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const services = [
   { label: "Static Billboards", href: "/inventory" },
@@ -51,7 +51,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-colors"
               >
-                <Share size={16} />
+                <Facebook size={16} />
               </a>
               <a
                 href="https://www.instagram.com/grey_billboards/"
@@ -60,7 +60,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 hover:text-white transition-colors"
               >
-                <Rss size={16} />
+                <Instagram size={16} />
               </a>
             </div>
           </div>
