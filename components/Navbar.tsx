@@ -54,11 +54,11 @@ export default function Navbar() {
   }, []);
 
   const headerBg = scrolled
-    ? "border-b border-[#1a4f94] shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
+    ? "border-b border-[#374151] shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
     : "bg-transparent border-b border-transparent";
 
   // Always blue when scrolled, transparent over hero
-  const headerStyle = scrolled ? { backgroundColor: "#2464B4" } : {};
+  const headerStyle = scrolled ? { backgroundColor: "#4B5563" } : {};
   const textColor = "text-white/85";
   const logoColor = "text-white";
 
@@ -180,7 +180,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#2464B4] text-white text-sm font-bold hover:bg-[#1a4f94] transition-colors duration-150 whitespace-nowrap shadow-[0_2px_12px_rgba(36,100,180,0.12)]"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#4B5563] text-white text-sm font-bold hover:bg-[#374151] transition-colors duration-150 whitespace-nowrap shadow-[0_2px_12px_rgba(75,85,99,0.12)]"
               >
                 Request a Quote <ArrowRight size={13} />
               </Link>
@@ -270,7 +270,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#2464B4] text-white font-bold text-base hover:bg-[#1a4f94] transition-colors shadow-[0_4px_20px_rgba(36,100,180,0.12)]"
+              className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#4B5563] text-white font-bold text-base hover:bg-[#374151] transition-colors shadow-[0_4px_20px_rgba(75,85,99,0.12)]"
             >
               Request a Quote <ArrowRight size={16} />
             </Link>

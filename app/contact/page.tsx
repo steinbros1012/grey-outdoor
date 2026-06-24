@@ -56,7 +56,7 @@ export default function ContactPage() {
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#2464B4] transition-shadow text-sm";
+    "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#4B5563] transition-shadow text-sm";
   const inputStyle = {
     backgroundColor: "rgba(255,255,255,0.06)",
     border: "1px solid rgba(255,255,255,0.1)",
@@ -66,7 +66,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-4"
@@ -80,7 +80,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
@@ -166,8 +166,8 @@ export default function ContactPage() {
                   <p className="text-red-400 text-sm text-center">{error}</p>
                 )}
                 <button type="submit" disabled={loading}
-                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#1a4f94] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
-                  style={{ backgroundColor: "#2464B4" }}>
+                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: "#4B5563" }}>
                   {loading ? "Sending..." : "Send My Request →"}
                 </button>
               </form>
@@ -190,7 +190,7 @@ export default function ContactPage() {
                 className="p-5 rounded-lg flex gap-4"
                 style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
               >
-                <item.icon size={20} className="text-[#2464B4] flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <item.icon size={20} className="text-[#4B5563] flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <div className="text-xs font-semibold text-white/40 uppercase tracking-widest mb-1">{item.label}</div>
                   {item.lines.map((line) => (

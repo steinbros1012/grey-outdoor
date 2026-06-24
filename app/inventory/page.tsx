@@ -191,7 +191,7 @@ export default function InventoryPage() {
                   {hasActiveFilters && (
                     <button
                       onClick={clearFilters}
-                      className="text-xs font-semibold text-[#2464B4] hover:text-[#1a4f94] transition-colors"
+                      className="text-xs font-semibold text-[#2464B4] hover:text-[#374151] transition-colors"
                     >
                       Clear all
                     </button>

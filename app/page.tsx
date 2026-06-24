@@ -215,7 +215,7 @@ export default function HomePage() {
                 <motion.div
                   key={card.title}
                   variants={fadeUp}
-                  className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-100 hover:shadow-[0_8px_32px_rgba(36,100,180,0.10)] transition-all duration-300 group"
+                  className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-100 hover:shadow-[0_8px_32px_rgba(75,85,99,0.12)] transition-all duration-300 group"
                 >
                   <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
                     <card.icon size={20} className="text-[#2464B4]" aria-hidden="true" />
@@ -288,7 +288,7 @@ export default function HomePage() {
               {/* Digital */}
               <motion.div
                 variants={fadeUp}
-                className="p-10 bg-[#2464B4] rounded-2xl relative overflow-hidden"
+                className="p-10 bg-[#4B5563] rounded-2xl relative overflow-hidden"
               >
                 <div
                   className="absolute inset-0 opacity-[0.025]"
@@ -369,7 +369,7 @@ export default function HomePage() {
                 <motion.div key={loc.city} variants={fadeUp}>
                   <Link
                     href={loc.href}
-                    className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-[0_8px_40px_rgba(36,100,180,0.10)] transition-all duration-300"
+                    className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-[0_8px_40px_rgba(75,85,99,0.12)] transition-all duration-300"
                   >
                     <div className="flex items-center justify-between mb-3">
                       <p className="text-[10px] font-bold text-[#2464B4] uppercase tracking-[0.18em]">
@@ -393,7 +393,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Grey Outdoor — dark contrast section */}
-      <section className="py-24 sm:py-32 px-4 bg-[#2464B4]">
+      <section className="py-24 sm:py-32 px-4 bg-[#4B5563]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -479,7 +479,7 @@ export default function HomePage() {
       </section>
 
       {/* Lead CTA */}
-      <section className="py-24 sm:py-32 px-4 relative overflow-hidden" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-24 sm:py-32 px-4 relative overflow-hidden" style={{ backgroundColor: "#4B5563" }}>
         <div
           className="absolute inset-0 opacity-[0.05]"
           style={{

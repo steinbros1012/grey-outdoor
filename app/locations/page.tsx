@@ -56,7 +56,7 @@ export default function LocationsPage() {
   return (
     <>
       {/* Section 1, Dark hero */}
-      <section className="pt-24 sm:pt-32 pb-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="pt-24 sm:pt-32 pb-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-5"
@@ -71,7 +71,7 @@ export default function LocationsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#map"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#2464B4] text-white font-bold text-base hover:bg-[#1a4f94] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#4B5563] text-white font-bold text-base hover:bg-[#374151] transition-colors"
             >
               View Interactive Map
             </a>
@@ -139,7 +139,7 @@ export default function LocationsPage() {
               <div
                 key={market.name}
                 className="rounded-xl p-6 flex flex-col"
-                style={{ backgroundColor: "#2464B4", border: "1px solid rgba(255,255,255,0.08)" }}
+                style={{ backgroundColor: "#4B5563", border: "1px solid rgba(255,255,255,0.08)" }}
               >
                 <div className="flex-1">
                   <h3 className="text-base font-black text-white mb-1 leading-snug">{market.name}</h3>
@@ -149,7 +149,7 @@ export default function LocationsPage() {
                       <span
                         key={hw}
                         className="px-2 py-0.5 rounded-full text-xs font-semibold"
-                        style={{ backgroundColor: "#2464B4", color: "#fff" }}
+                        style={{ backgroundColor: "#4B5563", color: "#fff" }}
                       >
                         {hw}
                       </span>
@@ -158,7 +158,7 @@ export default function LocationsPage() {
                 </div>
                 <Link
                   href={market.href}
-                  className="text-sm font-bold text-[#2464B4] hover:text-[#1a4f94] transition-colors"
+                  className="text-sm font-bold text-[#4B5563] hover:text-[#374151] transition-colors"
                 >
                   Explore →
                 </Link>

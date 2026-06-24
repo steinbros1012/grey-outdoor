@@ -16,7 +16,7 @@ export default function DigitalBillboardsPage() {
       {/* Hero */}
       <section
         className="pt-24 sm:pt-32 pb-20 px-4 relative overflow-hidden"
-        style={{ backgroundColor: "#2464B4" }}
+        style={{ backgroundColor: "#4B5563" }}
       >
         <Image
           src="/hero/highway-2.jpg"
@@ -35,7 +35,7 @@ export default function DigitalBillboardsPage() {
           }}
         />
         <div className="relative max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#2464B4]/20 text-[#60A5FA] mb-6 tracking-widest uppercase">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#4B5563]/20 text-[#60A5FA] mb-6 tracking-widest uppercase">
             LED Display Technology
           </span>
           <h1
@@ -52,7 +52,7 @@ export default function DigitalBillboardsPage() {
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="px-8 py-4 rounded-full bg-[#2464B4] text-white font-bold hover:bg-[#1a4f94] transition-colors text-center"
+              className="px-8 py-4 rounded-full bg-[#4B5563] text-white font-bold hover:bg-[#374151] transition-colors text-center"
             >
               Check Digital Availability
             </Link>
@@ -105,7 +105,7 @@ export default function DigitalBillboardsPage() {
                 className="p-6 bg-white rounded-lg"
                 style={{ boxShadow: "0 4px 20px rgba(0,71,204,0.07)", borderTop: "3px solid #0047CC" }}
               >
-                <b.icon size={26} className="text-[#2464B4] mb-4" aria-hidden="true" />
+                <b.icon size={26} className="text-[#4B5563] mb-4" aria-hidden="true" />
                 <h3 className="text-lg font-bold text-[#1F2937] mb-2">{b.title}</h3>
                 <p className="text-sm text-[#475569] leading-relaxed">{b.body}</p>
               </div>
@@ -115,7 +115,7 @@ export default function DigitalBillboardsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -146,9 +146,9 @@ export default function DigitalBillboardsPage() {
               <div
                 key={s.step}
                 className="flex gap-6 p-6 rounded-lg"
-                style={{ backgroundColor: "#2464B4", border: "1px solid rgba(255,255,255,0.08)" }}
+                style={{ backgroundColor: "#4B5563", border: "1px solid rgba(255,255,255,0.08)" }}
               >
-                <div className="text-4xl font-black text-[#2464B4]/40 flex-shrink-0 leading-none">{s.step}</div>
+                <div className="text-4xl font-black text-[#4B5563]/40 flex-shrink-0 leading-none">{s.step}</div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">{s.title}</h3>
                   <p className="text-sm text-white/55 leading-relaxed">{s.body}</p>
@@ -193,7 +193,7 @@ export default function DigitalBillboardsPage() {
                 ].map(([feature, digital, stat]) => (
                   <tr key={feature} className="border-t border-[#F1F5F9]">
                     <td className="p-4 text-sm text-[#475569]">{feature}</td>
-                    <td className="p-4 text-sm text-center font-semibold text-[#2464B4]">{digital}</td>
+                    <td className="p-4 text-sm text-center font-semibold text-[#4B5563]">{digital}</td>
                     <td className="p-4 text-sm text-center text-[#475569]">{stat}</td>
                   </tr>
                 ))}

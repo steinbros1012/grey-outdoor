@@ -22,7 +22,7 @@ export default function SectionHeader({
   return (
     <div className={center ? "text-center" : ""}>
       {badge && (
-        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#2464B4]/15 text-[#2464B4] mb-4 tracking-wide">
+        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#4B5563]/15 text-[#4B5563] mb-4 tracking-wide">
           {badge}
         </span>
       )}
@@ -44,7 +44,7 @@ export default function SectionHeader({
         <div className={`mt-6 ${center ? "flex justify-center" : ""}`}>
           <Link
             href={ctaHref}
-            className="inline-flex items-center px-6 py-3 rounded-full bg-[#2464B4] text-white font-semibold hover:bg-[#1a4f94] transition-colors"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-[#4B5563] text-white font-semibold hover:bg-[#374151] transition-colors"
           >
             {ctaLabel}
           </Link>

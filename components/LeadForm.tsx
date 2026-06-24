@@ -75,8 +75,8 @@ export default function LeadForm({
   };
 
   const inputClass = dark
-    ? "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#2464B4] transition-shadow text-sm"
-    : "w-full px-4 py-3 rounded-lg text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#2464B4] transition-shadow text-sm border border-[#E2E8F0]";
+    ? "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#4B5563] transition-shadow text-sm"
+    : "w-full px-4 py-3 rounded-lg text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#4B5563] transition-shadow text-sm border border-[#E2E8F0]";
 
   const inputStyle = dark
     ? { backgroundColor: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }
@@ -242,7 +242,7 @@ export default function LeadForm({
           type="submit"
           disabled={loading}
           className="w-full py-4 rounded-full font-bold text-white text-base hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
-          style={{ backgroundColor: dark ? "#2464B4" : "#0047CC" }}
+          style={{ backgroundColor: dark ? "#4B5563" : "#0047CC" }}
         >
           {loading ? "Sending..." : "Request Free Availability Check →"}
         </button>

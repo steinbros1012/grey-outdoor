@@ -12,7 +12,7 @@ export default function BestBillboardLocationsWilmingtonPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-3xl mx-auto">
           <Link
             href="/resources"
@@ -22,7 +22,7 @@ export default function BestBillboardLocationsWilmingtonPage() {
           </Link>
           <span
             className="inline-block px-3 py-1 rounded-full text-xs font-bold text-white mb-4"
-            style={{ backgroundColor: "#2464B4" }}
+            style={{ backgroundColor: "#4B5563" }}
           >
             Locations
           </span>

@@ -29,7 +29,7 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#2464B4", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    <footer style={{ backgroundColor: "#4B5563", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand col */}

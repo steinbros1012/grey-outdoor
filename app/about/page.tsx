@@ -50,10 +50,10 @@ export default function AboutPage() {
       {/* Hero */}
       <section
         className="pt-24 sm:pt-32 pb-20 px-4"
-        style={{ backgroundColor: "#2464B4" }}
+        style={{ backgroundColor: "#4B5563" }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#2464B4]/15 text-[#2464B4] mb-6 tracking-widest uppercase">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#4B5563]/15 text-[#4B5563] mb-6 tracking-widest uppercase">
             Est. 1999
           </span>
           <h1
@@ -94,13 +94,13 @@ export default function AboutPage() {
                   />
                 </div>
                 <h3 className="text-lg font-black text-[#1F2937] mb-1">{member.name}</h3>
-                <p className="text-sm font-semibold text-[#2464B4] mb-3 leading-snug">{member.title}</p>
+                <p className="text-sm font-semibold text-[#4B5563] mb-3 leading-snug">{member.title}</p>
                 <p className="text-sm text-[#475569] leading-relaxed mb-3">{member.bio}</p>
                 <div className="flex flex-col gap-1 mt-auto">
                   {member.phone && (
                     <a
                       href={`tel:${member.phone.replace(/-/g, "")}`}
-                      className="text-sm font-semibold text-[#2464B4] hover:text-[#2464B4] transition-colors"
+                      className="text-sm font-semibold text-[#4B5563] hover:text-[#4B5563] transition-colors"
                     >
                       Call or Text: {member.phone}
                     </a>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   {member.email && (
                     <a
                       href={`mailto:${member.email}`}
-                      className="text-sm text-[#475569] hover:text-[#2464B4] transition-colors break-all"
+                      className="text-sm text-[#475569] hover:text-[#4B5563] transition-colors break-all"
                     >
                       {member.email}
                     </a>
@@ -131,7 +131,7 @@ export default function AboutPage() {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
             />
-            <div className="absolute inset-0 bg-[#2464B4]/40" />
+            <div className="absolute inset-0 bg-[#4B5563]/40" />
           </div>
           <h2
             className="text-3xl font-black text-[#1F2937] mb-6"
@@ -169,7 +169,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -197,7 +197,7 @@ export default function AboutPage() {
               <div
                 key={val.title}
                 className="p-8 rounded-lg"
-                style={{ backgroundColor: "#2464B4", border: "1px solid rgba(255,255,255,0.08)" }}
+                style={{ backgroundColor: "#4B5563", border: "1px solid rgba(255,255,255,0.08)" }}
               >
                 <h3 className="text-xl font-bold text-white mb-3">{val.title}</h3>
                 <p className="text-white/55 leading-relaxed text-sm">{val.body}</p>

@@ -21,7 +21,7 @@ const faqs = [
 export default function LelandPage() {
   return (
     <>
-      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#2464B4" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#4B5563" }}>
         <Image
           src="/hero/coastal-road.jpg"
           alt="Coastal highway in Brunswick County, NC"
@@ -43,11 +43,11 @@ export default function LelandPage() {
         </div>
       </section>
 
-      <section className="py-14 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-14 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[{ value: "30,000+", label: "Town Population" }, { value: "150,000+", label: "Brunswick County" }, { value: "38,000", label: "US-74/76 Daily Traffic" }, { value: "#3", label: "Fastest Growing NC Town" }].map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-black text-[#2464B4] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
+              <div className="text-3xl lg:text-4xl font-black text-[#4B5563] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
               <div className="text-xs text-white/40 uppercase tracking-widest">{s.label}</div>
             </div>
           ))}
@@ -67,24 +67,24 @@ export default function LelandPage() {
                 <div key={loc.loc} className="flex items-center justify-between p-5 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
                   <div>
                     <div className="font-bold text-[#1F2937]">{loc.loc}</div>
-                    <div className="text-xs text-[#2464B4] font-semibold mt-0.5">{loc.hw}</div>
+                    <div className="text-xs text-[#4B5563] font-semibold mt-0.5">{loc.hw}</div>
                     <div className="text-xs text-[#475569] mt-1">{loc.size} · {loc.traffic}</div>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-600">{loc.type}</span>
-                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#2464B4] text-white text-xs font-bold hover:bg-[#1a4f94] transition-colors">Inquire</Link>
+                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#4B5563] text-white text-xs font-bold hover:bg-[#374151] transition-colors">Inquire</Link>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#2464B4" }}>
+          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#4B5563" }}>
             <LeadForm title="Get Leland Availability" subtitle="Request locations and pricing for the Leland/Brunswick County market." dark />
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Leland?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -93,7 +93,7 @@ export default function LelandPage() {
               { title: "Captive Commuter Audience", body: "Tens of thousands of Leland and Brunswick County residents commute to Wilmington daily via US-74/76. Billboard placements on this corridor reach the same commuters twice per day, five days a week, for the duration of your campaign." },
               { title: "Underserved Advertising Market", body: "Compared to Wilmington, Leland offers fewer competing advertisers and lower rates, giving brands the opportunity to own key locations and build strong recall among a growing, loyal local audience." },
             ].map((r) => (
-              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#2464B4", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#4B5563", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <h3 className="text-lg font-bold text-white mb-2">{r.title}</h3>
                 <p className="text-sm text-white/55 leading-relaxed">{r.body}</p>
               </div>

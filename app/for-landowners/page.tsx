@@ -34,7 +34,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       style={{ borderColor: "rgba(0,0,0,0.1)" }}
     >
       <button
-        className="w-full text-left py-5 flex items-center justify-between gap-4 font-semibold text-[#1F2937] text-base hover:text-[#2464B4] transition-colors"
+        className="w-full text-left py-5 flex items-center justify-between gap-4 font-semibold text-[#1F2937] text-base hover:text-[#4B5563] transition-colors"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
@@ -111,10 +111,10 @@ export default function ForLandownersPage() {
       {/* Hero */}
       <section
         className="pt-24 sm:pt-32 pb-20 px-4"
-        style={{ backgroundColor: "#2464B4" }}
+        style={{ backgroundColor: "#4B5563" }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#2464B4]/15 text-[#2464B4] mb-6 tracking-widest uppercase">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#4B5563]/15 text-[#4B5563] mb-6 tracking-widest uppercase">
             For Property Owners
           </span>
           <h1
@@ -130,7 +130,7 @@ export default function ForLandownersPage() {
           </p>
           <a
             href="#contact-form"
-            className="inline-flex items-center px-8 py-4 rounded-full bg-[#2464B4] text-white font-bold text-base hover:bg-[#1a4f94] transition-colors"
+            className="inline-flex items-center px-8 py-4 rounded-full bg-[#4B5563] text-white font-bold text-base hover:bg-[#374151] transition-colors"
           >
             Find Out What Your Property Is Worth
           </a>
@@ -167,7 +167,7 @@ export default function ForLandownersPage() {
               <div key={item.step} className="text-center">
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-lg mx-auto mb-5"
-                  style={{ backgroundColor: "#2464B4" }}
+                  style={{ backgroundColor: "#4B5563" }}
                 >
                   {item.step}
                 </div>
@@ -236,7 +236,7 @@ export default function ForLandownersPage() {
       </section>
 
       {/* What Landowners Earn */}
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#4B5563" }}>
         <div className="max-w-5xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-black text-white mb-12 text-center"
@@ -271,11 +271,11 @@ export default function ForLandownersPage() {
                   key={box.title}
                   className="p-6 rounded-lg text-center"
                   style={{
-                    backgroundColor: "#2464B4",
+                    backgroundColor: "#4B5563",
                     border: "1px solid rgba(255,255,255,0.08)",
                   }}
                 >
-                  <div className="text-sm font-bold text-[#2464B4] mb-2">
+                  <div className="text-sm font-bold text-[#4B5563] mb-2">
                     {box.title}
                   </div>
                   <p className="text-xs text-white/50 leading-relaxed">
@@ -309,7 +309,7 @@ export default function ForLandownersPage() {
       <section
         id="contact-form"
         className="py-12 sm:py-20 px-4"
-        style={{ backgroundColor: "#2464B4" }}
+        style={{ backgroundColor: "#4B5563" }}
       >
         <div className="max-w-2xl mx-auto">
           <h2
@@ -322,14 +322,14 @@ export default function ForLandownersPage() {
             Fill out the form and we&apos;ll be in touch within a few business days.
           </p>
           {submitted ? (
-            <div className="bg-[#2464B4] rounded-xl p-12 text-center">
+            <div className="bg-[#4B5563] rounded-xl p-12 text-center">
               <div className="text-5xl mb-4">✓</div>
               <h3 className="text-2xl font-black text-white mb-2">Got it, thanks!</h3>
               <p className="text-white/60">We&apos;ll review your property details and be in touch within a few business days.</p>
             </div>
           ) : (
           <form
-            className="bg-[#2464B4] rounded-xl p-8 space-y-5"
+            className="bg-[#4B5563] rounded-xl p-8 space-y-5"
             onSubmit={handleSubmit}
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -337,32 +337,32 @@ export default function ForLandownersPage() {
                 <label htmlFor="lo-name" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Full Name *</label>
                 <input id="lo-name" name="name" type="text" required value={form.name} onChange={handleChange}
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#2464B4] transition-colors" />
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4B5563] transition-colors" />
               </div>
               <div>
                 <label htmlFor="lo-phone" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Phone *</label>
                 <input id="lo-phone" name="phone" type="tel" required value={form.phone} onChange={handleChange}
                   placeholder="(910) 555-0100"
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#2464B4] transition-colors" />
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4B5563] transition-colors" />
               </div>
             </div>
             <div>
               <label htmlFor="lo-email" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Email *</label>
               <input id="lo-email" name="email" type="email" required value={form.email} onChange={handleChange}
                 placeholder="jane@example.com"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#2464B4] transition-colors" />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4B5563] transition-colors" />
             </div>
             <div>
               <label htmlFor="lo-location" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Property Address / General Location</label>
               <input id="lo-location" name="propertyLocation" type="text" value={form.propertyLocation} onChange={handleChange}
                 placeholder="e.g. Near I-40 and exit 132, Burlington NC"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#2464B4] transition-colors" />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4B5563] transition-colors" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="lo-state" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">State</label>
                 <select id="lo-state" name="state" value={form.state} onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#2464B4] transition-colors appearance-none">
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#4B5563] transition-colors appearance-none">
                   <option value="" style={{ color: "#1F2937" }}>Select state</option>
                   <option value="NC" style={{ color: "#1F2937" }}>NC</option>
                   <option value="SC" style={{ color: "#1F2937" }}>SC</option>
@@ -373,7 +373,7 @@ export default function ForLandownersPage() {
               <div>
                 <label htmlFor="lo-type" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Property Type</label>
                 <select id="lo-type" name="propertyType" value={form.propertyType} onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#2464B4] transition-colors appearance-none">
+                  className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-[#4B5563] transition-colors appearance-none">
                   <option value="" style={{ color: "#1F2937" }}>Select type</option>
                   <option value="highway" style={{ color: "#1F2937" }}>Highway frontage</option>
                   <option value="commercial" style={{ color: "#1F2937" }}>Commercial property</option>
@@ -386,11 +386,11 @@ export default function ForLandownersPage() {
               <label htmlFor="lo-details" className="block text-xs font-semibold text-white/50 uppercase tracking-widest mb-1.5">Additional Details</label>
               <textarea id="lo-details" name="details" rows={4} value={form.details} onChange={handleChange}
                 placeholder="Any other details about the property, existing structures, road frontage, etc."
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#2464B4] transition-colors resize-none" />
+                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4B5563] transition-colors resize-none" />
             </div>
             {error && <p className="text-red-400 text-sm text-center">{error}</p>}
             <button type="submit" disabled={loading}
-              className="w-full py-4 rounded-full bg-[#2464B4] hover:bg-[#1a4f94] text-white font-bold text-base transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+              className="w-full py-4 rounded-full bg-[#4B5563] hover:bg-[#374151] text-white font-bold text-base transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
               {loading ? "Sending..." : "Send My Property Details"}
             </button>
           </form>
