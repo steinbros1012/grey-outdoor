@@ -104,13 +104,6 @@ const advantages = [
   },
 ];
 
-const stats = [
-  { value: "700+", label: "Billboard Faces" },
-  { value: "25+", label: "Years in NC" },
-  { value: "10+", label: "Active Markets" },
-  { value: "1M+", label: "Daily Impressions" },
-];
-
 const markets = [
   "Wilmington / Hampstead",
   "Leland / Brunswick County",
@@ -127,24 +120,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-
-      {/* Stats bar */}
-      <section className="border-b border-slate-100 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-slate-100">
-            {stats.map((s) => (
-              <div key={s.label} className="px-6 py-7 text-center">
-                <div className="text-3xl sm:text-4xl font-black text-[#E8630A] mb-1" style={{ letterSpacing: "-0.03em" }}>
-                  {s.value}
-                </div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest font-semibold">
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Market search — key discovery UX */}
       <section className="py-16 sm:py-20 px-4 bg-white border-b border-slate-100">
