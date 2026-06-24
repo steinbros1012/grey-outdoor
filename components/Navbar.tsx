@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
 const inventoryLinks = [
@@ -68,12 +69,15 @@ export default function Navbar() {
           <div className="flex items-center gap-6 h-16 md:h-[68px]">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 shrink-0 mr-2 group">
-              {/* Logo badge — mirrors their actual logo style */}
-              <div className="flex items-center gap-0 px-2.5 py-1 rounded border-2 border-white/60 bg-[#6B7280]">
-                <span className="text-sm font-black tracking-tight text-white leading-none">GREY</span>
-              </div>
-              <span className="text-sm font-bold tracking-[0.06em] text-white/90 leading-none">OUTDOOR, LLC</span>
+            <Link href="/" className="shrink-0 mr-2">
+              <Image
+                src="/grey-outdoor-logo.webp"
+                alt="Grey Outdoor LLC"
+                width={140}
+                height={52}
+                className="h-10 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}
@@ -198,11 +202,14 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-[100] bg-white flex flex-col">
           <div className="flex items-center justify-between px-4 py-4 border-b border-slate-100">
-            <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-              <div className="flex items-center px-2.5 py-1 rounded border-2 border-[#2464B4] bg-[#6B7280]">
-                <span className="text-sm font-black tracking-tight text-white leading-none">GREY</span>
-              </div>
-              <span className="text-sm font-bold tracking-[0.06em] text-[#2464B4] leading-none">OUTDOOR, LLC</span>
+            <Link href="/" onClick={() => setMobileOpen(false)}>
+              <Image
+                src="/grey-outdoor-logo.webp"
+                alt="Grey Outdoor LLC"
+                width={140}
+                height={52}
+                className="h-9 w-auto object-contain"
+              />
             </Link>
             <button className="p-2 text-slate-400 hover:text-slate-900 rounded-lg" onClick={() => setMobileOpen(false)} aria-label="Close menu">
               <X size={22} />
