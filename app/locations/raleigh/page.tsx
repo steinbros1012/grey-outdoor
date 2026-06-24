@@ -36,7 +36,7 @@ const faqs = [
 export default function BurlingtonPage() {
   return (
     <>
-      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#2464B4" }}>
         <Image
           src="/hero/grey-outdoor-hero-2.jpg"
           alt="Interstate highway corridor at dusk"
@@ -62,7 +62,7 @@ export default function BurlingtonPage() {
         </div>
       </section>
 
-      <section className="py-14 px-4" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="py-14 px-4" style={{ backgroundColor: "#2464B4" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { value: "58,000+", label: "I-40/85 Daily Traffic" },
@@ -71,7 +71,7 @@ export default function BurlingtonPage() {
             { value: "14x48", label: "Premium Format" },
           ].map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-black text-[#EB2813] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
+              <div className="text-3xl lg:text-4xl font-black text-[#2464B4] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
               <div className="text-xs text-white/40 uppercase tracking-widest">{s.label}</div>
             </div>
           ))}
@@ -81,7 +81,7 @@ export default function BurlingtonPage() {
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-black text-[#272727] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
+            <h2 className="text-3xl font-black text-[#1F2937] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
             <div className="space-y-4">
               {[
                 { loc: "I-40/85 Burlington (Exit Area)", hw: "I-40/85 Westbound", size: "14x48", traffic: "58,000/day", type: "Static" },
@@ -91,25 +91,25 @@ export default function BurlingtonPage() {
               ].map((loc) => (
                 <div key={loc.loc} className="flex items-center justify-between p-5 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
                   <div>
-                    <div className="font-bold text-[#272727]">{loc.loc}</div>
-                    <div className="text-xs text-[#0C4C93] font-semibold mt-0.5">{loc.hw}</div>
+                    <div className="font-bold text-[#1F2937]">{loc.loc}</div>
+                    <div className="text-xs text-[#2464B4] font-semibold mt-0.5">{loc.hw}</div>
                     <div className="text-xs text-[#475569] mt-1">{loc.size} · {loc.traffic}</div>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${loc.type === "Digital" ? "bg-yellow-100 text-yellow-800" : "bg-slate-100 text-slate-600"}`}>{loc.type}</span>
-                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#EB2813] text-white text-xs font-bold hover:bg-[#c8200f] transition-colors">Inquire</Link>
+                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#2464B4] text-white text-xs font-bold hover:bg-[#1a4f94] transition-colors">Inquire</Link>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#0C4C93" }}>
+          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#2464B4" }}>
             <LeadForm title="Get Burlington / I-40 Availability" subtitle="Request locations and pricing for the I-40/85 Alamance County corridor." dark />
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise on the I-40/85 Corridor?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -118,7 +118,7 @@ export default function BurlingtonPage() {
               { title: "Strong Local Alamance County Base", body: "Beyond through-traffic, Alamance County has a growing local consumer market centered on Burlington. Retail, home services, healthcare, and auto dealerships all benefit from consistent local brand presence alongside the regional highway audience." },
               { title: "Underserved Advertising Market", body: "Compared to Raleigh or Charlotte, the Burlington/I-40 corridor offers regional brand awareness at a competitive price point. Grey Outdoor's inventory here provides outsized reach relative to cost for businesses targeting the full NC I-40 corridor." },
             ].map((r) => (
-              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#0C4C93", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#2464B4", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <h3 className="text-lg font-bold text-white mb-2">{r.title}</h3>
                 <p className="text-sm text-white/55 leading-relaxed">{r.body}</p>
               </div>
@@ -129,10 +129,10 @@ export default function BurlingtonPage() {
 
       <section className="py-14 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-black text-[#272727] mb-6" style={{ letterSpacing: "-0.02em" }}>Industries That Succeed on I-40/85</h2>
+          <h2 className="text-2xl font-black text-[#1F2937] mb-6" style={{ letterSpacing: "-0.02em" }}>Industries That Succeed on I-40/85</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {["Retail", "Auto Dealers", "Home Services", "Healthcare", "Restaurants", "Financial Services", "Real Estate", "Regional Brands"].map(i => (
-              <span key={i} className="px-4 py-2 rounded-full text-sm font-semibold text-[#272727] bg-white border border-[#E2E8F0]">{i}</span>
+              <span key={i} className="px-4 py-2 rounded-full text-sm font-semibold text-[#1F2937] bg-white border border-[#E2E8F0]">{i}</span>
             ))}
           </div>
         </div>
@@ -140,11 +140,11 @@ export default function BurlingtonPage() {
 
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-black text-[#272727] mb-10" style={{ letterSpacing: "-0.02em" }}>Burlington &amp; I-40/85 Billboard Advertising FAQ</h2>
+          <h2 className="text-3xl font-black text-[#1F2937] mb-10" style={{ letterSpacing: "-0.02em" }}>Burlington &amp; I-40/85 Billboard Advertising FAQ</h2>
           <div className="space-y-6">
             {faqs.map((faq) => (
               <div key={faq.q} className="p-6 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
-                <h3 className="font-bold text-[#272727] mb-2">{faq.q}</h3>
+                <h3 className="font-bold text-[#1F2937] mb-2">{faq.q}</h3>
                 <p className="text-sm text-[#475569] leading-relaxed">{faq.a}</p>
               </div>
             ))}

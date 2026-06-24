@@ -12,7 +12,7 @@ export default function BillboardCostNCPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#2464B4" }}>
         <div className="max-w-3xl mx-auto">
           <Link
             href="/resources"

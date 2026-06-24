@@ -56,7 +56,7 @@ export default function ContactPage() {
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#EB2813] transition-shadow text-sm";
+    "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#2464B4] transition-shadow text-sm";
   const inputStyle = {
     backgroundColor: "rgba(255,255,255,0.06)",
     border: "1px solid rgba(255,255,255,0.1)",
@@ -66,7 +66,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#2464B4" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-4"
@@ -80,7 +80,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#0C4C93" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#2464B4" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
@@ -129,9 +129,9 @@ export default function ContactPage() {
                     <label htmlFor="market" className={labelClass}>Target Market *</label>
                     <select id="market" name="market" required value={form.market} onChange={handleChange}
                       className={inputClass} style={{ ...inputStyle, color: form.market ? "#F8FAFC" : "rgba(248,250,252,0.3)" }}>
-                      <option value="" disabled style={{ color: "#272727" }}>Select market</option>
+                      <option value="" disabled style={{ color: "#1F2937" }}>Select market</option>
                       {["Wilmington / Hampstead", "Leland / Brunswick County", "Jacksonville", "Eastern NC", "Burlington / I-40 Corridor", "Florence, SC", "Myrtle Beach / Coastal SC", "Other"].map(m => (
-                        <option key={m} value={m} style={{ color: "#272727", backgroundColor: "#fff" }}>{m}</option>
+                        <option key={m} value={m} style={{ color: "#1F2937", backgroundColor: "#fff" }}>{m}</option>
                       ))}
                     </select>
                   </div>
@@ -139,9 +139,9 @@ export default function ContactPage() {
                     <label htmlFor="campaignType" className={labelClass}>Campaign Type</label>
                     <select id="campaignType" name="campaignType" value={form.campaignType} onChange={handleChange}
                       className={inputClass} style={{ ...inputStyle, color: form.campaignType ? "#F8FAFC" : "rgba(248,250,252,0.3)" }}>
-                      <option value="" disabled style={{ color: "#272727" }}>Select type</option>
+                      <option value="" disabled style={{ color: "#1F2937" }}>Select type</option>
                       {["Static Bulletin", "Digital Billboard", "Both, Need Advice", "Not Sure"].map(t => (
-                        <option key={t} value={t} style={{ color: "#272727", backgroundColor: "#fff" }}>{t}</option>
+                        <option key={t} value={t} style={{ color: "#1F2937", backgroundColor: "#fff" }}>{t}</option>
                       ))}
                     </select>
                   </div>
@@ -150,9 +150,9 @@ export default function ContactPage() {
                   <label htmlFor="budget" className={labelClass}>Estimated Monthly Budget</label>
                   <select id="budget" name="budget" value={form.budget} onChange={handleChange}
                     className={inputClass} style={{ ...inputStyle, color: form.budget ? "#F8FAFC" : "rgba(248,250,252,0.3)" }}>
-                    <option value="" disabled style={{ color: "#272727" }}>Select budget range</option>
+                    <option value="" disabled style={{ color: "#1F2937" }}>Select budget range</option>
                     {["Under $1,000/mo", "$1,000 – $3,000/mo", "$3,000 – $7,500/mo", "$7,500 – $15,000/mo", "$15,000+/mo", "Not Sure"].map(b => (
-                      <option key={b} value={b} style={{ color: "#272727", backgroundColor: "#fff" }}>{b}</option>
+                      <option key={b} value={b} style={{ color: "#1F2937", backgroundColor: "#fff" }}>{b}</option>
                     ))}
                   </select>
                 </div>
@@ -166,8 +166,8 @@ export default function ContactPage() {
                   <p className="text-red-400 text-sm text-center">{error}</p>
                 )}
                 <button type="submit" disabled={loading}
-                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#c8200f] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
-                  style={{ backgroundColor: "#EB2813" }}>
+                  className="w-full py-4 rounded-full font-bold text-white text-base hover:bg-[#1a4f94] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: "#2464B4" }}>
                   {loading ? "Sending..." : "Send My Request →"}
                 </button>
               </form>
@@ -190,7 +190,7 @@ export default function ContactPage() {
                 className="p-5 rounded-lg flex gap-4"
                 style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
               >
-                <item.icon size={20} className="text-[#EB2813] flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <item.icon size={20} className="text-[#2464B4] flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <div className="text-xs font-semibold text-white/40 uppercase tracking-widest mb-1">{item.label}</div>
                   {item.lines.map((line) => (

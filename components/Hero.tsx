@@ -87,7 +87,7 @@ export default function Hero() {
             Your Brand.
             <br />
             Every Road in{" "}
-            <span className="text-[#EB2813]">NC.</span>
+            <span className="text-[#2464B4]">NC.</span>
           </motion.h1>
 
           {/* Sub */}
@@ -109,7 +109,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#EB2813] hover:bg-[#c8200f] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(235,40,19,0.15)] hover:shadow-[0_0_60px_rgba(235,40,19,0.15)] w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-[#2464B4] hover:bg-[#1a4f94] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(36,100,180,0.12)] hover:shadow-[0_0_60px_rgba(36,100,180,0.12)] w-full sm:w-auto justify-center"
             >
               Request Availability
               <ArrowRight size={17} />

@@ -53,10 +53,11 @@ export default function Navbar() {
   }, []);
 
   const headerBg = scrolled
-    ? "border-b border-[#093d77] shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
+    ? "border-b border-[#1a4f94] shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
     : "bg-transparent border-b border-transparent";
 
-  const headerStyle = scrolled ? { backgroundColor: "#0C4C93" } : {};
+  // Always blue when scrolled, transparent over hero
+  const headerStyle = scrolled ? { backgroundColor: "#2464B4" } : {};
   const textColor = "text-white/85";
   const logoColor = "text-white";
 
@@ -67,9 +68,12 @@ export default function Navbar() {
           <div className="flex items-center gap-6 h-16 md:h-[68px]">
 
             {/* Logo */}
-            <Link href="/" className="flex items-baseline gap-0.5 shrink-0 mr-2">
-              <span className={`text-lg font-black tracking-tight transition-colors duration-300 ${logoColor}`}>GREY</span>
-              <span className="text-lg font-black tracking-tight text-[#EB2813]">OUTDOOR</span>
+            <Link href="/" className="flex items-center gap-2 shrink-0 mr-2 group">
+              {/* Logo badge — mirrors their actual logo style */}
+              <div className="flex items-center gap-0 px-2.5 py-1 rounded border-2 border-white/60 bg-[#6B7280]">
+                <span className="text-sm font-black tracking-tight text-white leading-none">GREY</span>
+              </div>
+              <span className="text-sm font-bold tracking-[0.06em] text-white/90 leading-none">OUTDOOR, LLC</span>
             </Link>
 
             {/* Desktop nav */}
@@ -79,7 +83,7 @@ export default function Navbar() {
               <div ref={inventoryRef} className="relative">
                 <button
                   onClick={() => { setInventoryOpen((v) => !v); setMarketsOpen(false); }}
-                  className={`flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium transition-colors duration-150 whitespace-nowrap ${textColor} hover:text-[${scrolled ? "#272727" : "white"}] hover:bg-white/8`}
+                  className={`flex items-center gap-1 px-3.5 py-2 rounded-lg text-sm font-medium transition-colors duration-150 whitespace-nowrap ${textColor} hover:text-[${scrolled ? "#1F2937" : "white"}] hover:bg-white/8`}
                 >
                   Browse Inventory
                   <ChevronDown size={14} className={`transition-transform duration-200 ${inventoryOpen ? "rotate-180" : ""}`} />
@@ -95,7 +99,7 @@ export default function Navbar() {
                           onClick={() => setInventoryOpen(false)}
                           className="flex flex-col gap-0.5 px-4 py-3 rounded-xl hover:bg-slate-50 transition-colors group"
                         >
-                          <span className="text-sm font-semibold text-slate-900 group-hover:text-[#EB2813] transition-colors">{item.label}</span>
+                          <span className="text-sm font-semibold text-slate-900 group-hover:text-[#2464B4] transition-colors">{item.label}</span>
                           <span className="text-xs text-slate-400">{item.desc}</span>
                         </Link>
                       ))}
@@ -104,7 +108,7 @@ export default function Navbar() {
                       <Link
                         href="/inventory"
                         onClick={() => setInventoryOpen(false)}
-                        className="flex items-center justify-between text-xs font-bold text-[#EB2813] hover:gap-3 transition-all"
+                        className="flex items-center justify-between text-xs font-bold text-[#2464B4] hover:gap-3 transition-all"
                       >
                         See all available inventory <ArrowRight size={12} />
                       </Link>
@@ -141,7 +145,7 @@ export default function Navbar() {
                       <Link
                         href="/locations"
                         onClick={() => setMarketsOpen(false)}
-                        className="flex items-center justify-between text-xs font-bold text-[#EB2813] hover:gap-3 transition-all"
+                        className="flex items-center justify-between text-xs font-bold text-[#2464B4] hover:gap-3 transition-all"
                       >
                         View all markets <ArrowRight size={12} />
                       </Link>
@@ -172,7 +176,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#EB2813] text-white text-sm font-bold hover:bg-[#c8200f] transition-colors duration-150 whitespace-nowrap shadow-[0_2px_12px_rgba(235,40,19,0.15)]"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#2464B4] text-white text-sm font-bold hover:bg-[#1a4f94] transition-colors duration-150 whitespace-nowrap shadow-[0_2px_12px_rgba(36,100,180,0.12)]"
               >
                 Request a Quote <ArrowRight size={13} />
               </Link>
@@ -194,9 +198,11 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-[100] bg-white flex flex-col">
           <div className="flex items-center justify-between px-4 py-4 border-b border-slate-100">
-            <Link href="/" className="flex items-baseline gap-0.5" onClick={() => setMobileOpen(false)}>
-              <span className="text-lg font-black text-slate-900">GREY</span>
-              <span className="text-lg font-black text-[#EB2813]">OUTDOOR</span>
+            <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+              <div className="flex items-center px-2.5 py-1 rounded border-2 border-[#2464B4] bg-[#6B7280]">
+                <span className="text-sm font-black tracking-tight text-white leading-none">GREY</span>
+              </div>
+              <span className="text-sm font-bold tracking-[0.06em] text-[#2464B4] leading-none">OUTDOOR, LLC</span>
             </Link>
             <button className="p-2 text-slate-400 hover:text-slate-900 rounded-lg" onClick={() => setMobileOpen(false)} aria-label="Close menu">
               <X size={22} />
@@ -257,7 +263,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#EB2813] text-white font-bold text-base hover:bg-[#c8200f] transition-colors shadow-[0_4px_20px_rgba(235,40,19,0.15)]"
+              className="flex items-center justify-center gap-2 w-full py-4 rounded-full bg-[#2464B4] text-white font-bold text-base hover:bg-[#1a4f94] transition-colors shadow-[0_4px_20px_rgba(36,100,180,0.12)]"
             >
               Request a Quote <ArrowRight size={16} />
             </Link>

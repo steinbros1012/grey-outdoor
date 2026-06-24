@@ -90,14 +90,14 @@ export async function POST(request: Request) {
     ];
 
     const html = `
-      <h2 style="font-family:sans-serif;color:#272727;">New Billboard Inquiry</h2>
+      <h2 style="font-family:sans-serif;color:#1F2937;">New Billboard Inquiry</h2>
       <table style="font-family:sans-serif;border-collapse:collapse;width:100%;max-width:560px;">
         ${rows
           .map(
             ([label, value]) => `
           <tr>
             <td style="padding:10px 14px;background:#F8FAFC;border:1px solid #E2E8F0;font-weight:600;color:#64748B;font-size:13px;white-space:nowrap;">${label}</td>
-            <td style="padding:10px 14px;border:1px solid #E2E8F0;color:#272727;font-size:14px;">${value}</td>
+            <td style="padding:10px 14px;border:1px solid #E2E8F0;color:#1F2937;font-size:14px;">${value}</td>
           </tr>`
           )
           .join("")}
