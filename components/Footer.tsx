@@ -34,11 +34,15 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand col */}
           <div className="col-span-2 lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2 mb-3">
-              <div className="px-2.5 py-1 rounded border-2 border-white/50 bg-[#6B7280]">
-                <span className="text-sm font-black tracking-tight text-white leading-none">GREY</span>
-              </div>
-              <span className="text-sm font-bold tracking-[0.06em] text-white/80 leading-none">OUTDOOR, LLC</span>
+            <Link href="/" className="inline-block mb-3">
+              <Image
+                src="/grey-outdoor-logo.webp"
+                alt="Grey Outdoor LLC"
+                width={160}
+                height={60}
+                className="h-14 w-auto object-contain"
+                style={{ mixBlendMode: "multiply" }}
+              />
             </Link>
             <p className="text-sm text-white/50 mb-6 max-w-xs leading-relaxed">
               North Carolina&apos;s Billboard Advertising Leaders. 700+ faces across
