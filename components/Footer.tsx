@@ -34,14 +34,13 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand col */}
           <div className="col-span-2 lg:col-span-2">
-            <Link href="/" className="inline-block mb-3">
+            <Link href="/" className="inline-block mb-4 rounded-lg overflow-hidden bg-white px-3 py-2">
               <Image
                 src="/grey-outdoor-logo.webp"
                 alt="Grey Outdoor LLC"
                 width={160}
                 height={60}
-                className="h-14 w-auto object-contain"
-                style={{ mixBlendMode: "multiply" }}
+                className="h-10 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-white/50 mb-6 max-w-xs leading-relaxed">
