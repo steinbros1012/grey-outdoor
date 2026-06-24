@@ -54,7 +54,7 @@ export default function Hero() {
       />
 
       {/* Orange top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#F97316] to-transparent opacity-70" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#E8630A] to-transparent opacity-70" />
 
       {/* Main content — centered */}
       <div className="relative z-10 flex-1 flex items-center justify-center">
@@ -87,7 +87,7 @@ export default function Hero() {
             Your Brand.
             <br />
             Every Road in{" "}
-            <span className="text-[#F97316]">NC.</span>
+            <span className="text-[#E8630A]">NC.</span>
           </motion.h1>
 
           {/* Sub */}
@@ -109,7 +109,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.5)] w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-[#E8630A] hover:bg-[#d45608] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(232,99,10,0.35)] hover:shadow-[0_0_60px_rgba(232,99,10,0.45)] w-full sm:w-auto justify-center"
             >
               Request Availability
               <ArrowRight size={17} />
@@ -162,7 +162,7 @@ export default function Hero() {
             {stats.map((s) => (
               <div key={s.label} className="px-4 sm:px-8 py-5 text-center">
                 <div
-                  className="text-2xl sm:text-3xl font-black text-[#F97316]"
+                  className="text-2xl sm:text-3xl font-black text-[#E8630A]"
                   style={{ letterSpacing: "-0.02em" }}
                 >
                   {s.value}

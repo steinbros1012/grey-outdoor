@@ -5,8 +5,8 @@
   --color-brand-dark: #08091A;
   --color-brand-navy: #0D1230;
   --color-brand-blue: #0047CC;
-  --color-brand-orange: #F97316;
-  --color-brand-orange-dark: #EA580C;
+  --color-brand-orange: #E8630A;
+  --color-brand-orange-dark: #d45608;
   --color-neutral-50: #F8FAFC;
   --color-neutral-100: #F1F5F9;
   --color-neutral-200: #E2E8F0;
@@ -52,16 +52,16 @@ body {
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F97316;
+  background: #E8630A;
 }
 
 ::selection {
-  background-color: rgba(249, 115, 22, 0.25);
+  background-color: rgba(232, 99, 10, 0.2);
   color: #0F172A;
 }
 
 :focus-visible {
-  outline: 2px solid #F97316;
+  outline: 2px solid #E8630A;
   outline-offset: 2px;
   border-radius: 4px;
 }

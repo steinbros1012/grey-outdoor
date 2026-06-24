@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-baseline gap-1 mb-3">
               <span className="text-xl font-black text-white">GREY</span>
-              <span className="text-xl font-black text-[#F97316]">OUTDOOR</span>
+              <span className="text-xl font-black text-[#E8630A]">OUTDOOR</span>
             </Link>
             <p className="text-sm text-white/50 mb-6 max-w-xs leading-relaxed">
               North Carolina&apos;s Billboard Advertising Leaders. 700+ faces across
