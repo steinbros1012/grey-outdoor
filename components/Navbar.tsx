@@ -54,11 +54,11 @@ export default function Navbar() {
   }, []);
 
   const headerBg = scrolled
-    ? "border-b border-[#374151] shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
-    : "bg-transparent border-b border-transparent";
+    ? "shadow-[0_2px_16px_rgba(0,0,0,0.18)]"
+    : "shadow-[0_1px_8px_rgba(0,0,0,0.10)]";
 
-  // Always blue when scrolled, transparent over hero
-  const headerStyle = scrolled ? { backgroundColor: "#4B5563" } : {};
+  // Always gray — transparent nav breaks on pages without a dark hero
+  const headerStyle = { backgroundColor: "#4B5563" };
   const textColor = "text-white/85";
   const logoColor = "text-white";
 
