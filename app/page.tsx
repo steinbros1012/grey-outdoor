@@ -131,7 +131,7 @@ export default function HomePage() {
             variants={stagger}
           >
             <motion.div variants={fadeUp} className="mb-8">
-              <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-4">
+              <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-4">
                 Find Billboards Near You
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-[-0.03em]">
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <select
                   value={selectedMarket}
                   onChange={(e) => setSelectedMarket(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#E8630A] focus:border-transparent appearance-none"
+                  className="w-full pl-10 pr-4 py-3.5 rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#EB2813] focus:border-transparent appearance-none"
                 >
                   <option value="">Select a market...</option>
                   {markets.map((m) => (
@@ -157,14 +157,14 @@ export default function HomePage() {
               </div>
               <Link
                 href={selectedMarket ? `/inventory?market=${encodeURIComponent(selectedMarket)}` : "/inventory"}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#E8630A] text-white text-sm font-bold hover:bg-[#d45608] transition-colors whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#EB2813] text-white text-sm font-bold hover:bg-[#c8200f] transition-colors whitespace-nowrap"
               >
                 Browse Inventory <ArrowRight size={15} />
               </Link>
             </motion.div>
             <motion.p variants={fadeUp} className="mt-4 text-sm text-slate-400">
               Or{" "}
-              <Link href="/inventory" className="text-[#E8630A] font-semibold hover:underline">
+              <Link href="/inventory" className="text-[#EB2813] font-semibold hover:underline">
                 view all 700+ locations
               </Link>
             </motion.p>
@@ -182,7 +182,7 @@ export default function HomePage() {
             variants={stagger}
           >
             <motion.div variants={fadeUp} className="max-w-xl mb-16">
-              <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-5">
+              <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-5">
                 Why Outdoor Advertising
               </span>
               <h2 className="text-4xl sm:text-5xl font-black text-slate-900 leading-[1.05]" style={{ letterSpacing: "-0.03em" }}>
@@ -190,7 +190,7 @@ export default function HomePage() {
                 <br />
                 Can&apos;t be blocked.
                 <br />
-                <span className="text-[#E8630A]">Can&apos;t be ignored.</span>
+                <span className="text-[#EB2813]">Can&apos;t be ignored.</span>
               </h2>
             </motion.div>
 
@@ -215,10 +215,10 @@ export default function HomePage() {
                 <motion.div
                   key={card.title}
                   variants={fadeUp}
-                  className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-orange-100 hover:shadow-[0_8px_32px_rgba(232,99,10,0.06)] transition-all duration-300 group"
+                  className="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-100 hover:shadow-[0_8px_32px_rgba(12,76,147,0.10)] transition-all duration-300 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center mb-6 group-hover:bg-orange-100 transition-colors">
-                    <card.icon size={20} className="text-[#E8630A]" aria-hidden="true" />
+                  <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
+                    <card.icon size={20} className="text-[#EB2813]" aria-hidden="true" />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2">{card.title}</h3>
                   <p className="text-slate-500 leading-relaxed text-sm">{card.body}</p>
@@ -239,7 +239,7 @@ export default function HomePage() {
             variants={stagger}
           >
             <motion.div variants={fadeUp} className="text-center mb-16">
-              <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-5">
+              <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-5">
                 Format Options
               </span>
               <h2 className="text-4xl sm:text-5xl font-black text-slate-900 leading-[1.05]" style={{ letterSpacing: "-0.03em" }}>
@@ -256,7 +256,7 @@ export default function HomePage() {
                 variants={fadeUp}
                 className="p-10 bg-white rounded-2xl border border-slate-200 shadow-[0_4px_32px_rgba(0,0,0,0.04)]"
               >
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-100 text-xs font-bold text-[#E8630A] uppercase tracking-widest mb-6">
+                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-xs font-bold text-[#EB2813] uppercase tracking-widest mb-6">
                   Static
                 </span>
                 <h3 className="text-2xl lg:text-3xl font-black text-slate-900 mb-3" style={{ letterSpacing: "-0.025em" }}>
@@ -272,14 +272,14 @@ export default function HomePage() {
                     "Junior Posters — neighborhood precision",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-sm text-slate-600">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#E8630A] flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#EB2813] flex-shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/inventory"
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E8630A] hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#EB2813] hover:gap-3 transition-all"
                 >
                   View Static Inventory <ChevronRight size={14} />
                 </Link>
@@ -288,7 +288,7 @@ export default function HomePage() {
               {/* Digital */}
               <motion.div
                 variants={fadeUp}
-                className="p-10 bg-[#0F172A] rounded-2xl relative overflow-hidden"
+                className="p-10 bg-[#0C4C93] rounded-2xl relative overflow-hidden"
               >
                 <div
                   className="absolute inset-0 opacity-[0.025]"
@@ -348,7 +348,7 @@ export default function HomePage() {
           >
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14">
               <div>
-                <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-5">
+                <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-5">
                   Market Coverage
                 </span>
                 <h2 className="text-4xl sm:text-5xl font-black text-slate-900 leading-[1.05]" style={{ letterSpacing: "-0.03em" }}>
@@ -358,7 +358,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/locations"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-[#E8630A] text-[#E8630A] text-sm font-bold hover:bg-[#E8630A] hover:text-white transition-all shrink-0"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-[#EB2813] text-[#EB2813] text-sm font-bold hover:bg-[#EB2813] hover:text-white transition-all shrink-0"
               >
                 All Markets <ArrowRight size={14} />
               </Link>
@@ -369,10 +369,10 @@ export default function HomePage() {
                 <motion.div key={loc.city} variants={fadeUp}>
                   <Link
                     href={loc.href}
-                    className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-100 hover:border-orange-200 hover:shadow-[0_8px_40px_rgba(232,99,10,0.08)] transition-all duration-300"
+                    className="group flex flex-col p-6 bg-white rounded-2xl border border-slate-100 hover:border-blue-200 hover:shadow-[0_8px_40px_rgba(12,76,147,0.10)] transition-all duration-300"
                   >
                     <div className="flex items-center justify-between mb-3">
-                      <p className="text-[10px] font-bold text-[#E8630A] uppercase tracking-[0.18em]">
+                      <p className="text-[10px] font-bold text-[#EB2813] uppercase tracking-[0.18em]">
                         {loc.highways}
                       </p>
                       <span className="text-[10px] font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded-full border border-slate-100">
@@ -381,7 +381,7 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-lg font-bold text-slate-900 mb-2">{loc.city}</h3>
                     <p className="text-sm text-slate-500 leading-relaxed flex-1 mb-5">{loc.description}</p>
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#E8630A] group-hover:gap-2 transition-all">
+                    <span className="inline-flex items-center gap-1 text-xs font-bold text-[#EB2813] group-hover:gap-2 transition-all">
                       View Locations <ChevronRight size={11} />
                     </span>
                   </Link>
@@ -393,7 +393,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Grey Outdoor — dark contrast section */}
-      <section className="py-24 sm:py-32 px-4 bg-[#0F172A]">
+      <section className="py-24 sm:py-32 px-4 bg-[#0C4C93]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -402,7 +402,7 @@ export default function HomePage() {
             variants={stagger}
           >
             <motion.div variants={fadeUp} className="text-center mb-16">
-              <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-5">
+              <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-5">
                 The Grey Outdoor Difference
               </span>
               <h2 className="text-4xl sm:text-5xl font-black text-white leading-[1.05] max-w-xl mx-auto" style={{ letterSpacing: "-0.03em" }}>
@@ -450,7 +450,7 @@ export default function HomePage() {
           >
             <motion.span
               variants={fadeUp}
-              className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-5"
+              className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-5"
             >
               Industries Served
             </motion.span>
@@ -468,7 +468,7 @@ export default function HomePage() {
               {industries.map((ind) => (
                 <span
                   key={ind}
-                  className="px-4 py-2 rounded-full text-sm font-semibold text-slate-700 bg-white border border-slate-200 shadow-sm hover:border-orange-200 hover:text-[#E8630A] transition-colors cursor-default"
+                  className="px-4 py-2 rounded-full text-sm font-semibold text-slate-700 bg-white border border-slate-200 shadow-sm hover:border-blue-200 hover:text-[#EB2813] transition-colors cursor-default"
                 >
                   {ind}
                 </span>
@@ -479,7 +479,7 @@ export default function HomePage() {
       </section>
 
       {/* Lead CTA */}
-      <section className="py-24 sm:py-32 px-4 bg-[#E8630A] relative overflow-hidden">
+      <section className="py-24 sm:py-32 px-4 relative overflow-hidden" style={{ backgroundColor: "#0C4C93" }}>
         <div
           className="absolute inset-0 opacity-[0.05]"
           style={{

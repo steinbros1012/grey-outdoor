@@ -28,14 +28,14 @@ const company = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#08091A", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    <footer style={{ backgroundColor: "#0C4C93", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand col */}
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-baseline gap-1 mb-3">
               <span className="text-xl font-black text-white">GREY</span>
-              <span className="text-xl font-black text-[#E8630A]">OUTDOOR</span>
+              <span className="text-xl font-black text-[#EB2813]">OUTDOOR</span>
             </Link>
             <p className="text-sm text-white/50 mb-6 max-w-xs leading-relaxed">
               North Carolina&apos;s Billboard Advertising Leaders. 700+ faces across

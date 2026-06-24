@@ -54,7 +54,7 @@ export default function Hero() {
       />
 
       {/* Orange top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#E8630A] to-transparent opacity-70" />
+      <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-white to-transparent opacity-70" />
 
       {/* Main content — centered */}
       <div className="relative z-10 flex-1 flex items-center justify-center">
@@ -67,10 +67,10 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <span className="inline-flex items-center gap-2.5 border border-orange-500/35 bg-orange-500/10 text-orange-400 text-xs font-semibold px-4 py-2 rounded-full tracking-[0.12em] uppercase">
+            <span className="inline-flex items-center gap-2.5 border border-white/25 bg-white/10 text-white/80 text-xs font-semibold px-4 py-2 rounded-full tracking-[0.12em] uppercase">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
               </span>
               NC&apos;s Largest Independent Billboard Network
             </span>
@@ -87,7 +87,7 @@ export default function Hero() {
             Your Brand.
             <br />
             Every Road in{" "}
-            <span className="text-[#E8630A]">NC.</span>
+            <span className="text-[#EB2813]">NC.</span>
           </motion.h1>
 
           {/* Sub */}
@@ -109,7 +109,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#E8630A] hover:bg-[#d45608] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(232,99,10,0.35)] hover:shadow-[0_0_60px_rgba(232,99,10,0.45)] w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 bg-[#EB2813] hover:bg-[#c8200f] text-white font-bold px-8 py-4 rounded-full transition-all text-base shadow-[0_0_48px_rgba(235,40,19,0.15)] hover:shadow-[0_0_60px_rgba(235,40,19,0.15)] w-full sm:w-auto justify-center"
             >
               Request Availability
               <ArrowRight size={17} />
@@ -162,7 +162,7 @@ export default function Hero() {
             {stats.map((s) => (
               <div key={s.label} className="px-4 sm:px-8 py-5 text-center">
                 <div
-                  className="text-2xl sm:text-3xl font-black text-[#E8630A]"
+                  className="text-2xl sm:text-3xl font-black text-white"
                   style={{ letterSpacing: "-0.02em" }}
                 >
                   {s.value}

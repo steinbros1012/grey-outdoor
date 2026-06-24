@@ -21,7 +21,7 @@ const faqs = [
 export default function CoastalNCPage() {
   return (
     <>
-      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4 relative overflow-hidden" style={{ backgroundColor: "#0C4C93" }}>
         <Image
           src="/hero/highway-3.jpg"
           alt="Beach and coastal highway in Eastern NC"
@@ -43,11 +43,11 @@ export default function CoastalNCPage() {
         </div>
       </section>
 
-      <section className="py-14 px-4" style={{ backgroundColor: "#0D1230" }}>
+      <section className="py-14 px-4" style={{ backgroundColor: "#0C4C93" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
           {[{ value: "6+", label: "Eastern NC Counties" }, { value: "US-74", label: "Primary East-West Artery" }, { value: "US-701", label: "Bladen/Columbus Corridor" }, { value: "NC-87/211", label: "Coastal Access Routes" }].map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-black text-[#F97316] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
+              <div className="text-3xl lg:text-4xl font-black text-[#EB2813] mb-1" style={{ letterSpacing: "-0.02em" }}>{s.value}</div>
               <div className="text-xs text-white/40 uppercase tracking-widest">{s.label}</div>
             </div>
           ))}
@@ -57,7 +57,7 @@ export default function CoastalNCPage() {
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-black text-[#0F172A] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
+            <h2 className="text-3xl font-black text-[#272727] mb-8" style={{ letterSpacing: "-0.02em" }}>Available Billboard Locations</h2>
             <div className="space-y-4">
               {[
                 { loc: "US-74 at NC-130, Whiteville", hw: "US-74", size: "10x36", traffic: "15,000*/day", type: "Static" },
@@ -67,25 +67,25 @@ export default function CoastalNCPage() {
               ].map((loc) => (
                 <div key={loc.loc} className="flex items-center justify-between p-5 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
                   <div>
-                    <div className="font-bold text-[#0F172A]">{loc.loc}</div>
-                    <div className="text-xs text-[#0047CC] font-semibold mt-0.5">{loc.hw}</div>
+                    <div className="font-bold text-[#272727]">{loc.loc}</div>
+                    <div className="text-xs text-[#0C4C93] font-semibold mt-0.5">{loc.hw}</div>
                     <div className="text-xs text-[#475569] mt-1">{loc.size} · {loc.traffic}</div>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-600">{loc.type}</span>
-                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#F97316] text-white text-xs font-bold hover:bg-[#EA580C] transition-colors">Inquire</Link>
+                    <Link href="/contact" className="px-4 py-2 rounded-full bg-[#EB2813] text-white text-xs font-bold hover:bg-[#c8200f] transition-colors">Inquire</Link>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#0D1230" }}>
+          <div className="p-6 rounded-lg self-start" style={{ backgroundColor: "#0C4C93" }}>
             <LeadForm title="Get Coastal NC Availability" subtitle="Request locations and pricing for the Coastal NC market." dark />
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-20 px-4" style={{ backgroundColor: "#0C4C93" }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-black text-white mb-10 text-center" style={{ letterSpacing: "-0.02em" }}>Why Advertise in Eastern NC?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -94,7 +94,7 @@ export default function CoastalNCPage() {
               { title: "Underserved Advertising Market", body: "Compared to metro NC, Eastern NC has fewer competing advertisers. Brands can achieve dominant billboard presence at accessible rates while building strong recall among loyal local audiences." },
               { title: "Coastal Gateway Traffic", body: "Highway 211 and the Southport/Hampstead corridors carry significant seasonal and through traffic from inland markets heading to Brunswick and Pender County beaches, adding tourism reach on top of the resident base." },
             ].map((r) => (
-              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div key={r.title} className="p-6 rounded-lg" style={{ backgroundColor: "#0C4C93", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <h3 className="text-lg font-bold text-white mb-2">{r.title}</h3>
                 <p className="text-sm text-white/55 leading-relaxed">{r.body}</p>
               </div>
@@ -105,10 +105,10 @@ export default function CoastalNCPage() {
 
       <section className="py-14 px-4" style={{ backgroundColor: "#F1F5F9" }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-black text-[#0F172A] mb-6" style={{ letterSpacing: "-0.02em" }}>Industries That Succeed in Eastern NC</h2>
+          <h2 className="text-2xl font-black text-[#272727] mb-6" style={{ letterSpacing: "-0.02em" }}>Industries That Succeed in Eastern NC</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {["Agriculture & Farm Supply", "Healthcare", "Auto Dealers", "Home Services", "Real Estate", "Restaurants", "Retail", "Insurance"].map(i => (
-              <span key={i} className="px-4 py-2 rounded-full text-sm font-semibold text-[#0F172A] bg-white border border-[#E2E8F0]">{i}</span>
+              <span key={i} className="px-4 py-2 rounded-full text-sm font-semibold text-[#272727] bg-white border border-[#E2E8F0]">{i}</span>
             ))}
           </div>
         </div>
@@ -116,11 +116,11 @@ export default function CoastalNCPage() {
 
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-black text-[#0F172A] mb-10" style={{ letterSpacing: "-0.02em" }}>Eastern NC Billboard Advertising FAQ</h2>
+          <h2 className="text-3xl font-black text-[#272727] mb-10" style={{ letterSpacing: "-0.02em" }}>Eastern NC Billboard Advertising FAQ</h2>
           <div className="space-y-6">
             {faqs.map((faq) => (
               <div key={faq.q} className="p-6 bg-white rounded-lg" style={{ border: "1px solid #E2E8F0" }}>
-                <h3 className="font-bold text-[#0F172A] mb-2">{faq.q}</h3>
+                <h3 className="font-bold text-[#272727] mb-2">{faq.q}</h3>
                 <p className="text-sm text-[#475569] leading-relaxed">{faq.a}</p>
               </div>
             ))}

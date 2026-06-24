@@ -94,7 +94,7 @@ export default function InventoryPage() {
                 onClick={() => toggleType(t)}
                 className={`w-4 h-4 rounded flex items-center justify-center border-2 transition-colors flex-shrink-0 ${
                   selectedTypes.includes(t)
-                    ? "bg-[#E8630A] border-[#E8630A]"
+                    ? "bg-[#EB2813] border-[#EB2813]"
                     : "border-slate-300 group-hover:border-slate-400"
                 }`}
               >
@@ -122,7 +122,7 @@ export default function InventoryPage() {
                 onClick={() => toggleMarket(m)}
                 className={`w-4 h-4 rounded flex items-center justify-center border-2 transition-colors flex-shrink-0 ${
                   selectedMarkets.includes(m)
-                    ? "bg-[#E8630A] border-[#E8630A]"
+                    ? "bg-[#EB2813] border-[#EB2813]"
                     : "border-slate-300 group-hover:border-slate-400"
                 }`}
               >
@@ -149,7 +149,7 @@ export default function InventoryPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-1.5 mt-4 text-sm font-bold text-[#E8630A] hover:gap-3 transition-all"
+            className="inline-flex items-center gap-1.5 mt-4 text-sm font-bold text-[#EB2813] hover:gap-3 transition-all"
           >
             Get complete list <ChevronRight size={13} />
           </Link>
@@ -164,7 +164,7 @@ export default function InventoryPage() {
       <section className="pt-24 sm:pt-32 pb-12 px-4 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl">
-            <span className="inline-block text-xs font-bold text-[#E8630A] uppercase tracking-[0.2em] mb-4">
+            <span className="inline-block text-xs font-bold text-[#EB2813] uppercase tracking-[0.2em] mb-4">
               Billboard Inventory
             </span>
             <h1 className="text-4xl sm:text-5xl font-black text-slate-900 leading-[1.06] tracking-[-0.03em] mb-4">
@@ -191,7 +191,7 @@ export default function InventoryPage() {
                   {hasActiveFilters && (
                     <button
                       onClick={clearFilters}
-                      className="text-xs font-semibold text-[#E8630A] hover:text-[#d45608] transition-colors"
+                      className="text-xs font-semibold text-[#EB2813] hover:text-[#c8200f] transition-colors"
                     >
                       Clear all
                     </button>
@@ -216,7 +216,7 @@ export default function InventoryPage() {
                       {selectedTypes.map((t) => (
                         <span
                           key={t}
-                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#E8630A]"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-semibold text-[#EB2813]"
                         >
                           {t}
                           <button onClick={() => toggleType(t)} className="hover:text-orange-800">
@@ -227,7 +227,7 @@ export default function InventoryPage() {
                       {selectedMarkets.map((m) => (
                         <span
                           key={m}
-                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-50 border border-orange-200 text-xs font-semibold text-[#E8630A]"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-semibold text-[#EB2813]"
                         >
                           {m}
                           <button onClick={() => toggleMarket(m)} className="hover:text-orange-800">
@@ -253,7 +253,7 @@ export default function InventoryPage() {
               {filtered.length === 0 ? (
                 <div className="text-center py-20">
                   <p className="text-slate-400 text-sm font-medium mb-4">No locations match your current filters.</p>
-                  <button onClick={clearFilters} className="text-sm font-bold text-[#E8630A] hover:underline">
+                  <button onClick={clearFilters} className="text-sm font-bold text-[#EB2813] hover:underline">
                     Clear all filters
                   </button>
                 </div>
@@ -279,7 +279,7 @@ export default function InventoryPage() {
                             className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide ${
                               bb.type === "Digital"
                                 ? "bg-blue-600 text-white shadow-[0_2px_8px_rgba(37,99,235,0.35)]"
-                                : "bg-[#0F172A]/80 text-white backdrop-blur-sm"
+                                : "bg-[#272727]/80 text-white backdrop-blur-sm"
                             }`}
                           >
                             {bb.type === "Digital" && (
@@ -303,8 +303,8 @@ export default function InventoryPage() {
                       <div className="p-5">
                         {/* Market tag */}
                         <div className="flex items-center gap-1.5 mb-3">
-                          <MapPin size={11} className="text-[#E8630A]" />
-                          <span className="text-[11px] font-bold text-[#E8630A] uppercase tracking-[0.12em]">
+                          <MapPin size={11} className="text-[#EB2813]" />
+                          <span className="text-[11px] font-bold text-[#EB2813] uppercase tracking-[0.12em]">
                             {bb.market}
                           </span>
                         </div>
@@ -333,7 +333,7 @@ export default function InventoryPage() {
 
                         <Link
                           href={`/contact?billboard=${bb.id}`}
-                          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-sm font-bold text-white bg-[#E8630A] hover:bg-[#d45608] transition-colors duration-150"
+                          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-sm font-bold text-white bg-[#EB2813] hover:bg-[#c8200f] transition-colors duration-150"
                         >
                           Check Availability <ChevronRight size={14} />
                         </Link>
@@ -360,7 +360,7 @@ export default function InventoryPage() {
               <h2 className="text-base font-bold text-slate-900">Filters</h2>
               <div className="flex items-center gap-4">
                 {hasActiveFilters && (
-                  <button onClick={clearFilters} className="text-sm font-semibold text-[#E8630A]">
+                  <button onClick={clearFilters} className="text-sm font-semibold text-[#EB2813]">
                     Clear all
                   </button>
                 )}
@@ -375,7 +375,7 @@ export default function InventoryPage() {
             <div className="sticky bottom-0 bg-white border-t border-slate-100 p-4">
               <button
                 onClick={() => setMobileFiltersOpen(false)}
-                className="w-full py-3.5 rounded-full bg-[#E8630A] text-white font-bold text-sm"
+                className="w-full py-3.5 rounded-full bg-[#EB2813] text-white font-bold text-sm"
               >
                 Show {filtered.length} location{filtered.length !== 1 ? "s" : ""}
               </button>

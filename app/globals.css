@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand colors */
-  --color-brand-dark: #08091A;
-  --color-brand-navy: #0D1230;
-  --color-brand-blue: #0047CC;
-  --color-brand-orange: #E8630A;
-  --color-brand-orange-dark: #d45608;
-  --color-neutral-50: #F8FAFC;
-  --color-neutral-100: #F1F5F9;
-  --color-neutral-200: #E2E8F0;
-  --color-neutral-600: #475569;
-  --color-neutral-900: #0F172A;
+  /* Brand colors — Grey Outdoor LLC */
+  --color-brand-blue: #0C4C93;
+  --color-brand-blue-dark: #093d77;
+  --color-brand-blue-light: #1e60a3;
+  --color-brand-red: #EB2813;
+  --color-brand-red-dark: #c8200f;
+  --color-neutral-50: #F3F3F3;
+  --color-neutral-100: #EDEDED;
+  --color-neutral-200: #E2E2E2;
+  --color-neutral-600: #5f5c5c;
+  --color-neutral-900: #272727;
 
   /* Font */
   --font-sans: var(--font-inter), system-ui, sans-serif;
@@ -35,7 +35,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #0F172A;
+  color: #272727;
   font-family: var(--font-sans);
   font-feature-settings: "ss01";
   min-height: 100vh;
@@ -45,23 +45,23 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #F3F3F3;
 }
 ::-webkit-scrollbar-thumb {
   background: #CBD5E1;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E8630A;
+  background: #0C4C93;
 }
 
 ::selection {
-  background-color: rgba(232, 99, 10, 0.2);
-  color: #0F172A;
+  background-color: rgba(12, 76, 147, 0.18);
+  color: #272727;
 }
 
 :focus-visible {
-  outline: 2px solid #E8630A;
+  outline: 2px solid #0C4C93;
   outline-offset: 2px;
   border-radius: 4px;
 }

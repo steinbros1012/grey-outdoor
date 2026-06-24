@@ -50,10 +50,10 @@ export default function AboutPage() {
       {/* Hero */}
       <section
         className="pt-24 sm:pt-32 pb-20 px-4"
-        style={{ backgroundColor: "#08091A" }}
+        style={{ backgroundColor: "#0C4C93" }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#F97316]/15 text-[#F97316] mb-6 tracking-widest uppercase">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#EB2813]/15 text-[#EB2813] mb-6 tracking-widest uppercase">
             Est. 1999
           </span>
           <h1
@@ -72,7 +72,7 @@ export default function AboutPage() {
       <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="max-w-7xl mx-auto">
           <h2
-            className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-12 text-center"
+            className="text-3xl sm:text-4xl font-black text-[#272727] mb-12 text-center"
             style={{ letterSpacing: "-0.02em" }}
           >
             Meet the Team
@@ -93,14 +93,14 @@ export default function AboutPage() {
                     className="rounded-full object-cover w-32 h-32 sm:w-40 sm:h-40"
                   />
                 </div>
-                <h3 className="text-lg font-black text-[#0F172A] mb-1">{member.name}</h3>
-                <p className="text-sm font-semibold text-[#F97316] mb-3 leading-snug">{member.title}</p>
+                <h3 className="text-lg font-black text-[#272727] mb-1">{member.name}</h3>
+                <p className="text-sm font-semibold text-[#EB2813] mb-3 leading-snug">{member.title}</p>
                 <p className="text-sm text-[#475569] leading-relaxed mb-3">{member.bio}</p>
                 <div className="flex flex-col gap-1 mt-auto">
                   {member.phone && (
                     <a
                       href={`tel:${member.phone.replace(/-/g, "")}`}
-                      className="text-sm font-semibold text-[#0047CC] hover:text-[#F97316] transition-colors"
+                      className="text-sm font-semibold text-[#0C4C93] hover:text-[#EB2813] transition-colors"
                     >
                       Call or Text: {member.phone}
                     </a>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   {member.email && (
                     <a
                       href={`mailto:${member.email}`}
-                      className="text-sm text-[#475569] hover:text-[#F97316] transition-colors break-all"
+                      className="text-sm text-[#475569] hover:text-[#EB2813] transition-colors break-all"
                     >
                       {member.email}
                     </a>
@@ -131,10 +131,10 @@ export default function AboutPage() {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
             />
-            <div className="absolute inset-0 bg-[#08091A]/40" />
+            <div className="absolute inset-0 bg-[#0C4C93]/40" />
           </div>
           <h2
-            className="text-3xl font-black text-[#0F172A] mb-6"
+            className="text-3xl font-black text-[#272727] mb-6"
             style={{ letterSpacing: "-0.02em" }}
           >
             Our Story
@@ -169,7 +169,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#0C4C93" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -197,7 +197,7 @@ export default function AboutPage() {
               <div
                 key={val.title}
                 className="p-8 rounded-lg"
-                style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}
+                style={{ backgroundColor: "#0C4C93", border: "1px solid rgba(255,255,255,0.08)" }}
               >
                 <h3 className="text-xl font-bold text-white mb-3">{val.title}</h3>
                 <p className="text-white/55 leading-relaxed text-sm">{val.body}</p>
@@ -212,7 +212,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
-              className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4"
+              className="text-3xl sm:text-4xl font-black text-[#272727] mb-4"
               style={{ letterSpacing: "-0.02em" }}
             >
               Why Clients Choose Grey Outdoor
@@ -242,7 +242,7 @@ export default function AboutPage() {
                 className="p-6 bg-white rounded-lg"
                 style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}
               >
-                <h3 className="text-lg font-bold text-[#0F172A] mb-2">{card.title}</h3>
+                <h3 className="text-lg font-bold text-[#272727] mb-2">{card.title}</h3>
                 <p className="text-sm text-[#475569] leading-relaxed">{card.body}</p>
               </div>
             ))}

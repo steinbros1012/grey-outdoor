@@ -70,7 +70,7 @@ const categoryColors: Record<string, string> = {
   Pricing: "#0047CC",
   Strategy: "#7C3AED",
   Research: "#059669",
-  Locations: "#F97316",
+  Locations: "#EB2813",
   Creative: "#DC2626",
   Guide: "#B45309",
 };
@@ -79,7 +79,7 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="pt-24 sm:pt-32 pb-16 px-4" style={{ backgroundColor: "#0C4C93" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h1
             className="text-4xl sm:text-6xl font-black text-white mb-4"
@@ -121,7 +121,7 @@ export default function ResourcesPage() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <h2 className="text-lg font-bold text-[#0F172A] mb-2 leading-snug">
+                  <h2 className="text-lg font-bold text-[#272727] mb-2 leading-snug">
                     {post.title}
                   </h2>
                   <p className="text-sm text-[#475569] leading-relaxed flex-1 mb-4">
@@ -129,7 +129,7 @@ export default function ResourcesPage() {
                   </p>
                   <Link
                     href={`/resources/${post.slug}`}
-                    className="text-sm font-bold text-[#0047CC] hover:text-[#F97316] transition-colors"
+                    className="text-sm font-bold text-[#0C4C93] hover:text-[#EB2813] transition-colors"
                   >
                     Read Article →
                   </Link>

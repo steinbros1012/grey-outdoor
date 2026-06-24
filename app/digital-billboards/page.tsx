@@ -16,7 +16,7 @@ export default function DigitalBillboardsPage() {
       {/* Hero */}
       <section
         className="pt-24 sm:pt-32 pb-20 px-4 relative overflow-hidden"
-        style={{ backgroundColor: "#08091A" }}
+        style={{ backgroundColor: "#0C4C93" }}
       >
         <Image
           src="/hero/highway-2.jpg"
@@ -35,7 +35,7 @@ export default function DigitalBillboardsPage() {
           }}
         />
         <div className="relative max-w-4xl mx-auto text-center">
-          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#0047CC]/20 text-[#60A5FA] mb-6 tracking-widest uppercase">
+          <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-[#0C4C93]/20 text-[#60A5FA] mb-6 tracking-widest uppercase">
             LED Display Technology
           </span>
           <h1
@@ -52,7 +52,7 @@ export default function DigitalBillboardsPage() {
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="px-8 py-4 rounded-full bg-[#F97316] text-white font-bold hover:bg-[#EA580C] transition-colors text-center"
+              className="px-8 py-4 rounded-full bg-[#EB2813] text-white font-bold hover:bg-[#c8200f] transition-colors text-center"
             >
               Check Digital Availability
             </Link>
@@ -71,7 +71,7 @@ export default function DigitalBillboardsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2
-              className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4"
+              className="text-3xl sm:text-4xl font-black text-[#272727] mb-4"
               style={{ letterSpacing: "-0.02em" }}
             >
               Why Advertisers Love Digital Billboards
@@ -105,8 +105,8 @@ export default function DigitalBillboardsPage() {
                 className="p-6 bg-white rounded-lg"
                 style={{ boxShadow: "0 4px 20px rgba(0,71,204,0.07)", borderTop: "3px solid #0047CC" }}
               >
-                <b.icon size={26} className="text-[#0047CC] mb-4" aria-hidden="true" />
-                <h3 className="text-lg font-bold text-[#0F172A] mb-2">{b.title}</h3>
+                <b.icon size={26} className="text-[#0C4C93] mb-4" aria-hidden="true" />
+                <h3 className="text-lg font-bold text-[#272727] mb-2">{b.title}</h3>
                 <p className="text-sm text-[#475569] leading-relaxed">{b.body}</p>
               </div>
             ))}
@@ -115,7 +115,7 @@ export default function DigitalBillboardsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#08091A" }}>
+      <section className="py-12 sm:py-20 px-4" style={{ backgroundColor: "#0C4C93" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <h2
@@ -146,9 +146,9 @@ export default function DigitalBillboardsPage() {
               <div
                 key={s.step}
                 className="flex gap-6 p-6 rounded-lg"
-                style={{ backgroundColor: "#0D1230", border: "1px solid rgba(255,255,255,0.08)" }}
+                style={{ backgroundColor: "#0C4C93", border: "1px solid rgba(255,255,255,0.08)" }}
               >
-                <div className="text-4xl font-black text-[#0047CC]/40 flex-shrink-0 leading-none">{s.step}</div>
+                <div className="text-4xl font-black text-[#0C4C93]/40 flex-shrink-0 leading-none">{s.step}</div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">{s.title}</h3>
                   <p className="text-sm text-white/55 leading-relaxed">{s.body}</p>
@@ -164,7 +164,7 @@ export default function DigitalBillboardsPage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2
-              className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4"
+              className="text-3xl sm:text-4xl font-black text-[#272727] mb-4"
               style={{ letterSpacing: "-0.02em" }}
             >
               Digital vs. Static Billboards
@@ -174,7 +174,7 @@ export default function DigitalBillboardsPage() {
           <div className="bg-white rounded-lg overflow-hidden overflow-x-auto" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.08)" }}>
             <table className="w-full min-w-[480px]">
               <thead>
-                <tr style={{ backgroundColor: "#0F172A" }}>
+                <tr style={{ backgroundColor: "#272727" }}>
                   <th className="text-left p-4 text-sm font-bold text-white/60">Feature</th>
                   <th className="p-4 text-sm font-bold text-[#60A5FA] text-center">Digital</th>
                   <th className="p-4 text-sm font-bold text-white/60 text-center">Static</th>
@@ -193,7 +193,7 @@ export default function DigitalBillboardsPage() {
                 ].map(([feature, digital, stat]) => (
                   <tr key={feature} className="border-t border-[#F1F5F9]">
                     <td className="p-4 text-sm text-[#475569]">{feature}</td>
-                    <td className="p-4 text-sm text-center font-semibold text-[#0047CC]">{digital}</td>
+                    <td className="p-4 text-sm text-center font-semibold text-[#0C4C93]">{digital}</td>
                     <td className="p-4 text-sm text-center text-[#475569]">{stat}</td>
                   </tr>
                 ))}

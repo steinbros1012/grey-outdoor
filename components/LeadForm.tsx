@@ -75,8 +75,8 @@ export default function LeadForm({
   };
 
   const inputClass = dark
-    ? "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#E8630A] transition-shadow text-sm"
-    : "w-full px-4 py-3 rounded-lg text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#0047CC] transition-shadow text-sm border border-[#E2E8F0]";
+    ? "w-full px-4 py-3 rounded-lg text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-[#EB2813] transition-shadow text-sm"
+    : "w-full px-4 py-3 rounded-lg text-[#272727] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#0C4C93] transition-shadow text-sm border border-[#E2E8F0]";
 
   const inputStyle = dark
     ? { backgroundColor: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }
@@ -90,7 +90,7 @@ export default function LeadForm({
     return (
       <div className="text-center py-12">
         <div className="text-5xl mb-4">✓</div>
-        <h3 className="text-2xl font-bold mb-2" style={{ color: dark ? "#F8FAFC" : "#0F172A" }}>Request Received!</h3>
+        <h3 className="text-2xl font-bold mb-2" style={{ color: dark ? "#F8FAFC" : "#272727" }}>Request Received!</h3>
         <p style={{ color: dark ? "rgba(248,250,252,0.6)" : "#475569" }}>
           We&apos;ll reach out within 24 hours with availability and rates for your
           selected market.
@@ -105,7 +105,7 @@ export default function LeadForm({
         <h3
           className="text-2xl font-black mb-2"
           style={{
-            color: dark ? "#F8FAFC" : "#0F172A",
+            color: dark ? "#F8FAFC" : "#272727",
             letterSpacing: "-0.02em",
           }}
         >
@@ -207,7 +207,7 @@ export default function LeadForm({
             className={inputClass}
             style={{
               ...inputStyle,
-              color: dark ? (form.market ? "#F8FAFC" : "rgba(248,250,252,0.3)") : "#0F172A",
+              color: dark ? (form.market ? "#F8FAFC" : "rgba(248,250,252,0.3)") : "#272727",
             }}
             aria-label="Select your target market"
           >
@@ -215,7 +215,7 @@ export default function LeadForm({
               Select a market
             </option>
             {markets.map((m) => (
-              <option key={m} value={m} style={{ color: "#0F172A", backgroundColor: "#fff" }}>
+              <option key={m} value={m} style={{ color: "#272727", backgroundColor: "#fff" }}>
                 {m}
               </option>
             ))}
@@ -242,7 +242,7 @@ export default function LeadForm({
           type="submit"
           disabled={loading}
           className="w-full py-4 rounded-full font-bold text-white text-base hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
-          style={{ backgroundColor: dark ? "#E8630A" : "#0047CC" }}
+          style={{ backgroundColor: dark ? "#EB2813" : "#0047CC" }}
         >
           {loading ? "Sending..." : "Request Free Availability Check →"}
         </button>
